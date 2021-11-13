@@ -8,3 +8,8 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 alias config='/usr/bin/git --git-dir=/home/ca/dotfiles/ --work-tree=/home/ca'
+
+
+
+alias lol="sudo sh -c 'sysctl -w abi.vsyscall32=0'"
+
