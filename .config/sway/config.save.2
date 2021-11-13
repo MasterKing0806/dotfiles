@@ -3,9 +3,7 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
-
-exec wl-paste -t text --watch clipman store --no-persist
-
+#
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -97,13 +95,9 @@ output * bg /personen/canh/Wallpapers/link.jpg fill
     bindsym Ctrl+Alt+l exec swaylock --image /personen/canh/Wallpapers/4k-Arch-Dark-Background.png --inside-color 3b4252 --ring-color 2e3440 --key-hl-color d8dee9 --inside-ver-color 81a1c1 --ring-ver-color 88c0d0	 
 
 
-#Keybinding for Clipman
-	bindsym Ctrl+Alt+h exec clipman pick -t wofi
-    
-
-# Exit sway (logs you out of your Wayland session)
+    # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
-#
+
 # Moving around:
 #
     # Move your focus around
@@ -284,8 +278,6 @@ exec_always {
 #    gsettings set $gnome-schema cursor-theme 'Your cursor Theme'
 #    gsettings set $gnome-schema font-name 'Your font name'
 }
-
-
 
 
 
