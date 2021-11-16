@@ -76,3 +76,6 @@
       "m m c" #'mpc)
 
 
+(map! :leader
+      :desc "pdf jump to page"
+      "m g" #'pdf-view-goto-page)
