@@ -29,3 +29,5 @@ alias bashrc='vim ~/.bashrc'
 
 alias swayc='vim ~/.config/sway/config'
 
+alias shut='shutdown now'
+
