@@ -83,3 +83,28 @@
 (map! :leader
       :desc "pdf jump to page"
       "m g" #'pdf-view-goto-page)
+
+(map! :leader
+      :desc "mpd play"
+      "m m p" #'mpc-play)
+
+(map! :leader
+      :desc "mpd pause"
+      "m m s" #'mpc-pause)
+(map! :leader
+      :desc "next"
+      "m m n" #'mpc-next)
+
+
+(map! :leader
+      :desc "resume"
+      "m m m" #'mpc-resume)
+
+(map! :leader
+      :desc "next page"
+      "m j" #'image-next-file)
+
+
+(map! :leader
+      :desc "page before"
+      "m k" #'image-previous-file)
