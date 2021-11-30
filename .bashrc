@@ -32,3 +32,6 @@ alias swayc='vim ~/.config/sway/config'
 alias shut='shutdown now'
 
 alias .config='~/.config'
+
+
+neofetch
