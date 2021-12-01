@@ -33,7 +33,12 @@ alias shut='shutdown now'
 
 alias .config='~/.config'
 
-alias timeshifts='sudo timeshift-gtk'
+timer (){
+	xhost +
+	sudo timeshift-gtk
+}
+
+alias timeshifts='timer'
 
 unmounten  (){
 	sudo udisksctl unmount -b /dev/sdd1
