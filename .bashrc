@@ -33,5 +33,6 @@ alias shut='shutdown now'
 
 alias .config='~/.config'
 
+alias timeshifts='sudo timeshift-gtk'
 
 neofetch
