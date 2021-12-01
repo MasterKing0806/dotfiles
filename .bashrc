@@ -35,4 +35,13 @@ alias .config='~/.config'
 
 alias timeshifts='sudo timeshift-gtk'
 
+unmounten  (){
+	sudo udisksctl unmount -b /dev/sdd1
+	sudo udisksctl power-off -b /dev/sdd1
+}
+
+
+alias udisk='unmounten'
+
+
 neofetch
