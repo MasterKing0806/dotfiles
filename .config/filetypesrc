@@ -1,2 +1,5 @@
 [EmbedSettings]
+embed-application/pdf=false
+embed-image/png=false
 embed-video/mp2t=false
+embed-video/mp4=false

@@ -1,0 +1,19 @@
+{
+  "version": "1.5",
+  "default_core_path": "",
+  "default_core_name": "",
+  "label_display_mode": 0,
+  "right_thumbnail_mode": 0,
+  "left_thumbnail_mode": 0,
+  "sort_mode": 0,
+  "items": [
+    {
+      "path": "/games/rom/Pokemon - Platinum Version (USA).nds",
+      "label": "Pokemon - Platinum Version (USA)",
+      "core_path": "DETECT",
+      "core_name": "DETECT",
+      "crc32": "9253921D|crc",
+      "db_name": "Nintendo - Nintendo DS.lpl"
+    }
+  ]
+}

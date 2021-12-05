@@ -1,5 +1,11 @@
 [Added Associations]
+application/pdf=emacs.desktop;
+image/png=imv-2.desktop;
 video/mp2t=mpv.desktop;
+video/mp4=mpv.desktop;
 
 [Default Applications]
+application/pdf=emacs.desktop;
+image/png=imv-2.desktop;
 video/mp2t=mpv.desktop;
+video/mp4=mpv.desktop;
