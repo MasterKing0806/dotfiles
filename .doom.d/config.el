@@ -61,3 +61,21 @@
 (map! :leader
       :desc "Seite suchen in PDF"
       "m g" #'pdf-view-goto-page)
+
+(map! :leader
+      :desc "open mpc"
+      "m m c" #'mpc)
+
+(map! :leader
+      :desc "resume music"
+      "m m m" #'mpc-resume)
+
+(map! :leader
+      :desc "next song"
+      "m m n" #'mpc-next)
+(map! :leader
+      :desc "play mpc"
+      "m m p" #'mpc-play)
+(map! :leader
+      :desc "toggle play mpc"
+      "m m s" #'mpc-toggle-play)
