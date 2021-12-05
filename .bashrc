@@ -25,6 +25,19 @@ alias pp='sudo pacman -Syu'
 
 alias ja='yay -Sua'
 
+alias flap='flatpak update'
+
+#Komplettes Systemupdate über alle Packagemanager
+sysalles () {
+	read -p "Komplettes Systemupdate! Hast du alles gebackupped?(y für ja) " VAR1
+	if [ "$VAR1" = "y" ]; then
+	    pp
+	    ja
+	    flap
+	fi
+}
+alias fullupdate='sysalles'
+
 alias bashrc='vim ~/.bashrc'
 
 alias swayc='vim ~/.config/sway/config'
@@ -33,6 +46,7 @@ alias shut='shutdown now'
 
 alias .config='~/.config'
 
+#Timeshift gtk App öffnen
 timer (){
 	xhost +
 	sudo timeshift-gtk
@@ -40,6 +54,7 @@ timer (){
 
 alias timeshifts='timer'
 
+#Externen Backup-HDD entfernen
 unmounten  (){
 	sudo udisksctl unmount -b /dev/sdc1
 	sudo udisksctl power-off -b /dev/sdc1
@@ -49,5 +64,30 @@ unmounten  (){
 alias udisk='unmounten'
 
 alias sdmmr='systemctl restart sddm'
+
+#Commands für Backuppen
+#Löschen von Snapshots vereinfachen
+timedelete (){
+	sudo timeshift --list
+	read -p "Eingabe von Snapshot: " name
+	sudo rm -r $name
+}
+
+alias dtime='timedelete'
+
+#Paketliste und Snapshots erstellen automatisieren
+autosnap (){
+	read -p "Datum eingeben(tt-mm-jj): " tag
+	mkdir /games/canh/Linux-Pakte/Paketliste/$tag
+	pacman -Qqen > /games/canh/Linux-Pakte/Paketliste/$tag/$tag-pkglist.txt
+	pacman -Qqem > /games/canh/Linux-Pakte/Paketliste/$tag/$tag-aurpkglist.txt
+	flatpak list > /games/canh/Linux-Pakte/Paketliste/$tag/$tag-flat.txt
+	sudo timeshift --create
+	udisk
+}
+
+alias snap='autosnap' 
+
+
 
 neofetch
