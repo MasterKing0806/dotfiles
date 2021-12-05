@@ -94,7 +94,7 @@ output * bg /games/canh/Wallpapers/kira.jpg fill
     bindsym $mod+Shift+c reload
 
 
-    bindsym Ctrl+Alt+l exec swaylock --image /personen/canh/Wallpapers/4k-Arch-Dark-Background.png --inside-color 3b4252 --ring-color 2e3440 --key-hl-color d8dee9 --inside-ver-color 81a1c1 --ring-ver-color 88c0d0	 
+    bindsym Ctrl+Alt+l exec swaylock --image /games/canh/Wallpapers/4k-Arch-Dark-Background.png --inside-color 3b4252 --ring-color 2e3440 --key-hl-color d8dee9 --inside-ver-color 81a1c1 --ring-ver-color 88c0d0	 
 
 
 #Keybinding for Clipman
