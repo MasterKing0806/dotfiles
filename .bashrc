@@ -41,8 +41,8 @@ timer (){
 alias timeshifts='timer'
 
 unmounten  (){
-	sudo udisksctl unmount -b /dev/sdd1
-	sudo udisksctl power-off -b /dev/sdd1
+	sudo udisksctl unmount -b /dev/sdc1
+	sudo udisksctl power-off -b /dev/sdc1
 }
 
 
