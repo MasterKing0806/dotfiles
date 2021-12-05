@@ -1,0 +1,13 @@
+game:
+  arch: win64
+  args: -opengl -SkipBuildPatchPrereq
+  exe: drive_c/Program Files (x86)/Epic Games/Launcher/Portal/Binaries/Win32/EpicGamesLauncher.exe
+  prefix: /games/lutris/epic-games-store
+system:
+  env:
+    __GL_SHADER_DISK_CACHE: '1'
+    __GL_SHADER_DISK_CACHE_PATH: /games/lutris/epic-games-store
+wine:
+  dxvk: false
+  esync: true
+  version: lutris-6.10-2-x86_64

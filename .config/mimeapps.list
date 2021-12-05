@@ -1,0 +1,5 @@
+[Added Associations]
+video/mp2t=mpv.desktop;
+
+[Default Applications]
+video/mp2t=mpv.desktop;
