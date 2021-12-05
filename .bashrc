@@ -48,5 +48,6 @@ unmounten  (){
 
 alias udisk='unmounten'
 
+alias sdmmr='systemctl restart sddm'
 
 neofetch
