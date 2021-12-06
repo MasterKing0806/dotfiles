@@ -19,6 +19,8 @@ alias doom='~/.emacs.d/bin/doom'
 
 alias cum='cmatrix'
 
+alias vpn='systemctl restart NetworkManager'
+
 alias pps='sudo pacman -S'
 
 alias pp='sudo pacman -Syu'
@@ -137,8 +139,8 @@ autosnap (){
 	pacman -Qqem > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-aurpkglist.txt
 	flatpak list > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-flat.txt
 	confconf
-	#sudo timeshift --create
-	#udisk
+	sudo timeshift --create
+	udisk
 }
 
 #Alles zusammenführen in eine übergreifende Funktion
