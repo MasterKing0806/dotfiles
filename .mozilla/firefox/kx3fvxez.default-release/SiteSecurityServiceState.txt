@@ -3,7 +3,7 @@ linoxide.com^partitionKey=%28http%2Clinoxide.com%29:HSTS	0	18966	1654281740178,1
 pics.computerbase.de^partitionKey=%28http%2Ccomputerbase.de%29:HSTS	0	18966	1701798444848,1,1,2
 classify-client.services.mozilla.com:HSTS	1	18967	1670343778464,1,0,2
 support.apple.com^partitionKey=%28http%2Capple.com%29:HSTS	0	18966	1670264900787,1,1,2
-github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	1	18967	1670351086320,1,1,2
+github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	1	18967	1670352487227,1,1,2
 youtube.com^partitionKey=%28http%2Cyoutube.com%29:HSTS	0	18966	1670240566142,1,1,2
 www.youtube.com^partitionKey=%28http%2Cyoutube.com%29:HSTS	0	18966	1670270218924,1,0,2
 wiki.ubuntuusers.de^partitionKey=%28http%2Cubuntuusers.de%29:HSTS	0	18966	1654508609998,1,0,2
@@ -14,7 +14,7 @@ www.freecodecamp.org^partitionKey=%28http%2Cfreecodecamp.org%29:HSTS	0	18966	167
 news.ycombinator.com^partitionKey=%28http%2Cycombinator.com%29:HSTS	0	18966	1670267610141,1,0,2
 bbs.archlinux.org^partitionKey=%28http%2Carchlinux.org%29:HSTS	0	18966	1670275334574,1,1,2
 consent.varonis.com^partitionKey=%28http%2Cvaronis.com%29:HSTS	0	18966	1670246595817,1,1,2
-stackoverflow.com^partitionKey=%28http%2Cstackoverflow.com%29:HSTS	1	18967	1654367903538,1,0,2
+stackoverflow.com^partitionKey=%28http%2Cstackoverflow.com%29:HSTS	1	18967	1654368556126,1,0,2
 www.google.com^firstPartyDomain=google-b-d.search.suggestions.mozilla:HSTS	0	18966	1670238758159,1,0,2
 tecadmin.net^partitionKey=%28http%2Ctecadmin.net%29:HSTS	0	18967	1670349558753,1,1,2
 addons.cdn.mozilla.net^partitionKey=%28http%2Cmozilla.net%29:HSTS	0	18966	1670238763345,1,1,2
@@ -22,7 +22,7 @@ cdn.educba.com^partitionKey=%28http%2Ceducba.com%29:HSTS	0	18966	1670278199722,1
 linuxize.com^partitionKey=%28http%2Clinuxize.com%29:HSTS	1	18967	1654366705930,1,1,2
 aur.archlinux.org^partitionKey=%28http%2Carchlinux.org%29:HSTS	0	18966	1670240965168,1,1,2
 miro.medium.com^partitionKey=%28http%2Cmedium.com%29:HSTS	0	18966	1654263859411,1,1,2
-firefox.settings.services.mozilla.com:HSTS	1	18967	1670350291355,1,0,2
+firefox.settings.services.mozilla.com:HSTS	1	18967	1670352453093,1,0,2
 devconnected.com^partitionKey=%28http%2Cdevconnected.com%29:HSTS	0	18966	1654478147582,1,0,2
 medium.com^partitionKey=%28http%2Cmedium.com%29:HSTS	0	18966	1654263997191,1,1,2
 services.addons.mozilla.org:HSTS	1	18967	1670344844257,1,0,2
@@ -35,9 +35,9 @@ discordapp.com^partitionKey=%28http%2Cdiscordapp.com%29:HSTS	0	18967	16703452457
 shavar.services.mozilla.com^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:HSTS	1	18967	1670343458579,1,1,2
 www.linux.com^partitionKey=%28http%2Clinux.com%29:HSTS	0	18967	1638813677062,1,0,2
 oauth.reddit.com^partitionKey=%28http%2Creddit.com%29:HSTS	0	18966	1654286554615,1,1,2
-alive.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	1	18967	1670351086238,1,0,2
+alive.github.com^partitionKey=%28http%2Cgithub.com%29:HSTS	1	18967	1670352487063,1,0,2
 support.mozilla.org^partitionKey=%28http%2Cmozilla.org%29:HSTS	0	18966	1670245529041,1,0,2
-incoming.telemetry.mozilla.org:HSTS	1	18967	1670351320420,1,0,2
+incoming.telemetry.mozilla.org:HSTS	1	18967	1670352453391,1,0,2
 securemetrics.apple.com^partitionKey=%28http%2Capple.com%29:HSTS	0	18966	1670264905327,1,1,2
 developer.valvesoftware.com^partitionKey=%28http%2Cvalvesoftware.com%29:HSTS	0	18966	1670259613345,1,0,2
 linux.die.net^partitionKey=%28http%2Cdie.net%29:HSTS	0	18966	1654291390758,1,0,2
@@ -46,7 +46,7 @@ versioncheck-bg.addons.mozilla.org:HSTS	0	18967	1638808414755,1,0,2
 flatpak.org^partitionKey=%28http%2Cflatpak.org%29:HSTS	0	18966	1654469177010,1,0,2
 wac-cdn.atlassian.com^partitionKey=%28http%2Catlassian.com%29:HSTS	1	18967	1701886416260,1,0,2
 cdn-client.medium.com^partitionKey=%28http%2Cmedium.com%29:HSTS	0	18966	1654263842376,1,1,2
-contile.services.mozilla.com:HSTS	1	18967	1670351443680,1,0,2
+contile.services.mozilla.com:HSTS	1	18967	1670352343680,1,0,2
 km.support.apple.com^partitionKey=%28http%2Capple.com%29:HSTS	0	18966	1670264900286,1,1,2
 superuser.com^partitionKey=%28http%2Csuperuser.com%29:HSTS	0	18967	1654365327435,1,0,2
 linuxhandbook.com^partitionKey=%28http%2Clinuxhandbook.com%29:HSTS	0	18967	1670349401956,1,0,2
@@ -80,7 +80,7 @@ cdn.jsdelivr.net:HSTS	1	18967	1670343809700,1,1,2
 aus5.mozilla.org:HSTS	1	18967	1670344114988,1,0,2
 addons.mozilla.org:HSTS	0	18966	1670238810366,1,1,2
 addons.cdn.mozilla.net:HSTS	0	18966	1670238653672,1,1,2
-signaler-pa.clients6.google.com^partitionKey=%28http%2Cgoogle.com%29:HSTS	1	18967	1649701343928,1,1,2
+signaler-pa.clients6.google.com^partitionKey=%28http%2Cgoogle.com%29:HSTS	1	18967	1649702488229,1,1,2
 gql.reddit.com^partitionKey=%28http%2Creddit.com%29:HSTS	0	18966	1670270583933,1,1,2
 www.emacswiki.org^partitionKey=%28http%2Cemacswiki.org%29:HSTS	0	18966	1670271994875,1,1,2
 scone-pa.clients6.google.com^partitionKey=%28http%2Cgoogle.com%29:HSTS	1	18967	1649696611878,1,1,2

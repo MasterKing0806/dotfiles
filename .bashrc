@@ -139,16 +139,9 @@ alias confconf='hubby2'
 #Automatisch löschen von repository Einträgen
 hubby (){
 	read -p "Zu löschender Git-Eintrag: " eint
-	read -p "Directory oder File (d): " deint
-	if [ "$deint" == "d" ];then
-		config rm -r --cached $eint
-		config commit -m "löschen von $eint"
-		config push
-	else 	
-		config rm --cached $eint
-		config commit -m "löschen von $eint"
-		config push
-	fi
+	config rm -r --cached $eint
+	config commit -m "löschen von $eint"
+	config push
 }
 
 alias confrm='hubby'
