@@ -17,7 +17,7 @@ user_pref("app.normandy.startupRolloutPrefs.media.peerconnection.mtransport_proc
 user_pref("app.normandy.startupRolloutPrefs.network.process.enabled", true);
 user_pref("app.normandy.user_id", "9089a032-a628-4255-9c83-a387d80e5e7a");
 user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1638808115);
-user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1638814738);
+user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1638818338);
 user_pref("app.update.lastUpdateTime.recipe-client-addon-run", 1638807778);
 user_pref("app.update.lastUpdateTime.region-update-timer", 1638695407);
 user_pref("app.update.lastUpdateTime.rs-experiment-loader-timer", 1638808843);
@@ -49,8 +49,8 @@ user_pref("browser.pageActions.persistedActions", "{\"ids\":[\"bookmark\"],\"ids
 user_pref("browser.pagethumbnails.storage_version", 3);
 user_pref("browser.proton.toolbar.version", 3);
 user_pref("browser.region.update.updated", 1638670878);
-user_pref("browser.safebrowsing.provider.google4.lastupdatetime", "1638816449176");
-user_pref("browser.safebrowsing.provider.google4.nextupdatetime", "1638818257176");
+user_pref("browser.safebrowsing.provider.google4.lastupdatetime", "1638818257750");
+user_pref("browser.safebrowsing.provider.google4.nextupdatetime", "1638820032750");
 user_pref("browser.safebrowsing.provider.mozilla.lastupdatetime", "1638807460203");
 user_pref("browser.safebrowsing.provider.mozilla.nextupdatetime", "1638829060203");
 user_pref("browser.search.region", "DE");
