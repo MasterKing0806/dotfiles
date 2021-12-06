@@ -21,6 +21,12 @@ alias cum='cmatrix'
 
 alias vpn='systemctl restart NetworkManager'
 
+jun(){
+	watch -n.1 "grep \"^[c]pu MHz\" /proc/cpuinfo"
+}
+
+alias freq='jun'
+
 alias pps='sudo pacman -S'
 
 alias pp='sudo pacman -Syu'
