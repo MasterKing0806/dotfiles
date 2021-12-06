@@ -109,29 +109,48 @@ alias snap='ueber'
 
 #Automatisch in git repository pushen
 
-hubby (){
-	read -p "Update Nachricht für commit: " updatenac
-	config add .bashrc
-	config commit -m "$updatenac"
-	config push
-}
-alias confbash='hubby'
-
-hubby1 (){
-	read -p "Update Nachricht für commit: " updatena
-	config add .doom.d
-	config commit -m "$updatena"
-	config push
-}
-alias confdoom='hubby1'
-
 hubby2 (){
 	read -p "Update Nachricht für commit: " updaten
-	config add .config
+	config add .doom.d
+	config add .mozilla
+	config add .bashrc
+	config add .phoronix-test-suite
+	config add .thunderbird
+	config add .config/alacritty
+	config add .config/sway
+	config add .config/mpd
+	config add .config/fontconfig
+	config add .config/gtk-2.0
+	config add .config/gtk-3.0
+	config add .config/htop
+	config add .config/Kvantum
+	config add .config/libreoffice
+	config add .config/mpv
+	config add .config/qt5ct
+	config add .config/radeon-profile
+	config add .config/retroarch
+	config add .config/waybar
+	config add .config/environment.d
 	config commit -m "$updaten"
 	config push
 }
 alias confconf='hubby2'
 
+#Automatisch löschen von repository Einträgen
+hubby (){
+	read -p "Zu löschender Git-Eintrag: " eint
+	read -p "Directory oder File (d): " deint
+	if [ "$deint" == "d" ];then
+		config rm -r --cached $eint
+		config commit -m "löschen von $eint"
+		config push
+	else 	
+		config rm --cached $eint
+		config commit -m "löschen von $eint"
+		config push
+	fi
+}
+
+alias confrm='hubby'
 
 neofetch
