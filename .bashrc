@@ -78,7 +78,7 @@ alias sdmmr='systemctl restart sddm'
 hubby2 (){
 	read -p "Update Nachricht für commit: " updaten
 	config add .doom.d
-	config add .mozilla
+	#config add .mozilla
 	config add .bashrc
 	config add .phoronix-test-suite
 	config add .thunderbird

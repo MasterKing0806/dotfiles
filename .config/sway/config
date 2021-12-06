@@ -100,7 +100,7 @@ output * bg /games/canh/Wallpapers/kira.jpg fill
 #Keybinding for Clipman
 	bindsym Alt+h exec clipman pick -t wofi
 
-#Keybinding for Doom Emacs, Firefox, Dolphin, Thunderbird, Keepass
+#Keybinding for Doom Emacs, Firefox, Dolphin, Thunderbird, Keepass, easyeffects, discord
 	bindsym Alt+e exec emacs
 
 
@@ -113,6 +113,13 @@ output * bg /games/canh/Wallpapers/kira.jpg fill
 	bindsym Alt+t exec thunderbird
 
 
+	bindsym Shift+Alt+e exec easyeffects
+
+
+	bindsym Shift+Alt+d exec discord
+
+
+	bindsym Alt+k exec org.keepassxc.KeePassXC 
     
 
 # Exit sway (logs you out of your Wayland session)
