@@ -88,8 +88,8 @@ autosnap (){
 	pacman -Qqen > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-pkglist.txt
 	pacman -Qqem > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-aurpkglist.txt
 	flatpak list > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-flat.txt
-#	sudo timeshift --create
-#	udisk
+	sudo timeshift --create
+	udisk
 }
 
 #Alles zusammenführen in eine übergreifende Funktion
@@ -107,6 +107,31 @@ ueber (){
 
 alias snap='ueber' 
 
+#Automatisch in git repository pushen
+
+hubby (){
+	read -p "Update Nachricht für commit: " updatenac
+	config add .bashrc
+	config commit -m "$updatenac"
+	config push
+}
+alias confbash='hubby'
+
+hubby1 (){
+	read -p "Update Nachricht für commit: " updatena
+	config add .doom.d
+	config commit -m "$updatena"
+	config push
+}
+alias confdoom='hubby1'
+
+hubby2 (){
+	read -p "Update Nachricht für commit: " updaten
+	config add .config
+	config commit -m "$updaten"
+	config push
+}
+alias confconf='hubby2'
 
 
 neofetch
