@@ -76,17 +76,36 @@ timedelete (){
 alias dtime='timedelete'
 
 #Paketliste und Snapshots erstellen automatisieren
-autosnap (){
-	read -p "Datum eingeben(tt-mm-jj): " tag
-	mkdir /games/canh/Linux-Pakte/Paketliste/$tag
-	pacman -Qqen > /games/canh/Linux-Pakte/Paketliste/$tag/$tag-pkglist.txt
-	pacman -Qqem > /games/canh/Linux-Pakte/Paketliste/$tag/$tag-aurpkglist.txt
-	flatpak list > /games/canh/Linux-Pakte/Paketliste/$tag/$tag-flat.txt
-	sudo timeshift --create
-	udisk
+#Zunächst einmal eingeben lassen, welchen Name der Monatsordner hat/haben soll und dann Datum der Erstellung der Listen eingeben
+einlesen (){
+	read -p "Monat für Ordner eingeben (jjjj-mm-Monat): " monad
+	read -p "Datum eingeben(tt.mm.jj): " tag
 }
 
-alias snap='autosnap' 
+#Erstellen von den ganzen Listen plus ausführen von Timeshift backup
+autosnap (){
+	mkdir /games/canh/Linux-Pakte/Paketliste/$monad/$tag
+	pacman -Qqen > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-pkglist.txt
+	pacman -Qqem > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-aurpkglist.txt
+	flatpak list > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-flat.txt
+#	sudo timeshift --create
+#	udisk
+}
+
+#Alles zusammenführen in eine übergreifende Funktion
+ueber (){
+	read -p "Neuer Monat?(n für nein, ja egal was eintippen): " confirm
+	einlesen
+	if [ "$confirm"  == "n" ]; then
+		autosnap
+	else 
+		mkdir /games/canh/Linux-Pakte/Paketliste/$monad
+		autosnap
+	fi
+
+}
+
+alias snap='ueber' 
 
 
 
