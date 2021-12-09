@@ -134,32 +134,65 @@ alias dtime='timedelete'
 #Paketliste und Snapshots erstellen automatisieren
 #Zunächst einmal eingeben lassen, welchen Name der Monatsordner hat/haben soll und dann Datum der Erstellung der Listen eingeben
 einlesen (){
+	read -p "Nicht vergessen, externe Backup-HDD anzuschließen! " filler
+	read -p "Neuer Monat?(n für nein, ja egal was eintippen): " confirm
 	read -p "Monat für Ordner eingeben (jjjj-mm-Monat): " monad
 	read -p "Datum eingeben(tt.mm.jj): " tag
 }
 
 #Erstellen von den ganzen Listen plus ausführen von Timeshift backup
+
+peckage() {
+	read -p "Neue Paketliste erstellen? (n für nein, sonst egal was) " juck
+	if [ "$juck" == "n" ];then
+		echo "Es wurden keine Paketelisten erstellt"
+	else
+		if [ "$confirm" != "n" ];then
+			mkdir /games/canh/Linux-Pakte/Paketliste/$monad
+		fi
+		mkdir /games/canh/Linux-Pakte/Paketliste/$monad/$tag
+		pacman -Qqen > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-pkglist.txt
+		pacman -Qqem > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-aurpkglist.txt
+		flatpak list > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-flat.txt
+		echo "Paketlisten wurden erstellt "
+	fi
+}
+
 autosnap (){
-	mkdir /games/canh/Linux-Pakte/Paketliste/$monad/$tag
-	pacman -Qqen > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-pkglist.txt
-	pacman -Qqem > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-aurpkglist.txt
-	flatpak list > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-flat.txt
+	peckage
 	confconf
+	doom update
 	sudo timeshift --create
 	udisk
 }
 
 #Alles zusammenführen in eine übergreifende Funktion
 ueber (){
-	read -p "Neuer Monat?(n für nein, ja egal was eintippen): " confirm
 	einlesen
 	if [ "$confirm"  == "n" ]; then
 		autosnap
+		read -p "Anschließen von externer Seagate-HDD und manuelles Übertragen von Studium Daten " VARI1
+		read -p "Linux-Infos auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 	else 
-		mkdir /games/canh/Linux-Pakte/Paketliste/$monad
 		autosnap
+		read -p "Anschließen von externer Seagate-HDD und manuelles Übertragen von Studium Daten " VARI1
+		read -p "Linux-Infos, Google Notes und Emails auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
+		mkdir /run/media/ca/Seagate/Email/$monad
 	fi
-
+	mkdir /run/media/ca/Seagate/Email/$monad/$tag
+	rsync -ruvt  /games/canh/Linux-Pakte/ /run/media/ca/Seagate/Linux-Pakte	
+	rsync -ruvt  /games/canh/email/ /run/media/ca/Seagate/Email/$monad/$tag
+	sudo udisksctl unmount -b /dev/sdc2
+	sudo udisksctl power-off -b /dev/sdc2
+	echo "Linux-Infos, Google Notes und Emails übertragen, Seagate-HDD ausgeworfen "
+	read -p "Manuell Daten übertragen von externer Seagate-HDD auf Ipad " VARI3
+	read -p "Anschließen externer Seagate-HDD, um Ipad Dateien manuell zu übertragen " VARI4
+	read -p "Goodnotes Backups auf Ipad übertragen " VARI5
+	rsync -ruvt /run/media/ca/Seagate/Studium/Goodnotes/ /games/canh/Studium/Goodnotes  
+	sudo udisksctl unmount -b /dev/sdc2
+	sudo udisksctl power-off -b /dev/sdc2
+	echo "Goodnotes übertragen, Seagate-HDD ausgeworfen "
+	fullupdate
 }
 
 alias snap='ueber' 
