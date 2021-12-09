@@ -132,7 +132,7 @@ timedelete (){
 alias dtime='timedelete'
 
 #Wenn der Monat nicht neu ist, soll "n" eingetippt werden. Dadurch wird vermieden, dass ein Ordner erstellt wird, welcher bereits existiert.
-#Zunächst einmal eingeben lassen, welchen Name der Monatsordner hat/haben soll und dann Datum der Erstellung der Listen eingeben
+#Zunächst einmal eingeben lassen, welchen Name der Monatsordner hat/haben soll und dann Datum der Erstellung der Paketlisten eingeben
 einlesen (){
 	read -p "Nicht vergessen, externe Backup-HDD anzuschließen! " filler
 	read -p "Neuer Monat?(n für nein, ja egal was eintippen): " confirm
