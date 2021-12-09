@@ -133,6 +133,7 @@ alias dtime='timedelete'
 
 #Paketliste und Snapshots erstellen automatisieren
 #Zunächst einmal eingeben lassen, welchen Name der Monatsordner hat/haben soll und dann Datum der Erstellung der Listen eingeben
+#Wenn der Monat nicht neu ist, soll "n" eingetippt werden. Dadurch wird vermieden, dass ein Ordner erstellt wird, welcher bereits existiert.
 einlesen (){
 	read -p "Nicht vergessen, externe Backup-HDD anzuschließen! " filler
 	read -p "Neuer Monat?(n für nein, ja egal was eintippen): " confirm
@@ -141,7 +142,7 @@ einlesen (){
 }
 
 #Erstellen von den ganzen Listen plus ausführen von Timeshift backup
-
+#peckage fragt ab, ob die drei Paketlisten -pacman, aur, flatpak- erstellt werden sollen, oder nicht. Damit wird vermieden, dass doppelte Listen erstellt werden.
 peckage() {
 	read -p "Neue Paketliste erstellen? (n für nein, sonst egal was) " juck
 	if [ "$juck" == "n" ];then
@@ -158,40 +159,57 @@ peckage() {
 	fi
 }
 
+#autosnap soll peckage zusammenführen mit anderen Prozessen. 
+#doom upgrade updatet Doom Emacs. 
+#confconf added, commited und pushed alle relevaten config files in Github.
+#Ausserdem wird ein timeshift snapshot auf der externen Backup-HDD erstellt und jene Festplatte anschließend sicher ausgeworfen.
 autosnap (){
 	peckage
+	doom upgrade
 	confconf
-	doom update
 	sudo timeshift --create
 	udisk
+	echo "Externe Backup-HDD sicher ausgeworfen, Backups wurden übertragen"
 }
 
 #Alles zusammenführen in eine übergreifende Funktion
+#Falls confirm gleich n ist, also kein neuer Monat ist, dann läuft autosnap mit den beiden Prompts.
+#Andernfalls, geschieht das gleiche, nur dass zusätzlich auf der externen Seagate-HDD ein Email-Ordner erstellt wird mit der neuen Monatsbezeichnung.
 ueber (){
 	einlesen
 	if [ "$confirm"  == "n" ]; then
 		autosnap
-		read -p "Anschließen von externer Seagate-HDD und manuelles Übertragen von Studium Daten " VARI1
-		read -p "Linux-Infos auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
+		read -p "Anschließen von externer Seagate-HDD " VARI1
+		read -p "Linux-Infos, Google Notes, Emails und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 	else 
 		autosnap
-		read -p "Anschließen von externer Seagate-HDD und manuelles Übertragen von Studium Daten " VARI1
-		read -p "Linux-Infos, Google Notes und Emails auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
+		read -p "Anschließen von externer Seagate-HDD " VARI1
+		read -p "Linux-Infos, Google Notes, Emails und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 		mkdir /run/media/ca/Seagate/Email/$monad
 	fi
+	#Erstellung eines Emailordners in Abhängigkeit vom Monat sowie des Tages, an dem die Emails übertragen worden.
 	mkdir /run/media/ca/Seagate/Email/$monad/$tag
+	#Sychronisierung von Linux-Pakte Ordner sowie email mit externern Seagate-HDD
 	rsync -ruvt  /games/canh/Linux-Pakte/ /run/media/ca/Seagate/Linux-Pakte	
 	rsync -ruvt  /games/canh/email/ /run/media/ca/Seagate/Email/$monad/$tag
+	read -p "Linux-Infos, Google Notes und Emails übertragen, fortfahren mit Studium-Daten (Vorsicht: Möglicher Datenverlust) " VARI6
+	rsync -ruvtn /games/canh/Studium/ /run/media/ca/Seagate/Studium 
+	#Dryrun der Kopie von Daten des Studiums, um sicher zu gehen
+	read -p "Check: Sieht okay aus? Dann einfach fortfahren " VARI7
+	#Sychronisierung von Studium Ordner mit Seagate-HDD
+	rsync -ruvt --progress  /games/canh/Studium/ /run/media/ca/Seagate/Studium 
 	sudo udisksctl unmount -b /dev/sdc2
 	sudo udisksctl power-off -b /dev/sdc2
-	echo "Linux-Infos, Google Notes und Emails übertragen, Seagate-HDD ausgeworfen "
+	echo "Linux-Infos, Google Notes, Emails übertragen und Studium-Daten, Seagate-HDD ausgeworfen "
 	read -p "Manuell Daten übertragen von externer Seagate-HDD auf Ipad " VARI3
-	read -p "Anschließen externer Seagate-HDD, um Ipad Dateien manuell zu übertragen " VARI4
-	read -p "Goodnotes Backups auf Ipad übertragen " VARI5
-	rsync -ruvt /run/media/ca/Seagate/Studium/Goodnotes/ /games/canh/Studium/Goodnotes  
+	#Übertragung von Ipad-Dateien auf PC über die externe Seagate-HDD
+	read -p "Anschließen externer Seagate-HDD, um Ipad Dateien zu übertragen " VARI4
+	rsync -ruvtn  /run/media/ca/Seagate/Studium/ /games/canh/Studium  
+	read -p "Check: Sieht okay aus? Dann einfach fortfahren " VARI8
+	rsync -ruvt --progress /run/media/ca/Seagate/Studium/ /games/canh/Studium  
 	sudo udisksctl unmount -b /dev/sdc2
 	sudo udisksctl power-off -b /dev/sdc2
-	echo "Goodnotes übertragen, Seagate-HDD ausgeworfen "
+	echo "Neue Ipad-Dateien und Goodnotes übertragen, Seagate-HDD ausgeworfen "
 	fullupdate
 }
 
