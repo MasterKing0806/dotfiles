@@ -131,9 +131,8 @@ timedelete (){
 
 alias dtime='timedelete'
 
-#Paketliste und Snapshots erstellen automatisieren
-#Zunächst einmal eingeben lassen, welchen Name der Monatsordner hat/haben soll und dann Datum der Erstellung der Listen eingeben
 #Wenn der Monat nicht neu ist, soll "n" eingetippt werden. Dadurch wird vermieden, dass ein Ordner erstellt wird, welcher bereits existiert.
+#Zunächst einmal eingeben lassen, welchen Name der Monatsordner hat/haben soll und dann Datum der Erstellung der Listen eingeben
 einlesen (){
 	read -p "Nicht vergessen, externe Backup-HDD anzuschließen! " filler
 	read -p "Neuer Monat?(n für nein, ja egal was eintippen): " confirm
@@ -141,7 +140,6 @@ einlesen (){
 	read -p "Datum eingeben(tt.mm.jj): " tag
 }
 
-#Erstellen von den ganzen Listen plus ausführen von Timeshift backup
 #peckage fragt ab, ob die drei Paketlisten -pacman, aur, flatpak- erstellt werden sollen, oder nicht. Damit wird vermieden, dass doppelte Listen erstellt werden.
 peckage() {
 	read -p "Neue Paketliste erstellen? (n für nein, sonst egal was) " juck
