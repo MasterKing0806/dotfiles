@@ -178,9 +178,9 @@ autosnap (){
 	doom upgrade
 	kon
 	confconf
-	read -p "Backup Drive unmounten" JJ1
  	sudo timeshift --create
 	udisk
+	read -p "Backup Drive unmounten?" JJ1
 	echo "Externe Backup-HDD sicher ausgeworfen, Backups wurden übertragen"
 }
 
@@ -195,7 +195,7 @@ ueber (){
 		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 	else 
 		autosnap
-		read -p "Anschließen von externer Seagate-HDD " VARI1
+		read -p "Anschließen von externer Seagate-HDD und in Dolphin die Ordner laden " VARI1
 		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 		mkdir /run/media/ca/Seagate/Email/$monad
 	fi
@@ -225,7 +225,7 @@ ueber (){
 	sudo udisksctl unmount -b /dev/sdc2
 	sudo udisksctl power-off -b /dev/sdc2
 	echo "Neue Ipad-Dateien und Goodnotes übertragen, Seagate-HDD ausgeworfen "
-#	fullupdate
+	fullupdate
 }
 
 alias snap='ueber' 
