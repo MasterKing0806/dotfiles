@@ -134,11 +134,11 @@ alias dtime='timedelete'
 
 #Wichtige config files separat speichern
 kon() {
-	rsync -ruv /home/ca/.bashrc "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
-	rsync -ruv /home/ca/.config/sway "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
-	rsync -ruv /home/ca/.config/waybar "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
-	rsync -ruv /home/ca/.config/alacritty "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
-	rsync -ruv /home/ca/.doom.d "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
+	rsync -ruvt /home/ca/.bashrc "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
+	rsync -ruvt /home/ca/.config/sway "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
+	rsync -ruvt /home/ca/.config/waybar "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
+	rsync -ruvt /home/ca/.config/alacritty "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
+	rsync -ruvt /home/ca/.doom.d "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
 }
 
 
