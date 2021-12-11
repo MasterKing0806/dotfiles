@@ -178,7 +178,8 @@ autosnap (){
 	doom upgrade
 	kon
 	confconf
-	sudo timeshift --create
+	read -p "Backup Drive unmounten" JJ1
+ 	sudo timeshift --create
 	udisk
 	echo "Externe Backup-HDD sicher ausgeworfen, Backups wurden übertragen"
 }
