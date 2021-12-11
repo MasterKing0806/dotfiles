@@ -180,7 +180,7 @@ autosnap (){
 	confconf
  	sudo timeshift --create
 	udisk
-	read -p "Backup Drive unmounten?" JJ1
+	read -p "Backup Drive auswerfen?(am besten kurz warten)" JJ1
 	echo "Externe Backup-HDD sicher ausgeworfen, Backups wurden übertragen"
 }
 
@@ -211,7 +211,7 @@ ueber (){
 	read -p "Check: Sieht okay aus? Dann einfach fortfahren " VARI7
 	#Sychronisierung von Studium Ordner mit Seagate-HDD
 	rsync -ruvt --progress  /games/canh/Studium/ /run/media/ca/Seagate/Studium 
-	read -p "Externe Seagate-HDD auswerfen? " VARI10
+	read -p "Externe Seagate-HDD auswerfen?(am besten kurz warten) " VARI10
 	sudo udisksctl unmount -b /dev/sdc2
 	sudo udisksctl power-off -b /dev/sdc2
 	echo "Linux-Infos, Google Notes, Emails übertragen und Studium-Daten, Seagate-HDD ausgeworfen "
@@ -221,7 +221,7 @@ ueber (){
 	rsync -ruvtn  /run/media/ca/Seagate/Studium/ /games/canh/Studium  
 	read -p "Check: Sieht okay aus? Dann einfach fortfahren " VARI8
 	rsync -ruvt --progress /run/media/ca/Seagate/Studium/ /games/canh/Studium  
-	read -p "Externe Seagate-HDD auswerfen? " VARI9
+	read -p "Externe Seagate-HDD auswerfen?(am besten kurz warten) " VARI9
 	sudo udisksctl unmount -b /dev/sdc2
 	sudo udisksctl power-off -b /dev/sdc2
 	echo "Neue Ipad-Dateien und Goodnotes übertragen, Seagate-HDD ausgeworfen "
