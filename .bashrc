@@ -81,7 +81,7 @@ hubby2 (){
 	#config add .mozilla
 	config add .bashrc
 	config add .phoronix-test-suite
-	config add .thunderbird
+	#config add .thunderbird
 	config add .config/alacritty
 	config add .config/sway
 	config add .config/mpd
@@ -131,6 +131,17 @@ timedelete (){
 
 alias dtime='timedelete'
 
+
+#Wichtige config files separat speichern
+kon() {
+	rsync -ruv /home/ca/.bashrc "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
+	rsync -ruv /home/ca/.config/sway "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
+	rsync -ruv /home/ca/.config/waybar "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
+	rsync -ruv /home/ca/.config/alacritty "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
+	rsync -ruv /home/ca/.doom.d "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
+}
+
+
 #Wenn der Monat nicht neu ist, soll "n" eingetippt werden. Dadurch wird vermieden, dass ein Ordner erstellt wird, welcher bereits existiert.
 #Zunächst einmal eingeben lassen, welchen Name der Monatsordner hat/haben soll und dann Datum der Erstellung der Paketlisten eingeben
 einlesen (){
@@ -159,11 +170,13 @@ peckage() {
 
 #autosnap soll peckage zusammenführen mit anderen Prozessen. 
 #doom upgrade updatet Doom Emacs. 
+#konf, config files zu separat zu speichern
 #confconf added, commited und pushed alle relevaten config files in Github.
 #Ausserdem wird ein timeshift snapshot auf der externen Backup-HDD erstellt und jene Festplatte anschließend sicher ausgeworfen.
 autosnap (){
 	peckage
 	doom upgrade
+	kon
 	confconf
 	sudo timeshift --create
 	udisk
@@ -178,18 +191,19 @@ ueber (){
 	if [ "$confirm"  == "n" ]; then
 		autosnap
 		read -p "Anschließen von externer Seagate-HDD " VARI1
-		read -p "Linux-Infos, Google Notes, Emails und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
+		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 	else 
 		autosnap
 		read -p "Anschließen von externer Seagate-HDD " VARI1
-		read -p "Linux-Infos, Google Notes, Emails und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
+		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 		mkdir /run/media/ca/Seagate/Email/$monad
 	fi
 	#Erstellung eines Emailordners in Abhängigkeit vom Monat sowie des Tages, an dem die Emails übertragen worden.
 	mkdir /run/media/ca/Seagate/Email/$monad/$tag
-	#Sychronisierung von Linux-Pakte Ordner sowie email mit externern Seagate-HDD
+	#Sychronisierung von Linux-Pakte Ordner, email und Hanyd Fotos  mit externern Seagate-HDD
 	rsync -ruvt  /games/canh/Linux-Pakte/ /run/media/ca/Seagate/Linux-Pakte	
 	rsync -ruvt  /games/canh/email/ /run/media/ca/Seagate/Email/$monad/$tag
+	rsync -ruvt "/games/canh/Fotos Galaxy s9/" "/run/media/ca/Seagate/Fotos Galaxy s9"
 	read -p "Linux-Infos, Google Notes und Emails übertragen, fortfahren mit Studium-Daten (Vorsicht: Möglicher Datenverlust) " VARI6
 	rsync -ruvtn /games/canh/Studium/ /run/media/ca/Seagate/Studium 
 	#Dryrun der Kopie von Daten des Studiums, um sicher zu gehen
@@ -210,7 +224,7 @@ ueber (){
 	sudo udisksctl unmount -b /dev/sdc2
 	sudo udisksctl power-off -b /dev/sdc2
 	echo "Neue Ipad-Dateien und Goodnotes übertragen, Seagate-HDD ausgeworfen "
-	fullupdate
+#	fullupdate
 }
 
 alias snap='ueber' 

@@ -5,8 +5,9 @@
     <FanProfiles>
         <fanProfile name="default">
             <step temperature="40" speed="0"/>
-            <step temperature="65" speed="30"/>
-            <step temperature="75" speed="46"/>
+            <step temperature="60" speed="10"/>
+            <step temperature="80" speed="20"/>
+            <step temperature="85" speed="20"/>
         </fanProfile>
     </FanProfiles>
     <Plots/>
