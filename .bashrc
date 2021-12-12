@@ -71,7 +71,7 @@ unmounten  (){
 
 alias udisk='unmounten'
 
-alias sdmmr='systemctl restart sddm'
+alias sddmr='systemctl restart sddm'
 
 #Automatisch in git repository pushen
 

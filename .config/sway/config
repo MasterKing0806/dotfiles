@@ -34,7 +34,10 @@ set $menu wofi --show=drun --lines=5 --prompt""
 #output * bg /games/canh/Wallpapers/asuka.jpg fill
 #output * bg /games/canh/Wallpapers/kono-subarashii-sekai-ni-shukufuku-wo-characters-kazuma-satou-aqua-megumin.png fill 
 #output * bg /games/canh/Wallpapers/link.jpg fill
-output * bg /games/canh/Wallpapers/kira.jpg fill
+#output * bg /games/canh/Wallpapers/kira.jpg fill
+#output * bg /games/canh/Wallpapers/asukaeva.jpg fill
+output * bg /games/canh/Wallpapers/gintama_gintoki_sakata_art_113266_1920x1080.jpg fill
+
 
 #
 # Example configuration:
@@ -100,7 +103,7 @@ output * bg /games/canh/Wallpapers/kira.jpg fill
 #Keybinding for Clipman
 	bindsym Alt+h exec clipman pick -t wofi
 
-#Keybinding for Doom Emacs, Firefox, Dolphin, Thunderbird, Keepass, easyeffects, discord
+#Keybinding for Doom Emacs, Firefox, Dolphin, Thunderbird, Keepass, discord
 	bindsym Alt+e exec emacs
 
 
@@ -113,14 +116,12 @@ output * bg /games/canh/Wallpapers/kira.jpg fill
 	bindsym Alt+t exec thunderbird
 
 
-	bindsym Shift+Alt+e exec easyeffects
-
-
 	bindsym Shift+Alt+d exec discord
 
 
 	bindsym Alt+k exec org.keepassxc.KeePassXC 
-    
+
+
 
 # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
@@ -262,7 +263,6 @@ bar {
 #focus_follows_mouse no
 
 
-include /etc/sway/config.d/*
 
 #screenshots
 bindsym $mod+Print exec grim -g "$(slurp)" /games/canh/screenshots/$(date +%Y-%m-%d_%H-%m-%s).png	
@@ -312,6 +312,14 @@ exec_always {
 
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
+#Damit waybar/gtk apps nicht so lange brauche, um zu starten
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+
+#Easyeffects bei boot starten
+exec "easyeffects --gapplication-service" 
+
+
+include /etc/sway/config.d/*
