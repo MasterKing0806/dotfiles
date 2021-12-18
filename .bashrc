@@ -90,7 +90,7 @@ hubby2 (){
 	config add .config/gtk-3.0
 	config add .config/htop
 	config add .config/Kvantum
-	config add .config/libreoffice
+#	config add .config/libreoffice
 	config add .config/mpv
 	config add .config/qt5ct
 	config add .config/radeon-profile
@@ -179,8 +179,8 @@ autosnap (){
 	kon
 	confconf
  	sudo timeshift --create
-	udisk
 	read -p "Backup Drive auswerfen?(am besten kurz warten)" JJ1
+	udisk
 	echo "Externe Backup-HDD sicher ausgeworfen, Backups wurden übertragen"
 }
 
@@ -191,7 +191,7 @@ ueber (){
 	einlesen
 	if [ "$confirm"  == "n" ]; then
 		autosnap
-		read -p "Anschließen von externer Seagate-HDD " VARI1
+		read -p "Anschließen von externer Seagate-HDD und n Dolphin die Ordner laden " VARI1
 		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 	else 
 		autosnap
