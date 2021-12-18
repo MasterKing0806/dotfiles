@@ -221,7 +221,7 @@ ueber (){
 	sudo udisksctl unmount -b /dev/sdc2
 	sudo udisksctl power-off -b /dev/sdc2
 	echo "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper übertragen und Studium-Daten, Seagate-HDD ausgeworfen "
-	read -p "Manuell Daten übertragen von externer Seagate-HDD auf Ipad sowie Erstellung von Goodnotes Backups auf externer Seagate-HDD " VARI3
+	read -p "Manuell Daten übertragen von externer Seagate-HDD auf Ipad (Hochsrollen, um zu schauen, welche Daten verändert wurden) sowie Erstellung von Goodnotes Backups auf externer Seagate-HDD " VARI3
 	#Übertragung von Ipad-Dateien auf PC über die externe Seagate-HDD
 	read -p "Anschließen externer Seagate-HDD, um Ipad Dateien zu übertragen " VARI4
 	rsync -ruvtn  /run/media/ca/Seagate/Studium/ /games/canh/Studium  
