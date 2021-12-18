@@ -290,9 +290,9 @@ gaps horizontal -15
 gaps vertical -15
 
 client.background #3b4252
-client.focused #000000 #3b4252 #ffffff #3b4252 #3b4252 
-client.focused_inactive #3b4252 #3b4252 #ffffff #3b4252 #3b4252 
-client.unfocused #000000 #3b4252 #ffffff #3b4252  #3b4252 
+client.focused #000000 #3b4252 #d8dee9 #3b4252 #3b4252 
+client.focused_inactive #000000 #3b4252 #d8dee9 #3b4252 #3b4252 
+client.unfocused #000000 #3b4252 #d8dee9 #3b4252 #3b4252 
 
 
 set $gnome-schema org.gnome.desktop.interface
@@ -317,9 +317,12 @@ exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
+#Easyeffekt Daemon starten
+exec /usr/bin/easyeffects --gapplication-service
 
-#Easyeffects bei boot starten
-exec "easyeffects --gapplication-service" 
+
+#Polkit
+exec "/usr/lib/polkit-kde-authentication-agent-1"
 
 
 include /etc/sway/config.d/*

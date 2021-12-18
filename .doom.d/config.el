@@ -79,3 +79,15 @@
 (map! :leader
       :desc "toggle play mpc"
       "m m s" #'mpc-toggle-play)
+
+(map! :leader
+      :desc "enable line mode "
+      "d" #'display-line-numbers-mode)
+
+(map! :leader
+      :desc "pdf go next page "
+      "j" #'pdf-view-next-page)
+
+(map! :leader
+      :desc "enable line mode "
+      "k" #'pdf-view-previous-page)

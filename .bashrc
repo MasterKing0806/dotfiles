@@ -192,20 +192,21 @@ ueber (){
 	if [ "$confirm"  == "n" ]; then
 		autosnap
 		read -p "Anschließen von externer Seagate-HDD " VARI1
-		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
+		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 	else 
 		autosnap
 		read -p "Anschließen von externer Seagate-HDD und in Dolphin die Ordner laden " VARI1
-		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
+		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 		mkdir /run/media/ca/Seagate/Email/$monad
 	fi
 	#Erstellung eines Emailordners in Abhängigkeit vom Monat sowie des Tages, an dem die Emails übertragen worden.
 	mkdir /run/media/ca/Seagate/Email/$monad/$tag
-	#Sychronisierung von Linux-Pakte Ordner, email und Hanyd Fotos  mit externern Seagate-HDD
+	#Sychronisierung von Linux-Pakte Ordner, email, Handy Fotos, Wallpaper  mit externern Seagate-HDD
 	rsync -ruvt  /games/canh/Linux-Pakte/ /run/media/ca/Seagate/Linux-Pakte	
 	rsync -ruvt  /games/canh/email/ /run/media/ca/Seagate/Email/$monad/$tag
 	rsync -ruvt "/games/canh/Fotos Galaxy s9/" "/run/media/ca/Seagate/Fotos Galaxy s9"
-	read -p "Linux-Infos, Google Notes und Emails übertragen, fortfahren mit Studium-Daten (Vorsicht: Möglicher Datenverlust) " VARI6
+	rsync -ruvt /games/canh/Wallpapers/ /run/media/ca/Seagate/Wallpapers
+	read -p "Linux-Infos, Google Notes, Emails, Handy Fotos und Wallpaper übertragen, fortfahren mit Studium-Daten (Vorsicht: Möglicher Datenverlust) " VARI6
 	rsync -ruvtn /games/canh/Studium/ /run/media/ca/Seagate/Studium 
 	#Dryrun der Kopie von Daten des Studiums, um sicher zu gehen
 	read -p "Check: Sieht okay aus? Dann einfach fortfahren " VARI7
@@ -214,7 +215,7 @@ ueber (){
 	read -p "Externe Seagate-HDD auswerfen?(am besten kurz warten) " VARI10
 	sudo udisksctl unmount -b /dev/sdc2
 	sudo udisksctl power-off -b /dev/sdc2
-	echo "Linux-Infos, Google Notes, Emails übertragen und Studium-Daten, Seagate-HDD ausgeworfen "
+	echo "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper übertragen und Studium-Daten, Seagate-HDD ausgeworfen "
 	read -p "Manuell Daten übertragen von externer Seagate-HDD auf Ipad " VARI3
 	#Übertragung von Ipad-Dateien auf PC über die externe Seagate-HDD
 	read -p "Anschließen externer Seagate-HDD, um Ipad Dateien zu übertragen " VARI4
