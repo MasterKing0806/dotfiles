@@ -145,7 +145,6 @@ kon() {
 #Wenn der Monat nicht neu ist, soll "n" eingetippt werden. Dadurch wird vermieden, dass ein Ordner erstellt wird, welcher bereits existiert.
 #Zunächst einmal eingeben lassen, welchen Name der Monatsordner hat/haben soll und dann Datum der Erstellung der Paketlisten eingeben
 einlesen (){
-	read -p "Nicht vergessen, externe Backup-HDD anzuschließen! " filler
 	read -p "Neuer Monat?(n für nein, ja egal was eintippen): " confirm
 	read -p "Monat für Ordner eingeben (jjjj-mm-Monat): " monad
 	read -p "Datum eingeben(tt.mm.jj): " tag
@@ -178,10 +177,16 @@ autosnap (){
 	doom upgrade
 	kon
 	confconf
- 	sudo timeshift --create
-	read -p "Backup Drive auswerfen?(am besten kurz warten)" JJ1
-	udisk
-	echo "Externe Backup-HDD sicher ausgeworfen, Backups wurden übertragen"
+	read -p "Timeshift Backup machen? (n für nein, sonst egal was) " zeit1
+	if [ $zeit1 != "n" ];then
+		read -p "Nicht vergessen, externe Backup-HDD anzuschließen! " filler
+		sudo timeshift --create
+		read -p "Backup Drive auswerfen?(am besten kurz warten)" JJ1
+		udisk
+		echo "Externe Backup-HDD sicher ausgeworfen, Backups wurden übertragen"
+	else
+		echo "Kein Timeshift Backup erstellt"
+	fi
 }
 
 #Alles zusammenführen in eine übergreifende Funktion
@@ -206,7 +211,7 @@ ueber (){
 	rsync -ruvt  /games/canh/email/ /run/media/ca/Seagate/Email/$monad/$tag
 	rsync -ruvt "/games/canh/Fotos Galaxy s9/" "/run/media/ca/Seagate/Fotos Galaxy s9"
 	rsync -ruvt /games/canh/Wallpapers/ /run/media/ca/Seagate/Wallpapers
-	read -p "Linux-Infos, Google Notes, Emails, Handy Fotos und Wallpaper übertragen, fortfahren mit Studium-Daten (Vorsicht: Möglicher Datenverlust) " VARI6
+	read -p "Linux-Infos, Google Notes, Emails, Handy Fotos und Wallpaper übertragen, fortfahren mit Studium-Daten (Vorsicht: Möglicher Datenverlust). Bitte erste alle Studium-Daten mit Learnweb vergleichen. " VARI6
 	rsync -ruvtn /games/canh/Studium/ /run/media/ca/Seagate/Studium 
 	#Dryrun der Kopie von Daten des Studiums, um sicher zu gehen
 	read -p "Check: Sieht okay aus? Dann einfach fortfahren " VARI7
@@ -216,7 +221,7 @@ ueber (){
 	sudo udisksctl unmount -b /dev/sdc2
 	sudo udisksctl power-off -b /dev/sdc2
 	echo "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper übertragen und Studium-Daten, Seagate-HDD ausgeworfen "
-	read -p "Manuell Daten übertragen von externer Seagate-HDD auf Ipad " VARI3
+	read -p "Manuell Daten übertragen von externer Seagate-HDD auf Ipad sowie Erstellung von Goodnotes Backups auf externer Seagate-HDD " VARI3
 	#Übertragung von Ipad-Dateien auf PC über die externe Seagate-HDD
 	read -p "Anschließen externer Seagate-HDD, um Ipad Dateien zu übertragen " VARI4
 	rsync -ruvtn  /run/media/ca/Seagate/Studium/ /games/canh/Studium  
