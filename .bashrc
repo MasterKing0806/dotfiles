@@ -179,7 +179,7 @@ autosnap (){
 	confconf
 	read -p "Timeshift Backup machen? (n für nein, sonst egal was) " zeit1
 	if [ $zeit1 != "n" ];then
-		read -p "Nicht vergessen, externe Backup-HDD anzuschließen! " filler
+		read -p "Nicht vergessen, externe Backup-HDD anzuschließen!(In Dolphin Backup-HDD nicht anklicken!) " filler
 		sudo timeshift --create
 		read -p "Backup Drive auswerfen?(am besten kurz warten)" JJ1
 		udisk
