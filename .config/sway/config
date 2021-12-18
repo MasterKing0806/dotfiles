@@ -36,8 +36,8 @@ set $menu wofi --show=drun --lines=5 --prompt""
 #output * bg /games/canh/Wallpapers/link.jpg fill
 #output * bg /games/canh/Wallpapers/kira.jpg fill
 #output * bg /games/canh/Wallpapers/asukaeva.jpg fill
-output * bg /games/canh/Wallpapers/gintama_gintoki_sakata_art_113266_1920x1080.jpg fill
-
+#output * bg /games/canh/Wallpapers/gintama_gintoki_sakata_art_113266_1920x1080.jpg fill
+output * bg /games/canh/Wallpapers/354023-amazing-konosuba-wallpaper-2560x1600.jpg fill
 
 #
 # Example configuration:
@@ -97,7 +97,7 @@ output * bg /games/canh/Wallpapers/gintama_gintoki_sakata_art_113266_1920x1080.j
     bindsym $mod+Shift+c reload
 
 
-    bindsym Ctrl+Alt+l exec swaylock --image /games/canh/Wallpapers/4k-Arch-Dark-Background.png --inside-color 3b4252 --ring-color 2e3440 --key-hl-color d8dee9 --inside-ver-color 81a1c1 --ring-ver-color 88c0d0	 
+    bindsym Ctrl+Alt+l exec swaylock --image /games/canh/Wallpapers/neon-genesis-evangelion-ec-2560x1440.jpg --inside-color 3b4252 --ring-color 2e3440 --key-hl-color d8dee9 --inside-ver-color 81a1c1 --ring-ver-color 88c0d0 --effect-blur 7x5 --clock --indicator --grace 15 
 
 
 #Keybinding for Clipman
