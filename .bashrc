@@ -232,6 +232,11 @@ ueber (){
 	sudo udisksctl unmount -b /dev/sdc2
 	sudo udisksctl power-off -b /dev/sdc2
 	echo "Neue Ipad-Dateien und Goodnotes übertragen, Seagate-HDD ausgeworfen "
+	read -p "Linux-Pakte und Studium Ordner auf Fotoserver übertragen. " jkl
+	rsync -ruvt /games/canh/Linux-Pakte/ "/fotoserver/fotos/Canh PC/Linux-Pakte"
+	rsync -ruvtn --progress --exclude '*.mp4*' /games/canh/Studium/ "/fotoserver/fotos/Canh PC/Studium"
+	read -p "Sieht aus okay aus? Dann einfach weiter. " jkl1
+	rsync -ruvt --progress --exclude '*.mp4*' /games/canh/Studium/ "/fotoserver/fotos/Canh PC/Studium"
 	fullupdate
 }
 
