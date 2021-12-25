@@ -197,22 +197,30 @@ ueber (){
 	if [ "$confirm"  == "n" ]; then
 		autosnap
 		read -p "Anschließen von externer Seagate-HDD und n Dolphin die Ordner laden " VARI1
-		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
+		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass, etc. und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 	else 
 		autosnap
 		read -p "Anschließen von externer Seagate-HDD und in Dolphin die Ordner laden " VARI1
-		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
+		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass, etc. und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 		mkdir /run/media/ca/Seagate/Email/$monad
 	fi
 	#Erstellung eines Emailordners in Abhängigkeit vom Monat sowie des Tages, an dem die Emails übertragen worden.
 	mkdir /run/media/ca/Seagate/Email/$monad/$tag
-	#Sychronisierung von Linux-Pakte Ordner, email, Handy Fotos, Wallpaper, Keepass  mit externern Seagate-HDD
+	#Sychronisierung von Linux-Pakte Ordner, email, Handy Fotos, Wallpaper, Keepass, Beleg, Filme-Serien, Kontoauszug, Musik, screenshots, Word-Dokumente, Lol, novus-bevo  mit externern Seagate-HDD
 	rsync -ruvt  /games/canh/Linux-Pakte/ /run/media/ca/Seagate/Linux-Pakte	
 	rsync -ruvt  /games/canh/email/ /run/media/ca/Seagate/Email/$monad/$tag
 	rsync -ruvt "/games/canh/Fotos Galaxy s9/" "/run/media/ca/Seagate/Fotos Galaxy s9"
 	rsync -ruvt /games/canh/Wallpapers/ /run/media/ca/Seagate/Wallpapers
 	rsync -ruvt  /games/canh/KeePass.kdbx /run/media/ca/Seagate/Keepass
-	read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper und Keepass übertragen, fortfahren mit Studium-Daten (Vorsicht: Möglicher Datenverlust). Bitte erste alle Studium-Daten mit Learnweb vergleichen. " VARI6
+	rsync -ruvt  /games/canh/Beleg/ /run/media/ca/Seagate/Beleg
+	rsync -ruvt  /games/canh/Filme-Serien/ /run/media/ca/Seagate/Filme-Serien
+	rsync -ruvt  /games/canh/Kontoauszug/ /run/media/ca/Seagate/Kontoauszug
+	rsync -ruvt  /games/canh/Musik/ /run/media/ca/Seagate/Musik
+	rsync -ruvt  /games/canh/screenshots/ /run/media/ca/Seagate/screenshots
+	rsync -ruvt  /games/canh/Word-Dokumente/ /run/media/ca/Seagate/Word-Dokumente
+	rsync -ruvt  /games/canh/Lol/ /run/media/ca/Seagate/Lol
+	rsync -ruvt  /kingston/Minecraft-alles/vanilla-launcher/novus-bevo/ /run/media/ca/Seagate/Minecraft/novus-bevo
+	read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper und Keepass, etc. übertragen, fortfahren mit Studium-Daten (Vorsicht: Möglicher Datenverlust). Bitte erste alle Studium-Daten mit Learnweb vergleichen. " VARI6
 	rsync -ruvtn /games/canh/Studium/ /run/media/ca/Seagate/Studium 
 	#Dryrun der Kopie von Daten des Studiums, um sicher zu gehen
 	read -p "Check: Sieht okay aus? Dann einfach fortfahren " VARI7
@@ -221,7 +229,7 @@ ueber (){
 	read -p "Externe Seagate-HDD auswerfen?(am besten kurz warten) " VARI10
 	sudo udisksctl unmount -b /dev/sdc2
 	sudo udisksctl power-off -b /dev/sdc2
-	echo "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass übertragen und Studium-Daten, Seagate-HDD ausgeworfen "
+	echo "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass übertragen, etc. und Studium-Daten, Seagate-HDD ausgeworfen "
 	read -p "Manuell Daten übertragen von externer Seagate-HDD auf Ipad (Hochsrollen, um zu schauen, welche Daten verändert wurden) sowie Erstellung von Goodnotes Backups auf externer Seagate-HDD " VARI3
 	#Übertragung von Ipad-Dateien auf PC über die externe Seagate-HDD
 	read -p "Anschließen externer Seagate-HDD (Dolphin öffnen), um Ipad Dateien zu übertragen " VARI4
