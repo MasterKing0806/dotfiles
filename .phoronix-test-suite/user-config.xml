@@ -24,7 +24,7 @@
       <SearchMediaForCache>TRUE</SearchMediaForCache>
       <SymLinkFilesFromCache>FALSE</SymLinkFilesFromCache>
       <PromptForDownloadMirror>FALSE</PromptForDownloadMirror>
-      <EnvironmentDirectory>/games/phornonixbench/</EnvironmentDirectory>
+      <EnvironmentDirectory>/games/phoronixbench/</EnvironmentDirectory>
       <CacheDirectory>~/.phoronix-test-suite/download-cache/</CacheDirectory>
     </Installation>
     <Testing>
@@ -32,7 +32,7 @@
       <SaveInstallationLogs>TRUE</SaveInstallationLogs>
       <SaveTestLogs>TRUE</SaveTestLogs>
       <RemoveTestInstallOnCompletion></RemoveTestInstallOnCompletion>
-      <ResultsDirectory>/games/phornonixbench/results</ResultsDirectory>
+      <ResultsDirectory>/games/phoronixbench/results</ResultsDirectory>
       <AlwaysUploadResultsToOpenBenchmarking>FALSE</AlwaysUploadResultsToOpenBenchmarking>
       <AutoSortRunQueue>TRUE</AutoSortRunQueue>
       <ShowPostRunStatistics>TRUE</ShowPostRunStatistics>

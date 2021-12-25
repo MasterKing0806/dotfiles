@@ -224,7 +224,7 @@ ueber (){
 	echo "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass übertragen und Studium-Daten, Seagate-HDD ausgeworfen "
 	read -p "Manuell Daten übertragen von externer Seagate-HDD auf Ipad (Hochsrollen, um zu schauen, welche Daten verändert wurden) sowie Erstellung von Goodnotes Backups auf externer Seagate-HDD " VARI3
 	#Übertragung von Ipad-Dateien auf PC über die externe Seagate-HDD
-	read -p "Anschließen externer Seagate-HDD, um Ipad Dateien zu übertragen " VARI4
+	read -p "Anschließen externer Seagate-HDD (Dolphin öffnen), um Ipad Dateien zu übertragen " VARI4
 	rsync -ruvtn  /run/media/ca/Seagate/Studium/ /games/canh/Studium  
 	read -p "Check: Sieht okay aus? Dann einfach fortfahren " VARI8
 	rsync -ruvt --progress /run/media/ca/Seagate/Studium/ /games/canh/Studium  

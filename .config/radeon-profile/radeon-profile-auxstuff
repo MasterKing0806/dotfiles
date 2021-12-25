@@ -5,11 +5,11 @@
     <FanProfiles>
         <fanProfile name="default">
             <step temperature="40" speed="0"/>
-            <step temperature="50" speed="13"/>
-            <step temperature="60" speed="15"/>
-            <step temperature="70" speed="20"/>
-            <step temperature="80" speed="25"/>
-            <step temperature="85" speed="40"/>
+            <step temperature="50" speed="0"/>
+            <step temperature="60" speed="10"/>
+            <step temperature="70" speed="15"/>
+            <step temperature="80" speed="20"/>
+            <step temperature="85" speed="20"/>
         </fanProfile>
     </FanProfiles>
     <Plots/>
