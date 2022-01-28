@@ -180,7 +180,7 @@ autosnap (){
 	read -p "Timeshift Backup machen? (n für nein) " zeit1
 	if [ "$zeit1" != "n" ];then
 		#Reihenfolge und Ort des Anschlusses der HDDs wichtig, damit keine Verwirrungen aufgrund des Device-Namens entsteht
-		read -p "Nicht vergessen, zuerst externe Seagate-HDD an Front-IO und externe Backup-HDD an Tastatur anzuschließen!(In Dolphin Backup-HDD nicht anklicken, Seagate-HDD aber schon anklicken!) " filler
+		read -p "Nicht vergessen, ZUERST externe Seagate-HDD an Front-IO und DANN externe Backup-HDD an Tastatur anzuschließen!(In Dolphin Backup-HDD nicht anklicken, Seagate-HDD aber schon anklicken!) " filler
 		sudo timeshift --create
 		read -p "Backup Drive auswerfen?(am besten kurz warten)" JJ1
 		udisk
@@ -232,9 +232,9 @@ ueber (){
 	echo "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass übertragen, etc. und Studium-Daten, Seagate-HDD ausgeworfen "
 	read -p "Linux-Pakte und Studium Ordner auf Fotoserver übertragen. " jkl
 	rsync -ruvt /games/canh/Linux-Pakte/ "/fotoserver/fotos/Canh PC/Linux-Pakte"
-	rsync -ruvtn --progress --exclude={'*.mp4*','*.mp3*'} /games/canh/Studium/ "/fotoserver/fotos/Canh PC/Studium"
+	rsync -ruvtn --progress --exclude={'*.mp4*','*.mp3*','*.zip*'} /games/canh/Studium/ "/fotoserver/fotos/Canh PC/Studium"
 	read -p "Sieht aus okay aus? Dann einfach weiter. " jkl1
-	rsync -ruvt --progress --exclude={'*.mp4*','*.mp3*'} /games/canh/Studium/ "/fotoserver/fotos/Canh PC/Studium"
+	rsync -ruvt --progress --exclude={'*.mp4*','*.mp3*','*.zip*'} /games/canh/Studium/ "/fotoserver/fotos/Canh PC/Studium"
 	fullupdate
 }
 
