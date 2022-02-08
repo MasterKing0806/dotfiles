@@ -37,7 +37,9 @@ set $menu wofi --show=drun --lines=5 --prompt""
 #output * bg /games/canh/Wallpapers/kira.jpg fill
 #output * bg /games/canh/Wallpapers/asukaeva.jpg fill
 #output * bg /games/canh/Wallpapers/gintama_gintoki_sakata_art_113266_1920x1080.jpg fill
-output * bg /games/canh/Wallpapers/354023-amazing-konosuba-wallpaper-2560x1600.jpg fill
+#output * bg /games/canh/Wallpapers/354023-amazing-konosuba-wallpaper-2560x1600.jpg fill
+#output * bg /games/canh/Wallpapers/EVAUnit01.jpg fill
+output * bg /games/canh/Wallpapers/564835.jpg fill 
 
 #
 # Example configuration:
