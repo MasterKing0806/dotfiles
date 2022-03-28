@@ -9,7 +9,7 @@
             <step temperature="60" speed="10"/>
             <step temperature="70" speed="15"/>
             <step temperature="80" speed="20"/>
-            <step temperature="85" speed="30"/>
+            <step temperature="85" speed="40"/>
         </fanProfile>
     </FanProfiles>
     <Plots/>
