@@ -8,19 +8,12 @@
   "sort_mode": 0,
   "items": [
     {
-      "path": "/games/rom/Pokemon - FireRed Version (USA).gba",
+      "path": "/kingston/Pokemon/Pokemon - FireRed Version (USA).gba",
+      "entry_slot": -1748772352,
       "label": "Pokemon - FireRed Version (USA)",
-      "core_path": "DETECT",
-      "core_name": "DETECT",
-      "crc32": "DD88761C|crc",
-      "db_name": "Nintendo - Game Boy Advance.lpl"
-    },
-    {
-      "path": "/games/rom/Pokemon - Ruby Version (USA).gba",
-      "label": "Pokemon - Ruby Version (USA)",
       "core_path": "/home/ca/.config/retroarch/cores/mgba_libretro.so",
       "core_name": "Nintendo - Game Boy Advance (mGBA)",
-      "crc32": "F0815EE7|crc",
+      "crc32": "DD88761C|crc",
       "db_name": "Nintendo - Game Boy Advance.lpl"
     }
   ]

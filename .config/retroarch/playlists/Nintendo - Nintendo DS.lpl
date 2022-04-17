@@ -8,11 +8,12 @@
   "sort_mode": 0,
   "items": [
     {
-      "path": "/games/rom/Pokemon - Platinum Version (USA).nds",
-      "label": "Pokemon - Platinum Version (USA)",
+      "path": "/kingston/Pokemon/Pokemon - Diamond Version (USA) (Rev 5).nds",
+      "entry_slot": -983322368,
+      "label": "Pokemon - Diamond Version (USA) (Rev 5)",
       "core_path": "DETECT",
       "core_name": "DETECT",
-      "crc32": "9253921D|crc",
+      "crc32": "84427823|crc",
       "db_name": "Nintendo - Nintendo DS.lpl"
     }
   ]
