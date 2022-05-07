@@ -13,6 +13,8 @@ alias config='/usr/bin/git --git-dir=/home/ca/dotfiles/ --work-tree=/home/ca'
 
 alias lol="sudo sh -c 'sysctl -w abi.vsyscall32=0'"
 
+alias loloff="sudo sh -c 'sysctl -w abi.vsyscall32=1'"
+
 alias spss='/home/ca/spss/bin/statistics'
 
 alias doom='~/.emacs.d/bin/doom'
