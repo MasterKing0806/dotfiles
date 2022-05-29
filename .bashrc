@@ -154,7 +154,7 @@ einlesen (){
 
 #peckage fragt ab, ob die drei Paketlisten -pacman, aur, flatpak- erstellt werden sollen, oder nicht. Damit wird vermieden, dass doppelte Listen erstellt werden.
 peckage() {
-	read -p "Neue Paketliste erstellen? (n für nein, sonst egal was) " juck
+	read -p "Neue Paketliste erstellen? (n für nein, sonst egal was; Achtung: Wenn länger keine Liste erstellt, checken, ob unter Linux-Pakte in interner SDD der Monatsordner vorhanden ist!) " juck
 	if [ "$juck" == "n" ];then
 		echo "Es wurden keine Paketelisten erstellt"
 	else

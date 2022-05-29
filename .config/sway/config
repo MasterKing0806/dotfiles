@@ -327,4 +327,6 @@ exec /usr/bin/easyeffects --gapplication-service
 exec "/usr/lib/polkit-kde-authentication-agent-1"
 
 
+
+
 include /etc/sway/config.d/*
