@@ -66,8 +66,13 @@ alias timeshifts='timer'
 
 #Externen Backup-HDD entfernen
 unmounten  (){
-	sudo udisksctl unmount -b /dev/sdd1
-	sudo udisksctl power-off -b /dev/sdd1
+	read -p "Soll Backup-HDD ausgeworfen werden? (Achtung: Möglich,dass sie schon ausgeworfen wurde) (n für nein, sonst egal)" wirf
+	if [ "$wirf" == "n" ] ;then
+		echo "HDD wurde bereits ausgeworfen."
+	else 
+		sudo udisksctl unmount -b /dev/sdd1
+		sudo udisksctl power-off -b /dev/sdd1
+	fi
 }
 
 
