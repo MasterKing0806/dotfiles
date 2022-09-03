@@ -37,6 +37,8 @@ alias ja='yay -Sua'
 
 alias flap='flatpak update'
 
+alias clearclip='clipman clear --all'
+
 #Komplettes Systemupdate über alle Packagemanager
 sysalles () {
 	read -p "Komplettes Systemupdate! Hast du alles gebackupped?(y für ja) " VAR1

@@ -38,13 +38,16 @@ set $menu wofi --show=drun --lines=5 --prompt""
 #output * bg /games/canh/Wallpapers/asukaeva.jpg fill
 #output * bg /games/canh/Wallpapers/gintama_gintoki_sakata_art_113266_1920x1080.jpg fill
 #output * bg /games/canh/Wallpapers/354023-amazing-konosuba-wallpaper-2560x1600.jpg fill
-#output * bg /games/canh/Wallpapers/EVAUnit01.jpg fill
-output * bg /games/canh/Wallpapers/564835.jpg fill 
+output HDMI-A-1  bg /games/canh/Wallpapers/EVAUnit01.jpg fill
+output DP-1  bg /games/canh/Wallpapers/564835.jpg fill 
 
 #
 # Example configuration:
-#
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+# 
+output DP-1 position 0 1440
+output HDMI-A-1 position 0 0 
+output * adaptive_sync on
+focus output DP-1
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
@@ -106,7 +109,7 @@ output * bg /games/canh/Wallpapers/564835.jpg fill
 	bindsym Alt+h exec clipman pick -t wofi
 
 #Keybinding for Doom Emacs, Firefox, Dolphin, Thunderbird, Keepass, discord
-	bindsym Alt+e exec emacs
+	bindsym Alt+Shift+e exec emacs
 
 
 	bindsym Alt+f exec firefox
@@ -154,28 +157,43 @@ output * bg /games/canh/Wallpapers/564835.jpg fill
 #
 # Workspaces:
 #
+
     # Switch to workspace
-    bindsym $mod+1 workspace number 1
-    bindsym $mod+2 workspace number 2
-    bindsym $mod+3 workspace number 3
-    bindsym $mod+4 workspace number 4
-    bindsym $mod+5 workspace number 5
-    bindsym $mod+6 workspace number 6
-    bindsym $mod+7 workspace number 7
-    bindsym $mod+8 workspace number 8
-    bindsym $mod+9 workspace number 9
-    bindsym $mod+0 workspace number 10
+    bindsym $mod+1 workspace 1
+    bindsym $mod+2 workspace 2
+    bindsym $mod+3 workspace 3
+    bindsym $mod+4 workspace 4
+    bindsym $mod+5 workspace 5
+    bindsym Alt+1 workspace 6
+    bindsym Alt+2 workspace 7
+    bindsym Alt+3 workspace 8
+    bindsym Alt+4 workspace 9
+    bindsym Alt+5 workspace 10
     # Move focused container to workspace
-    bindsym $mod+Shift+1 move container to workspace number 1
-    bindsym $mod+Shift+2 move container to workspace number 2
-    bindsym $mod+Shift+3 move container to workspace number 3
-    bindsym $mod+Shift+4 move container to workspace number 4
-    bindsym $mod+Shift+5 move container to workspace number 5
-    bindsym $mod+Shift+6 move container to workspace number 6
-    bindsym $mod+Shift+7 move container to workspace number 7
-    bindsym $mod+Shift+8 move container to workspace number 8
-    bindsym $mod+Shift+9 move container to workspace number 9
-    bindsym $mod+Shift+0 move container to workspace number 10
+    bindsym $mod+Shift+1 move container to workspace 1
+    bindsym $mod+Shift+2 move container to workspace 2
+    bindsym $mod+Shift+3 move container to workspace 3
+    bindsym $mod+Shift+4 move container to workspace 4
+    bindsym $mod+Shift+5 move container to workspace 5
+    bindsym Alt+Shift+1 move container to workspace 6
+    bindsym Alt+Shift+2 move container to workspace 7
+    bindsym Alt+Shift+3 move container to workspace 8
+    bindsym Alt+Shift+4 move container to workspace 9
+    bindsym Alt+Shift+5 move container to workspace 10
+
+
+workspace 1 output DP-1
+workspace 2 output DP-1 
+workspace 3 output DP-1
+workspace 4 output DP-1
+workspace 5 output DP-1
+workspace 6 output HDMI-A-1
+workspace 7 output HDMI-A-1
+workspace 8 output HDMI-A-1
+workspace 9 output HDMI-A-1
+workspace 10 output HDMI-A-1
+
+
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 #
@@ -311,8 +329,11 @@ exec_always {
 
 #exec autotiling -w 2 3 4 5 6 7 8 9 10  
 
+#Screensharing enbablen
+exec systemctl --user import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment WAYLAND_DISPLAY
+#exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
 #Damit waybar/gtk apps nicht so lange brauche, um zu starten
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK

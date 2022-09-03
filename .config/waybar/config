@@ -7,6 +7,7 @@
 // =============================================================================
 
 {
+    "output": "DP-1",
     "position": "bottom",
     "height": 30,
     "modules-center": ["sway/workspaces", "memory","cpu", "clock"],
