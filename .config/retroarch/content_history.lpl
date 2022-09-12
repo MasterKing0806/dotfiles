@@ -8,6 +8,14 @@
   "sort_mode": 2,
   "items": [
     {
+      "path": "/kingston/Pokemon/Pokemon - FireRed Version (USA).gba",
+      "label": "Pokemon - FireRed Version (USA)",
+      "core_path": "/home/ca/.config/retroarch/cores/mgba_libretro.so",
+      "core_name": "Nintendo - Game Boy Advance (mGBA)",
+      "crc32": "DD88761C|crc",
+      "db_name": "Nintendo - Game Boy Advance.lpl"
+    },
+    {
       "path": "/kingston/Pokemon/3Pokemon - Diamond Version (USA) (Rev 5).nds",
       "label": "3Pokemon - Diamond Version (USA) (Rev 5)",
       "core_path": "/home/ca/.config/retroarch/cores/desmume_libretro.so",
@@ -30,14 +38,6 @@
       "core_name": "Nintendo - DS (DeSmuME)",
       "crc32": "",
       "db_name": ""
-    },
-    {
-      "path": "/kingston/Pokemon/Pokemon - FireRed Version (USA).gba",
-      "label": "Pokemon - FireRed Version (USA)",
-      "core_path": "/home/ca/.config/retroarch/cores/mgba_libretro.so",
-      "core_name": "Nintendo - Game Boy Advance (mGBA)",
-      "crc32": "DD88761C|crc",
-      "db_name": "Nintendo - Game Boy Advance.lpl"
     },
     {
       "path": "/kingston/Pokemon/Pokemon - FireRed Version (USA).zip#Pokemon - FireRed Version (USA).gba",
