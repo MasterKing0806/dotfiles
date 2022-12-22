@@ -58,6 +58,10 @@ alias shut='shutdown now'
 
 alias .config='~/.config'
 
+alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --shuffle'  
+
+
+
 #Timeshift gtk App öffnen
 timer (){
 	xhost +
