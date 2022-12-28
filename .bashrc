@@ -60,6 +60,8 @@ alias .config='~/.config'
 
 alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --shuffle'  
 
+alias ufotoserver='sudo umount /fotoserver'
+
 
 
 #Timeshift gtk App öffnen
@@ -72,13 +74,8 @@ alias timeshifts='timer'
 
 #Externen Backup-HDD entfernen
 unmounten  (){
-	read -p "Soll Backup-HDD ausgeworfen werden? (Achtung: Möglich,dass sie schon ausgeworfen wurde) (n für nein, sonst egal)" wirf
-	if [ "$wirf" == "n" ] ;then
-		echo "HDD wurde bereits ausgeworfen."
-	else 
 		sudo udisksctl unmount -b /dev/sdd1
 		sudo udisksctl power-off -b /dev/sdd1
-	fi
 }
 
 
@@ -110,6 +107,7 @@ hubby2 (){
 	config add .config/retroarch
 	config add .config/waybar
 	config add .config/environment.d
+	config add .config/BetterDiscord
 	config commit -m "$updaten"
 	config push
 }
@@ -193,7 +191,7 @@ autosnap (){
 	read -p "Timeshift Backup machen? (n für nein) " zeit1
 	if [ "$zeit1" != "n" ];then
 		#Reihenfolge und Ort des Anschlusses der HDDs wichtig, damit keine Verwirrungen aufgrund des Device-Namens entsteht
-		read -p "Nicht vergessen, ZUERST externe Seagate-HDD an Front-IO und DANN externe Backup-HDD an Tastatur anzuschließen!(In Dolphin Backup-HDD nicht anklicken, Seagate-HDD aber schon anklicken!) " filler
+		read -p "Nicht vergessen, ZUERST externe Seagate-HDD an Front-IO und DANN externe Backup-HDD vorne an USB-C Front-IO oder hinten an Mainboard anzuschließen!(In Dolphin Backup-HDD nicht anklicken, Seagate-HDD aber schon anklicken!) " filler
 		sudo timeshift --create
 		read -p "Backup Drive auswerfen?(am besten kurz warten)" JJ1
 		udisk

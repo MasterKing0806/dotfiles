@@ -350,6 +350,9 @@ exec "/usr/lib/polkit-kde-authentication-agent-1"
 #Maus in Wine Apps
 exec_always xrandr --output $(xrandr | grep -m 1 XWAYLAND | awk '{print $1;}') --primary
 
+#Radeon-Profile
+exec radeon-profile
+
 
 
 
