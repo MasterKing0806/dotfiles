@@ -60,7 +60,11 @@ alias .config='~/.config'
 
 alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --shuffle'  
 
-alias ufotoserver='sudo umount /fotoserver'
+alias ufotoserver='sudo umount -l /fotoserver'
+
+
+#VDPAU (Video acceleration)
+export VDPAU_DRIVER=radeonsi
 
 
 

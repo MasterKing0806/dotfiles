@@ -27,7 +27,7 @@ set $menu wofi --show=drun --lines=5 --prompt""
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-#output *  bg /games/canh/Wallpapers/tomswallpapers.com-1579.jpg fill
+output HDMI-A-1  bg /games/canh/Wallpapers/tomswallpapers.com-1579.jpg fill
 #output *  bg /games/canh/Wallpapers/neon-genesis-evangelion-ec-2560x1440.jpg fill
 #output * bg /games/canh/Wallpapers/jinx.jpeg fill
 #output * bg /games/canh/Wallpapers/nier.jpg fill
@@ -38,8 +38,11 @@ set $menu wofi --show=drun --lines=5 --prompt""
 #output * bg /games/canh/Wallpapers/asukaeva.jpg fill
 #output * bg /games/canh/Wallpapers/gintama_gintoki_sakata_art_113266_1920x1080.jpg fill
 #output * bg /games/canh/Wallpapers/354023-amazing-konosuba-wallpaper-2560x1600.jpg fill
-output HDMI-A-1  bg /games/canh/Wallpapers/EVAUnit01.jpg fill
-output DP-1  bg /games/canh/Wallpapers/564835.jpg fill 
+#output HDMI-A-1  bg /games/canh/Wallpapers/EVAUnit01.jpg fill
+#output DP-1  bg /games/canh/Wallpapers/564835.jpg fill 
+output DP-1  bg /games/canh/Wallpapers/fmaed.jpg fill 
+
+
 
 #
 # Example configuration:
