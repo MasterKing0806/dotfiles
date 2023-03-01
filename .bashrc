@@ -62,6 +62,9 @@ alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-play
 
 alias ufotoserver='sudo umount -l /fotoserver'
 
+alias mov-cli='/home/ca/.local/bin/mov-cli'
+
+
 
 #VDPAU (Video acceleration)
 export VDPAU_DRIVER=radeonsi
