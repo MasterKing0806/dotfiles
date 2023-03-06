@@ -115,6 +115,10 @@ hubby2 (){
 	config add .config/waybar
 	config add .config/environment.d
 	config add .config/BetterDiscord
+	config add .config/WebCord
+	config add .config/dunst
+	config add .config/hypr
+	config add .bash_profile
 	config commit -m "$updaten"
 	config push
 }
@@ -153,10 +157,13 @@ alias dtime='timedelete'
 #Wichtige config files separat speichern
 kon() {
 	rsync -ruvt /home/ca/.bashrc "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
+	rsync -ruvt /home/ca/.bash_profile "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
 	rsync -ruvt /home/ca/.config/sway "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
 	rsync -ruvt /home/ca/.config/waybar "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
 	rsync -ruvt /home/ca/.config/alacritty "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
 	rsync -ruvt /home/ca/.doom.d "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
+	rsync -ruvt /home/ca/WebCord "/games/canh/Linux-Pakte/Config-Files/Wichtige Config Files"
+	rsync -ruvt /home/ca/hypr "games/canh/Linux-Pakte/Config-Files/Wichtige Config Files"
 }
 
 

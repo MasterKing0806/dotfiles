@@ -6,6 +6,7 @@
 
 exec wl-paste -t text --watch clipman store --no-persist
 
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -124,7 +125,7 @@ focus output DP-1
 	bindsym Alt+t exec thunderbird
 
 
-	bindsym Shift+Alt+d exec discord
+	bindsym Shift+Alt+d exec webcord 
 
 
 	bindsym Alt+k exec org.keepassxc.KeePassXC 
@@ -345,6 +346,8 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
 
 #Easyeffekt Daemon starten
 exec /usr/bin/easyeffects --gapplication-service
+
+
 
 
 #Polkit
