@@ -3,8 +3,8 @@
 #
 
 if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
-  exec sway
-#   exec Hyprland	 	
+#  exec sway
+   exec Hyprland	 	
 fi
 
 

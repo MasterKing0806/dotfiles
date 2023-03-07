@@ -41,7 +41,7 @@ alias clearclip='clipman clear --all'
 
 #Komplettes Systemupdate über alle Packagemanager
 sysalles () {
-	read -p "Komplettes Systemupdate! Hast du alles gebackupped?(y für ja) " VAR1
+	read -p "Komplettes Systemupdate! Hast du alles gebackupped?(y für ja; Achtung bei Yay Git Packages CleanBuild) " VAR1
 	if [ "$VAR1" = "y" ]; then
 	    pp
 	    ja
@@ -63,6 +63,8 @@ alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-play
 alias ufotoserver='sudo umount -l /fotoserver'
 
 alias mov-cli='/home/ca/.local/bin/mov-cli'
+
+alias hyprc='vim ~/.config/hypr/hyprland.conf'
 
 
 
@@ -162,8 +164,8 @@ kon() {
 	rsync -ruvt /home/ca/.config/waybar "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
 	rsync -ruvt /home/ca/.config/alacritty "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
 	rsync -ruvt /home/ca/.doom.d "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
-	rsync -ruvt /home/ca/WebCord "/games/canh/Linux-Pakte/Config-Files/Wichtige Config Files"
-	rsync -ruvt /home/ca/hypr "games/canh/Linux-Pakte/Config-Files/Wichtige Config Files"
+	rsync -ruvt /home/ca/.config/WebCord "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+	rsync -ruvt /home/ca/.config/hypr "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 }
 
 
