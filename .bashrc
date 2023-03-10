@@ -39,6 +39,18 @@ alias flap='flatpak update'
 
 alias clearclip='clipman clear --all'
 
+
+#Hyprland updaten
+front () {
+	echo Hyprland update
+	cd Hyprland
+	git pull
+	cd ..
+}
+
+
+alias hyper='front'
+
 #Komplettes Systemupdate über alle Packagemanager
 sysalles () {
 	read -p "Komplettes Systemupdate! Hast du alles gebackupped?(y für ja; Achtung bei Yay Git Packages CleanBuild) " VAR1
@@ -46,6 +58,7 @@ sysalles () {
 	    pp
 	    ja
 	    flap
+	    hyper
 	fi
 }
 alias fullupdate='sysalles'
@@ -58,7 +71,7 @@ alias shut='shutdown now'
 
 alias .config='~/.config'
 
-alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --shuffle'  
+alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --shuffle --volume=24'  
 
 alias ufotoserver='sudo umount -l /fotoserver'
 
@@ -258,7 +271,7 @@ ueber (){
 	sudo udisksctl power-off -b /dev/sdc1
 	echo "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass übertragen, etc. und Studium-Daten, Seagate-HDD ausgeworfen "
 	read -p "Linux-Pakte und Studium Ordner auf Fotoserver übertragen. " jkl
-	rsync -ruvt /games/canh/Linux-Pakte/ "/fotoserver/fotos/Canh PC/Linux-Pakte"
+	rsync -ruvt --exlude={'*Cache*'} /games/canh/Linux-Pakte/ "/fotoserver/fotos/Canh PC/Linux-Pakte"
 	rsync -ruvtn --progress --exclude={'*.mp4*','*.mp3*','*.zip*'} /games/canh/Studium/ "/fotoserver/fotos/Canh PC/Studium"
 	read -p "Sieht aus okay aus? Dann einfach weiter. " jkl1
 	rsync -ruvt --progress --exclude={'*.mp4*','*.mp3*','*.zip*'} /games/canh/Studium/ "/fotoserver/fotos/Canh PC/Studium"

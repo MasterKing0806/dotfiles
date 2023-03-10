@@ -87,6 +87,7 @@ focus output DP-1
 # Basics:
 #
     # Start a terminal
+
     bindsym $mod+Return exec $term
 
     # Kill focused window
@@ -124,11 +125,22 @@ focus output DP-1
 	
 	bindsym Alt+t exec thunderbird
 
+#Webcord auf dem zweiten Workspace des zweiten Monitors öffnen
 
-	bindsym Shift+Alt+d exec webcord 
+	bindsym Shift+Alt+d exec swaymsg "workspace 7;exec webcord" 
 
 
 	bindsym Alt+k exec org.keepassxc.KeePassXC 
+
+#MPV YT in Alacritty im Hintergrund auf dritten Workspace des ersten Monitors öffnen
+
+	bindsym $mod+Shift+z exec alacritty --class mpvy -e /home/ca/mpv.sh 
+
+	assign [app_id="mpvy"] workspace 3
+
+#Whatsapp Web Version in Firefox auf dem dritten Workspace des zweiten Monitors öffnen
+
+	bindsym $mod+Shift+w exec swaymsg "workspace 8; exec firefox --new-window https://web.whatsapp.com/ "
 
 
 
@@ -336,7 +348,8 @@ exec_always {
 #Screensharing enbablen
 exec systemctl --user import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP
 exec dbus-update-activation-environment WAYLAND_DISPLAY
-#exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=sway
+
 
 
 #Damit waybar/gtk apps nicht so lange brauche, um zu starten

@@ -3,8 +3,9 @@
 #
 
 if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
-#  exec sway
-   exec Hyprland	 	
+    source wayland.sh
+#   exec sway
+#   exec Hyprland	 	
 fi
 
 

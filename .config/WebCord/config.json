@@ -60,13 +60,13 @@
                 "warn": true
             },
             "optimize": {
-                "gpu": true
+                "gpu": false
             },
             "webApi": {
                 "webGl": true
             },
             "unix": {
-                "autoscroll": true
+                "autoscroll": false
             }
         }
     },
