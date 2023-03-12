@@ -1,3 +1,5 @@
-2023/03/10-16:54:37.785 bae3 Reusing MANIFEST /home/ca/.config/WebCord/Local Storage/leveldb/MANIFEST-000001
-2023/03/10-16:54:37.785 bae3 Recovering log #24
-2023/03/10-16:54:37.785 bae3 Reusing old log /home/ca/.config/WebCord/Local Storage/leveldb/000024.log 
+2023/03/12-15:23:31.413 dd5 Reusing MANIFEST /home/ca/.config/WebCord/Local Storage/leveldb/MANIFEST-000001
+2023/03/12-15:23:31.414 dd5 Recovering log #31
+2023/03/12-15:23:31.415 dd5 Reusing old log /home/ca/.config/WebCord/Local Storage/leveldb/000031.log 
+2023/03/12-15:24:45.492 f99 Level-0 table #35: started
+2023/03/12-15:24:45.522 f99 Level-0 table #35: 1462464 bytes OK

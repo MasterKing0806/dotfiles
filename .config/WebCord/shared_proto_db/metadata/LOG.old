@@ -1,2 +1,3 @@
-2023/03/07-20:03:36.709 c85c Creating DB /home/ca/.config/WebCord/shared_proto_db/metadata since it was missing.
-2023/03/07-20:03:36.716 c85c Reusing MANIFEST /home/ca/.config/WebCord/shared_proto_db/metadata/MANIFEST-000001
+2023/03/07-21:44:21.174 cf7c Reusing MANIFEST /home/ca/.config/WebCord/shared_proto_db/metadata/MANIFEST-000001
+2023/03/07-21:44:21.174 cf7c Recovering log #3
+2023/03/07-21:44:21.174 cf7c Reusing old log /home/ca/.config/WebCord/shared_proto_db/metadata/000003.log 

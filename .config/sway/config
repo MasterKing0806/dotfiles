@@ -134,7 +134,7 @@ focus output DP-1
 
 #MPV YT in Alacritty im Hintergrund auf dritten Workspace des ersten Monitors öffnen
 
-	bindsym $mod+Shift+z exec alacritty --class mpvy -e /home/ca/mpv.sh 
+	bindsym $mod+Shift+z exec alacritty --class mpvy -e /home/ca/Bashscripts/mpv.sh 
 
 	assign [app_id="mpvy"] workspace 3
 

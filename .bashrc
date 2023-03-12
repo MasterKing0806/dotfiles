@@ -134,6 +134,7 @@ hubby2 (){
 	config add .config/dunst
 	config add .config/hypr
 	config add .bash_profile
+	config add Bashscripts
 	config commit -m "$updaten"
 	config push
 }
@@ -179,6 +180,8 @@ kon() {
 	rsync -ruvt /home/ca/.doom.d "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
 	rsync -ruvt /home/ca/.config/WebCord "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 	rsync -ruvt /home/ca/.config/hypr "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+	rsync -ruvt /home/ca/Bashscripts/ "/games/canh/Linux-Pakte/Config Files"
+	rsync -ruvt /kingston/lutris/lol_yml/ "/games/canh/Lol/lol_yml"
 }
 
 
@@ -245,7 +248,7 @@ ueber (){
 	fi
 	#Erstellung eines Emailordners in Abhängigkeit vom Monat sowie des Tages, an dem die Emails übertragen worden.
 	mkdir /run/media/ca/7FEF-CE8E/Email/$monad/$tag
-	#Sychronisierung von Linux-Pakte Ordner, email, Handy Fotos, Wallpaper, Keepass, Beleg, Filme-Serien, Kontoauszug, Musik, screenshots, Word-Dokumente, Lol, novus-bevo  mit externern Seagate-HDD
+	#Sychronisierung von Linux-Pakte Ordner, email, Handy Fotos, Wallpaper, Keepass, Beleg, Filme-Serien, Kontoauszug, Musik, screenshots, Word-Dokumente, Lol, novus-bevo mit externern Seagate-HDD
 	rsync -ruvt  /games/canh/Linux-Pakte/ /run/media/ca/7FEF-CE8E/Linux-Pakte	
 	rsync -ruvt  /games/canh/email/ /run/media/ca/7FEF-CE8E/Email/$monad/$tag
 	rsync -ruvt "/games/canh/Fotos Galaxy s9/" "/run/media/ca/7FEF-CE8E/Fotos Galaxy s9"
