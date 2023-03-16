@@ -1,17 +1,27 @@
-2023/03/12-15:24:46.088 fb6 Reusing MANIFEST /home/ca/.config/WebCord/Local Storage/leveldb/MANIFEST-000001
-2023/03/12-15:24:46.088 fb6 Recovering log #31
-2023/03/12-15:24:46.090 fb6 Level-0 table #34: started
-2023/03/12-15:24:46.112 fb6 Level-0 table #34: 1462464 bytes OK
-2023/03/12-15:24:46.112 fb6 Recovering log #34
-2023/03/12-15:24:46.112 fb6 Reusing old log /home/ca/.config/WebCord/Local Storage/leveldb/000034.log 
-2023/03/12-15:24:46.117 fb6 Delete type=2 #35
-2023/03/12-15:24:46.117 fb6 Delete type=0 #31
-2023/03/12-15:24:46.117 fc6 Compacting 4@0 + 1@1 files
-2023/03/12-15:24:46.141 fc6 Generated table #35@0: 79 keys, 1465890 bytes
-2023/03/12-15:24:46.141 fc6 Compacted 4@0 + 1@1 files => 1465890 bytes
-2023/03/12-15:24:46.146 fc6 compacted to: files[ 0 1 0 0 0 0 0 ]
-2023/03/12-15:24:46.146 fc6 Delete type=2 #25
-2023/03/12-15:24:46.146 fc6 Delete type=2 #34
-2023/03/12-15:24:46.146 fc6 Delete type=2 #32
-2023/03/12-15:24:46.146 fc6 Delete type=2 #28
-2023/03/12-15:24:46.146 fc6 Delete type=2 #30
+2023/03/15-17:27:14.978 6b2 Reusing MANIFEST /home/ca/.config/WebCord/Local Storage/leveldb/MANIFEST-000001
+2023/03/15-17:27:14.979 6b2 Recovering log #71
+2023/03/15-17:27:14.981 6b2 Reusing old log /home/ca/.config/WebCord/Local Storage/leveldb/000071.log 
+2023/03/15-17:29:16.834 701 Level-0 table #75: started
+2023/03/15-17:29:16.857 701 Level-0 table #75: 1471612 bytes OK
+2023/03/15-17:29:16.859 701 Delete type=0 #71
+2023/03/15-18:20:16.963 701 Level-0 table #77: started
+2023/03/15-18:20:16.966 701 Level-0 table #77: 9403 bytes OK
+2023/03/15-18:20:16.968 701 Delete type=0 #74
+2023/03/15-18:20:16.969 701 Compacting 4@0 + 1@1 files
+2023/03/15-18:20:16.981 701 Generated table #78@0: 83 keys, 1475030 bytes
+2023/03/15-18:20:16.981 701 Compacted 4@0 + 1@1 files => 1475030 bytes
+2023/03/15-18:20:16.983 701 compacted to: files[ 0 1 0 0 0 0 0 ]
+2023/03/15-18:20:16.983 701 Delete type=2 #72
+2023/03/15-18:20:16.983 701 Delete type=2 #77
+2023/03/15-18:20:16.983 701 Delete type=2 #68
+2023/03/15-18:20:16.983 701 Delete type=2 #70
+2023/03/15-18:20:16.983 701 Delete type=2 #75
+2023/03/15-19:11:16.963 46fb Level-0 table #80: started
+2023/03/15-19:11:16.967 46fb Level-0 table #80: 14484 bytes OK
+2023/03/15-19:11:16.969 46fb Delete type=0 #76
+2023/03/15-20:09:16.964 4b71 Level-0 table #82: started
+2023/03/15-20:09:16.967 4b71 Level-0 table #82: 9099 bytes OK
+2023/03/15-20:09:16.972 4b71 Delete type=0 #79
+2023/03/15-21:03:16.963 4b71 Level-0 table #84: started
+2023/03/15-21:03:16.968 4b71 Level-0 table #84: 9349 bytes OK
+2023/03/15-21:03:16.972 4b71 Delete type=0 #81

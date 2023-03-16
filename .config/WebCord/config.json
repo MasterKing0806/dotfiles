@@ -54,7 +54,7 @@
                 "radio": 0
             },
             "devel": {
-                "enabled": true
+                "enabled": false
             },
             "redirection": {
                 "warn": true
