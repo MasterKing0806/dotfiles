@@ -39,6 +39,8 @@ alias flap='flatpak update'
 
 alias clearclip='clipman clear --all'
 
+alias lolaus="/home/ca/Bashscripts/lolfix2.sh"
+
 
 #Hyprland updaten
 front () {

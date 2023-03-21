@@ -127,8 +127,9 @@ focus output DP-1
 
 #Webcord auf dem zweiten Workspace des zweiten Monitors öffnen
 
-	bindsym Shift+Alt+d exec swaymsg "workspace 7;exec webcord" 
+	#bindsym Shift+Alt+d exec swaymsg "workspace 7;exec webcord" 
 
+	bindsym Shift+Alt+d exec swaymsg "workspace 7;exec discord" 
 
 	bindsym Alt+k exec org.keepassxc.KeePassXC 
 
@@ -142,6 +143,9 @@ focus output DP-1
 
 	bindsym $mod+Shift+w exec swaymsg "workspace 8; exec firefox --new-window https://web.whatsapp.com/ "
 
+#Discord Web Version in Patrick Server öffnen, um Screen zu sharen
+
+	bindsym $mod+Shift+p exec swaymsg "workspace 8; exec firefox https://discord.com/channels/941705366889177148/1008822347245039746 "
 
 
 # Exit sway (logs you out of your Wayland session)
