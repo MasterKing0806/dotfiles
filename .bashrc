@@ -132,7 +132,7 @@ hubby2 (){
 	config add .config/waybar
 	config add .config/environment.d
 	config add .config/BetterDiscord
-	config add .config/WebCord
+	#config add .config/WebCord
 	config add .config/dunst
 	config add .config/hypr
 	config add .bash_profile
@@ -180,7 +180,7 @@ kon() {
 	rsync -ruvt /home/ca/.config/waybar "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
 	rsync -ruvt /home/ca/.config/alacritty "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
 	rsync -ruvt /home/ca/.doom.d "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
-	rsync -ruvt /home/ca/.config/WebCord "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+	#rsync -ruvt /home/ca/.config/WebCord "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 	rsync -ruvt /home/ca/.config/hypr "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 	rsync -ruvt /kingston/lutris/league-of-legends/lolfix.sh /home/ca/Bashscripts/lolfix.sh
 	rsync -ruvt /kingston/lutris/league-of-legends/lolfix2.sh /home/ca/Bashscripts/lolfix2.sh
