@@ -265,6 +265,7 @@ ueber (){
 	rsync -ruvt  /games/canh/Kontoauszug/ /run/media/ca/7FEF-CE8E/Kontoauszug
 	rsync -ruvt  /games/canh/Musik/ /run/media/ca/7FEF-CE8E/Musik
 	rsync -ruvt  /games/canh/screenshots/ /run/media/ca/7FEF-CE8E/screenshots
+	rsync -ruvt  /games/canh/Schule/ /run/media/ca/7FEF-CE8E/Schule
 	rsync -ruvt  /games/canh/Word-Dokumente/ /run/media/ca/7FEF-CE8E/Word-Dokumente
 	rsync -ruvt  /games/canh/Lol/ /run/media/ca/7FEF-CE8E/Lol
 	rsync -ruvt  /kingston/Minecraft-alles/ /run/media/ca/7FEF-CE8E/Minecraft
