@@ -40,6 +40,18 @@ alias lolaus="/home/ca/Bashscripts/lolfix2.sh"
 
 alias lolan="/home/ca/Bashscripts/lolfix.sh"
 
+#Cache leeren
+leer () {
+	read -p "Cache leeren? (ja y, sonst egal) " LOO
+	if [ "$LOO" = "y" ];then
+		flatpak uninstall --unused
+		sudo pacman -Rsn $(pacman -Qqtd)
+		sudo pacman -Sc
+	fi
+}
+
+alias cacheleer='leer'
+
 #Hyprland updaten
 front () {
 	read -p " Hyprland update (ja y, sonst egal) " GG
@@ -286,6 +298,7 @@ ueber (){
 	read -p "Sieht aus okay aus? Dann einfach weiter. " jkl1
 	rsync -ruvt --progress --exclude={'*.mp4*','*.mp3*','*.zip*'} /games/canh/Studium/ "/fotoserver/fotos/Canh PC/Studium"
 	fullupdate
+	cacheleer
 }
 
 alias snap='ueber' 
