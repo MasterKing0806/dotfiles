@@ -89,6 +89,8 @@ alias .config='~/.config'
 
 alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --shuffle --volume=24'  
 
+alias mpvytnoshuffle='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --volume=24'  
+
 alias ufotoserver='sudo umount -l /fotoserver'
 
 alias mov-cli='/home/ca/.local/bin/mov-cli'
