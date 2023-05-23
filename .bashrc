@@ -30,6 +30,10 @@ alias pps='sudo pacman -S'
 
 alias pp='sudo pacman -Syu'
 
+alias ppr='sudo pacman -Rsn'
+
+alias ppq='pacman -Qi'
+
 alias ja='yay -Sua'
 
 alias flap='flatpak update'

@@ -315,19 +315,25 @@ input * accel_profile flat
 
 
 # This is for use with sway-borders
-border_images.focused ~/.config/sway/borders/dropShadowDarkOffset.png
-border_images.focused_inactive ~/.config/sway/borders/dropShadowDarkOffset.png
-border_images.unfocused ~/.config/sway/borders/dropShadowDarkOffset.png
-border_images.urgent ~/.config/sway/borders/dropShadowDarkOffset.png
+#border_images.focused ~/.config/sway/borders/dropShadowDarkOffset.png
+#border_images.focused_inactive ~/.config/sway/borders/dropShadowDarkOffset.png
+#border_images.unfocused ~/.config/sway/borders/dropShadowDarkOffset.png
+#border_images.urgent ~/.config/sway/borders/dropShadowDarkOffset.png
 
 # Window borders
-default_border pixel 1
+#default_border pixel 1
+#default_floating_border normal
+
+default_border pixel 10
 default_floating_border normal
 
+#gaps inner 45
+#gaps horizontal -15
+#gaps vertical -15
 
-gaps inner 45
-gaps horizontal -15
-gaps vertical -15
+gaps inner 15
+gaps horizontal -5
+gaps vertical -5
 
 client.background #3b4252
 client.focused #000000 #3b4252 #d8dee9 #3b4252 #3b4252 
