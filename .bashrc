@@ -50,26 +50,12 @@ leer () {
 	if [ "$LOO" = "y" ];then
 		flatpak uninstall --unused
 		sudo pacman -Rsn $(pacman -Qqtd)
-		sudo pacman -Sc
+		yay -Sc
 	fi
 }
 
 alias cacheleer='leer'
 
-#Hyprland updaten
-front () {
-	read -p " Hyprland update (ja y, sonst egal) " GG
-	if [ "$GG" = "y" ]; then
-		cd Hyprland
-		git pull
-		cd ..
-	else 
-		echo "Hyprland wurde nicht geupdatet."
-	fi
-}
-
-
-alias hyper='front'
 
 #Komplettes Systemupdate über alle Packagemanager
 sysalles () {
@@ -78,7 +64,6 @@ sysalles () {
 	    pp
 	    ja
 	    flap
-	    hyper
 	fi
 }
 alias fullupdate='sysalles'
