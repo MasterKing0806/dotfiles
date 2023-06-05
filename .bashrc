@@ -40,9 +40,11 @@ alias flap='flatpak update'
 
 alias clearclip='clipman clear --all'
 
-alias lolaus="/home/ca/Bashscripts/lolfix2.sh"
+alias lolaus="'/games/canh/Linux-Pakte/Config Files/Bashscripts/lolfix_alt/lolfix2hyprctl.sh'"
 
 alias lolan="/home/ca/Bashscripts/lolfix.sh"
+
+alias ytmp3='yt-dlp -x --audio-format mp3'
 
 #Cache leeren
 leer () {
