@@ -190,7 +190,7 @@ kon() {
 	#rsync -ruvt /home/ca/.config/WebCord "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 	rsync -ruvt /home/ca/.config/hypr "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 	rsync -ruvt /kingston/lutris/league-of-legends/lolfix.sh /home/ca/Bashscripts/lolfix.sh
-	rsync -ruvt /kingston/lutris/league-of-legends/lolfix2.sh /home/ca/Bashscripts/lolfix2.sh
+	#rsync -ruvt /kingston/lutris/league-of-legends/lolfix2.sh /home/ca/Bashscripts/lolfix2.sh
 	rsync -ruvt /home/ca/Bashscripts/ "/games/canh/Linux-Pakte/Config Files/Bashscripts"
 	rsync -ruvt /kingston/lutris/lol_yml/ "/games/canh/Lol/lol_yml"
 }
