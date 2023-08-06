@@ -1,2 +1,0 @@
-[2021-12-11T00:15:34+0100] [process_test_run_request(pts_test_run_manager.php:788)] Executing Test: pts/blender-1.9.1
-[2021-12-11T00:20:36+0100] [post_execution_process(pts_test_run_manager.php:1112)] Test Run Process Ended
