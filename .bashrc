@@ -144,6 +144,7 @@ hubby2 (){
 	config add .config/hypr
 	config add .bash_profile
 	config add Bashscripts
+	config add .config/yay
 	config commit -m "$updaten"
 	config push
 }
@@ -193,6 +194,7 @@ kon() {
 	#rsync -ruvt /kingston/lutris/league-of-legends/lolfix2.sh /home/ca/Bashscripts/lolfix2.sh
 	rsync -ruvt /home/ca/Bashscripts/ "/games/canh/Linux-Pakte/Config Files/Bashscripts"
 	rsync -ruvt /kingston/lutris/lol_yml/ "/games/canh/Lol/lol_yml"
+	rsync -ruvt /home/ca/.config/yay "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
 }
 
 
