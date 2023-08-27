@@ -177,7 +177,7 @@ timedelete (){
 	sudo rm -r $name
 }
 
-alias time='timedelete'
+alias dtime='timedelete'
 
 
 #Wichtige config files separat speichern
