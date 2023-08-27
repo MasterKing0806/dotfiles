@@ -84,7 +84,7 @@ alias mpvytnoshuffle='mpv --vo=null --video=no --no-video --term-osd-bar --no-re
 
 alias ufotoserver='sudo umount -l /fotoserver'
 
-alias mov-cli='/home/ca/.local/bin/mov-cli'
+#alias mov-cli='/home/ca/.local/bin/mov-cli'
 
 alias hyprc='vim ~/.config/hypr/hyprland.conf'
 
@@ -193,7 +193,7 @@ kon() {
 	rsync -ruvt /kingston/lutris/league-of-legends/lolfix.sh /home/ca/Bashscripts/lolfix.sh
 	#rsync -ruvt /kingston/lutris/league-of-legends/lolfix2.sh /home/ca/Bashscripts/lolfix2.sh
 	rsync -ruvt /home/ca/Bashscripts/ "/games/canh/Linux-Pakte/Config Files/Bashscripts"
-	rsync -ruvt /kingston/lutris/lol_yml/ "/games/canh/Lol/lol_yml"
+	rsync -ruvt "/home/ca/.config/lutris/games/league-of-legends-standard-euw-1691273264.yml" "/games/canh/Lol/lol_yml"
 	rsync -ruvt /home/ca/.config/yay "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files" 
 }
 
