@@ -29,14 +29,14 @@ tooltip {
     color: #88c0d0;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
     box-shadow: 2px 2px 6px 1px black;
     color: #88c0d0;
     background-color: #2e3440;
     border-radius: 15px;
 }
 
-#workspaces button.urgent {
+#workspaces button.special {
     color: #2a2e38;
     background-color: #7bc275;
     border-radius: 15px;
