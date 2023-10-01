@@ -36,7 +36,7 @@ tooltip {
     border-radius: 15px;
 }
 
-#workspaces button.special {
+#workspaces button.urgent {
     color: #2a2e38;
     background-color: #7bc275;
     border-radius: 15px;
