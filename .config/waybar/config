@@ -9,7 +9,7 @@
 {
     "output": "DP-1",
     "position": "bottom",
-    "height": 30,
+    "height": 53,
     "layer": "top",
     "modules-center": ["hyprland/workspaces","memory", "cpu", "clock"],
     // Modules configuration
@@ -18,7 +18,7 @@
 		"all-outputs": true,
 		"format": "{icon}",
 		"on-click": "activate",
-	 	"persistent_workspaces": {
+	 	"persistent-workspaces": {
 	 		"1": [],
 	 		"2": [],
 	 		"3": [],

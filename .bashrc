@@ -12,7 +12,6 @@ alias config='/usr/bin/git --git-dir=/home/ca/dotfiles/ --work-tree=/home/ca'
 
 
 
-alias spss='/home/ca/spss/bin/statistics'
 
 alias doom='~/.emacs.d/bin/doom'
 
@@ -40,11 +39,11 @@ alias flap='flatpak update'
 
 alias clearclip='clipman clear --all'
 
-alias lolaus="'/games/canh/Linux-Pakte/Config Files/Bashscripts/lolfix_alt/lolfix2hyprctl.sh'"
-
 alias lolan="/home/ca/Bashscripts/lolfix.sh"
 
 alias ytmp3='yt-dlp -x --audio-format mp3'
+
+alias rwaybar='waybar & disown'
 
 #Cache leeren
 leer () {
@@ -80,7 +79,7 @@ alias .config='~/.config'
 
 alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --shuffle --volume=24'  
 
-alias mpvytnoshuffle='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --volume=24'  
+alias mpvytnomix='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --volume=24'  
 
 alias ufotoserver='sudo umount -l /fotoserver'
 
@@ -111,8 +110,6 @@ unmounten  (){
 
 
 alias udisk='unmounten'
-
-alias sddmr='systemctl restart sddm'
 
 #Automatisch in git repository pushen
 
@@ -300,3 +297,6 @@ alias snap='ueber'
 
 
 neofetch
+
+# Created by `pipx` on 2023-10-17 21:16:29
+export PATH="$PATH:/home/ca/.local/bin"
