@@ -251,9 +251,11 @@ ueber (){
 	einlesen
 	if [ "$confirm"  == "n" ]; then
 		autosnap
+		read -p "Google Takout erstellen" CARI1
 		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass, etc. und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 	else 
 		autosnap
+		read -p "Google Takout erstellen" CARI1
 		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass, etc. und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 		mkdir /run/media/ca/7FEF-CE8E/Email/$monad
 	fi
