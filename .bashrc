@@ -65,6 +65,7 @@ sysalles () {
 	    pp
 	    ja
 	    flap
+	    pipx upgrade-all
 	fi
 }
 alias fullupdate='sysalles'

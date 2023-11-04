@@ -56,7 +56,7 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
- (setq TeX-PDF-mode t)
+(setq TeX-global-PDF-mode t)
 
 (map! :leader
       :desc "Seite suchen in PDF"
