@@ -21,6 +21,11 @@
             <serie align="left" id="9" color="#000000"/>
             <axis align="right" enabled="0" unit="1078116352" ticks="4" penStyle="1" penWidth="0" penColor="#383c4a"/>
         </plot>
+        <plot name="Clock Speed" enabled="1" background="#9ea5a3">
+            <axis align="left" enabled="1" unit="0" ticks="4" penStyle="1" penWidth="0" penColor="#19fd00"/>
+            <serie align="left" id="0" color="#000000"/>
+            <axis align="right" enabled="0" unit="1079033856" ticks="4" penStyle="1" penWidth="0" penColor="#383c4a"/>
+        </plot>
     </Plots>
     <TopbarItems>
         <topbarItem type="0" primaryValueId="0" primaryColor="#d3dae3" secondaryValueIdEnabled="1" secondaryValueId="1" secondaryColor="#d3dae3" pieMaxValue="100"/>
