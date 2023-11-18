@@ -120,11 +120,11 @@ hubby (){
 	read -p "Wie viele Einträge sollen gelöscht werden? " zahlen
 	for ((c=1; c<=$zahlen; c++)) 
 	do
-		read -p "Zu löschender Git-Eintrag(k für keine): " eint
+		read -p "Zu löschender Git-Eintrag, path von File angeben(k für keine): " eint
 		if [ $eint == k ] ;then
 			exit
 		else
-			config rm -r --cached $eint
+			config rm -r --cached "$eint"
 		fi
 	done
 	config commit -m "löschen von $eint"
