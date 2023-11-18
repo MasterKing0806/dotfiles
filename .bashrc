@@ -289,6 +289,7 @@ ueber (){
 	echo "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass übertragen, etc. und Studium-Daten, Seagate-HDD ausgeworfen "
 	read -p "Linux-Pakte und Studium Ordner auf Fotoserver übertragen. " jkl
 	rsync -ruvt --exclude '/Config Files/Wichtige Config Files/WebCord' /games/canh/Linux-Pakte/ "/fotoserver/fotos/Canh PC/Linux-Pakte"
+	rsync -ruvt  /games/canh/Kontoauszug/ "/fotoserver/fotos/Canh PC/Kontoauszug"
 	rsync -ruvtn --progress --exclude={'*.mp4*','*.mp3*','*.zip*'} /games/canh/Studium/ "/fotoserver/fotos/Canh PC/Studium"
 	read -p "Sieht aus okay aus? Dann einfach weiter. " jkl1
 	rsync -ruvt --progress --exclude={'*.mp4*','*.mp3*','*.zip*'} /games/canh/Studium/ "/fotoserver/fotos/Canh PC/Studium"
