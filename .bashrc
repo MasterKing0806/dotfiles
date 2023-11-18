@@ -115,7 +115,6 @@ alias udisk='unmounten'
 #Automatisch in git repository pushen
 source ~/Bashscripts/confconf
 
-
 #Automatisch löschen von repository Einträgen
 hubby (){
 	read -p "Wie viele Einträge sollen gelöscht werden? " zahlen
