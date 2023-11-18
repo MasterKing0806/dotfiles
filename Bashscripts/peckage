@@ -1,0 +1,24 @@
+#Wenn der Monat nicht neu ist, soll "n" eingetippt werden. Dadurch wird vermieden, dass ein Ordner erstellt wird, welcher bereits existiert.
+#Zunächst einmal eingeben lassen, welchen Name der Monatsordner hat/haben soll und dann Datum der Erstellung der Paketlisten eingeben
+einlesen (){
+	read -p "Neuer Monat?(n für nein, ja egal was eintippen): " confirm
+	read -p "Monat für Ordner eingeben (jjjj-mm-Monat): " monad
+	read -p "Datum eingeben(tt.mm.jj): " tag
+}
+
+#peckage fragt ab, ob die drei Paketlisten -pacman, aur, flatpak- erstellt werden sollen, oder nicht. Damit wird vermieden, dass doppelte Listen erstellt werden.
+peckage() {
+	read -p "Neue Paketliste erstellen? (n für nein, sonst egal was; Achtung: Wenn länger keine Liste erstellt, checken, ob unter Linux-Pakte in interner SDD der Monatsordner vorhanden ist!) " juck
+	if [ "$juck" == "n" ];then
+		echo "Es wurden keine Paketelisten erstellt"
+	else
+		if [ "$confirm" != "n" ];then
+			mkdir /games/canh/Linux-Pakte/Paketliste/$monad
+		fi
+		mkdir /games/canh/Linux-Pakte/Paketliste/$monad/$tag
+		pacman -Qqen > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-pkglist.txt
+		pacman -Qqem > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-aurpkglist.txt
+		flatpak list > /games/canh/Linux-Pakte/Paketliste/$monad/$tag/$tag-flat.txt
+		echo "Paketlisten wurden erstellt "
+	fi
+}
