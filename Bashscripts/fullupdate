@@ -1,0 +1,11 @@
+#Komplettes Systemupdate über alle Packagemanager
+sysalles () {
+	read -p "Komplettes Systemupdate! Hast du alles gebackupped?(y für ja; Achtung bei Yay Git Packages CleanBuild) " VAR1
+	if [ "$VAR1" = "y" ]; then
+	    pp
+	    ja
+	    flap
+	    pipx upgrade-all
+	fi
+}
+alias fullupdate='sysalles'
