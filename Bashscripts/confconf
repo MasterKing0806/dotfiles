@@ -7,7 +7,6 @@ hubby2 (){
 	config add .config/alacritty
 	config add .config/sway
 	config add .config/fontconfig
-	config add .config/htop
 	config add .config/Kvantum
 	config add .config/mpv
 	config add .config/qt5ct
