@@ -1,0 +1,26 @@
+#Automatisch in git repository pushen
+
+hubby2 (){
+	read -p "Update Nachricht für commit: " updaten
+	config add .doom.d
+	config add .bashrc
+	config add .config/alacritty
+	config add .config/sway
+	config add .config/fontconfig
+	config add .config/htop
+	config add .config/Kvantum
+	config add .config/mpv
+	config add .config/qt5ct
+	config add .config/radeon-profile
+	config add .config/waybar
+	config add .config/environment.d
+	config add .config/BetterDiscord
+	config add .config/dunst
+	config add .config/hypr
+	config add .bash_profile
+	config add Bashscripts
+	config add .config/yay
+	config commit -m "$updaten"
+	config push
+}
+alias confconf='hubby2'
