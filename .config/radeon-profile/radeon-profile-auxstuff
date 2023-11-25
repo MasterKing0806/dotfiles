@@ -5,7 +5,7 @@
     <FanProfiles>
         <fanProfile name="default" hysteresis="0" sensorInstance="0">
             <step temperature="40" speed="0"/>
-            <step temperature="50" speed="10"/>
+            <step temperature="55" speed="0"/>
             <step temperature="60" speed="25"/>
             <step temperature="70" speed="32"/>
             <step temperature="80" speed="40"/>

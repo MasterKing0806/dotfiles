@@ -59,6 +59,9 @@ alias hyprc='vim ~/.config/hypr/hyprland.conf'
 
 alias shortcuts='echo "$(</home/ca/Bashscripts/bashfunctions.txt)"'
 
+#Disable Howdy Warnings
+export OPENCV_LOG_LEVEL=0
+export OPENCV_VIDEOIO_PRIORITY_INTEL_MFX=0
 
 #VDPAU (Video acceleration)
 export VDPAU_DRIVER=radeonsi

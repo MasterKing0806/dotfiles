@@ -131,7 +131,7 @@ focus output DP-1
 
 	bindsym Shift+Alt+d exec swaymsg "workspace 7;exec discord" 
 
-	bindsym Alt+k exec org.keepassxc.KeePassXC 
+	bindsym Alt+k exec keepassxc 
 
 #MPV YT in Alacritty im Hintergrund auf dritten Workspace des ersten Monitors öffnen
 
