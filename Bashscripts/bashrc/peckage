@@ -1,9 +1,18 @@
 #Wenn der Monat nicht neu ist, soll "n" eingetippt werden. Dadurch wird vermieden, dass ein Ordner erstellt wird, welcher bereits existiert.
 #Zunächst einmal eingeben lassen, welchen Name der Monatsordner hat/haben soll und dann Datum der Erstellung der Paketlisten eingeben
 einlesen (){
-	read -p "Neuer Monat?(n für nein, ja egal was eintippen): " confirm
-	read -p "Monat für Ordner eingeben (jjjj-mm-Monat): " monad
-	read -p "Datum eingeben(tt.mm.jj): " tag
+    	source /home/ca/Bashscripts/bashrc/neuermonat
+    	monad=$(date +"%Y-%m-%B")
+	confirm="n"
+	if [ "$monad" == "$MONAT" ]; then
+		read -p "Dieser Monat ist gleich " jjk
+	else
+		read -p "Dieser Monat ist neu " jjk2
+		confirm="y"
+	fi
+	read -p "Dieser Monat für Ordner: $monad " usu
+    	tag=$(date +%d.%m.%y)
+	read -p "Datum von heute: $tag " yass
 }
 
 #peckage fragt ab, ob die drei Paketlisten -pacman, aur, flatpak- erstellt werden sollen, oder nicht. Damit wird vermieden, dass doppelte Listen erstellt werden.

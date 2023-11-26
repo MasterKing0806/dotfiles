@@ -1,0 +1,4 @@
+cd "/games/canh/Linux-Pakte/Paketliste"
+MONAT=$(ls -t | head -n1)
+echo "Das ist der letzte Monat: $MONAT"
+cd ~-

@@ -51,7 +51,7 @@ alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-play
 
 alias mpvytnomix='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --volume=24'  
 
-alias ufotoserver='sudo umount -l /fotoserver'
+alias ufotoserver='/home/ca/Bashscripts/ufotoserver.sh'
 
 #alias mov-cli='/home/ca/.local/bin/mov-cli'
 
@@ -59,9 +59,9 @@ alias hyprc='vim ~/.config/hypr/hyprland.conf'
 
 alias shortcuts='echo "$(</home/ca/Bashscripts/bashfunctions.txt)"'
 
-#Disable Howdy Warnings
-export OPENCV_LOG_LEVEL=0
-export OPENCV_VIDEOIO_PRIORITY_INTEL_MFX=0
+alias bashpr='vim ~/.bash_profile'
+
+
 
 #VDPAU (Video acceleration)
 export VDPAU_DRIVER=radeonsi
@@ -70,29 +70,29 @@ export VDPAU_DRIVER=radeonsi
 #Funktionen
 
 #Cache leeren
-source /home/ca/Bashscripts/cacheleer
+source /home/ca/Bashscripts/bashrc/cacheleer
 
 #Komplettes Systemupdate über alle Packagemanager
-source /home/ca/Bashscripts/fullupdate
+source /home/ca/Bashscripts/bashrc/fullupdate
 
 #Externen Backup-HDD entfernen
-source /home/ca/Bashscripts/udisk
+source /home/ca/Bashscripts/bashrc/udisk
 
 #Automatisch Dotfiles in git repository pushen
-source ~/Bashscripts/confconf
+source ~/Bashscripts/bashrc/confconf
 
 #Automatisch Dotfiles löschen von repository Einträgen
-source /home/ca/Bashscripts/confrm
+source /home/ca/Bashscripts/bashrc/confrm
 
 #Commands für Backuppen
 #Löschen von Snapshots vereinfachen
-source /home/ca/Bashscripts/dtime
+source /home/ca/Bashscripts/bashrc/dtime
 
 #Wichtige config files separat speichern
-source /home/ca/Bashscripts/kon
+source /home/ca/Bashscripts/bashrc/kon
 
 #Paketlisten erstellen
-source /home/ca/Bashscripts/peckage
+source /home/ca/Bashscripts/bashrc/peckage
 
 #autosnap soll peckage zusammenführen mit anderen Prozessen.
 #doom upgrade updatet Doom Emacs. 
@@ -100,11 +100,10 @@ source /home/ca/Bashscripts/peckage
 #confconf added, commited und pushed alle relevaten config files in Github.
 #Ausserdem wird ein timeshift snapshot auf der externen Backup-HDD erstellt und jene Festplatte anschließend sicher ausgeworfen.
 
-source /home/ca/Bashscripts/autosnap
+source /home/ca/Bashscripts/bashrc/autosnap
 
 #Alles zusammenführen in eine übergreifende Funktion
-source /home/ca/Bashscripts/snap
-
+source /home/ca/Bashscripts/bashrc/snap
 
 
 

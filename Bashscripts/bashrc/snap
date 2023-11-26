@@ -5,11 +5,15 @@ ueber (){
 	einlesen
 	if [ "$confirm"  == "n" ]; then
 		autosnap
+        /home/ca/Bashscripts/bashrc/takeoutff.sh
 		read -p "Google Takout erstellen" CARI1
+        /home/ca/Bashscripts/bashrc/thunderbirdff.sh
 		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass, etc. und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 	else
 		autosnap
+        /home/ca/Bashscripts/bashrc/takeoutff.sh
 		read -p "Google Takout erstellen" CARI1
+        /home/ca/Bashscripts/bashrc/thunderbirdff.sh
 		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass, etc. und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 		mkdir /run/media/ca/7FEF-CE8E/Email/$monad
 	fi
@@ -31,6 +35,7 @@ ueber (){
 	rsync -ruvt  /games/canh/Lol/ /run/media/ca/7FEF-CE8E/Lol
 	rsync -ruvt  /kingston/Minecraft-alles/ /run/media/ca/7FEF-CE8E/Minecraft
 	read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper und Keepass, etc. übertragen, fortfahren mit Studium-Daten (Vorsicht: Möglicher Datenverlust). Bitte erste alle Studium-Daten mit Learnweb vergleichen. " VARI6
+    /home/ca/Bashscripts/bashrc/gdriveff.sh
 	read -p "Über Cloud Daten zwischen Ipad und PC austauschen sowie Daten auf Ipad mit PC manuell synchronisieren " luxky
 	rsync -ruvtn /games/canh/Studium/ /run/media/ca/7FEF-CE8E/Studium
 	#Dryrun der Kopie von Daten des Studiums, um sicher zu gehen

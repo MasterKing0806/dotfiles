@@ -1,7 +1,7 @@
 #Automatisch in git repository pushen
 
 hubby2 (){
-	read -p "Update Nachricht für commit: " updaten
+	read -p "Update Nachricht für commit: $tag " update 
 	config add .doom.d
 	config add .bashrc
 	config add .config/alacritty
@@ -19,7 +19,7 @@ hubby2 (){
 	config add .bash_profile
 	config add Bashscripts
 	config add .config/yay
-	config commit -m "$updaten"
+	config commit -m "$tag"
 	config push
 }
 alias confconf='hubby2'

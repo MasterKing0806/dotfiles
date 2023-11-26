@@ -3,8 +3,8 @@ leer () {
 	read -p "Cache leeren? (ja y, sonst egal) " LOO
 	if [ "$LOO" = "y" ];then
 		flatpak uninstall --unused
-		sudo pacman -Rsn $(pacman -Qqtd)
-		yay -Sc
+		sudo pacman --noconfirm -Rsn $(pacman -Qqtd)
+		yay --noconfirm -Sc
 	fi
 }
 
