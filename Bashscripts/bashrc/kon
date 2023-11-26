@@ -9,6 +9,6 @@ kon() {
 	rsync -ruvt /home/ca/.config/hypr "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 	rsync -ruvt /kingston/lutris/league-of-legends/lolfix.sh /home/ca/Bashscripts/lolfix.sh
 	rsync -ruvt /home/ca/Bashscripts/ "/games/canh/Linux-Pakte/Config Files/Bashscripts"
-	rsync -ruvt "/home/ca/.config/lutris/games/league-of-legends-standard-euw-1691273264.yml" "/games/canh/Lol/lol_yml"
+	rsync -ruvt "/home/ca/.config/lutris/games/league-of-legends-standard-euw-1693250658.yml" "/games/canh/Lol/lol_yml"
 	rsync -ruvt /home/ca/.config/yay "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 }
