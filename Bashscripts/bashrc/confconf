@@ -1,7 +1,8 @@
 #Automatisch in git repository pushen
+tag=$(date +%d.%m.%y)
 
 hubby2 (){
-	read -p "Update Nachricht für commit: $tag " update 
+	echo "Update Nachricht für commit: $tag "
 	config add .doom.d
 	config add .bashrc
 	config add .config/alacritty
