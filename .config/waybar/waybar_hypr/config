@@ -11,7 +11,7 @@
     "position": "bottom",
     "height": 53,
     "layer": "top",
-    "modules-center": ["hyprland/workspaces","memory", "cpu", "clock"],
+    "modules-center": ["hyprland/workspaces","memory","cpu","tray","clock"],
     // Modules configuration
 	"hyprland/workspaces": {
 		"disable-scroll": true,
@@ -47,14 +47,6 @@
         	"format": "{:%H:%M:%S %e.%b.%Y}",
         	"tooltip": false,
     },
-
-	"network": {
-		 "interval": 5,
-        "format-wifi": "  {essid} ({signalStrength}%)", // Icon: wifi
-        "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
-        "format-disconnected": "⚠  Disconnected",
-        "tooltip-format": "{ifname}: {ipaddr}"
-	},
 	  "cpu": {
         "interval": 5,
         "format": "  {usage}% ({load})", // Icon: microchip
@@ -71,5 +63,9 @@
             "critical": 90
         }
     },
+    "tray": {
+        "icon-size": 17,
+        "spacing": 9
+        },
     }
 }

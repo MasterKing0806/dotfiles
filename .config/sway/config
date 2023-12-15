@@ -48,8 +48,8 @@ output DP-1  bg /games/canh/Wallpapers/fmaed.jpg fill
 #
 # Example configuration:
 # 
-output DP-1 position 0 1440
-output DP-3 position 0 0 
+output DP-3 position 0 -1440
+output DP-1 position 0 0 
 output DP-1  adaptive_sync on
 focus output DP-1
 #
@@ -380,7 +380,7 @@ exec "/usr/lib/polkit-kde-authentication-agent-1"
 exec_always xrandr --output $(xrandr | grep -m 1 XWAYLAND | awk '{print $1;}') --primary
 
 #Radeon-Profile
-exec radeon-profile
+#exec radeon-profile
 
 
 
