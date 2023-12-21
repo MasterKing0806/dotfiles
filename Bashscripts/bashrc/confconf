@@ -11,7 +11,6 @@ hubby2 (){
 	config add .config/Kvantum
 	config add .config/mpv
 	config add .config/qt5ct
-	config add .config/radeon-profile
 	config add .config/waybar
 	config add .config/environment.d
 	config add .config/BetterDiscord
