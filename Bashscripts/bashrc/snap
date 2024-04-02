@@ -37,7 +37,7 @@ ueber (){
 	read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper und Keepass, etc. übertragen, fortfahren mit Studium-Daten (Vorsicht: Möglicher Datenverlust). Bitte erste alle Studium-Daten mit Learnweb vergleichen. " VARI6
 	read -p "Über Cloud Daten zwischen Ipad und PC austauschen sowie Daten auf Ipad mit PC manuell synchronisieren " luxky
     rm -r /fotoserver/fotos/Canh_PC/Studium/Goodnotes/@eaDir
-    mv /fotoserver/fotos/Canh_PC/Studium/Goodnotes/* /games/canh/Studium/Goodnotes
+    mv /fotoserver/fotos/Canh_PC/Studium/Goodnotes/* /games/canh/Studium/Goodnotes 
     echo "Goodnotes übertragen auf PC"
 	rsync -ruvtn /games/canh/Studium/ /run/media/ca/7FEF-CE8E/Studium
 	#Dryrun der Kopie von Daten des Studiums, um sicher zu gehen
