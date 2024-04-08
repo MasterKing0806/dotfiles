@@ -1,0 +1,8 @@
+
+set selection-clipboard clipboard
+
+map j navigate next
+map k navigate previous 
+map W adjust_window width
+map H adjust_window best-fit
+unmap q

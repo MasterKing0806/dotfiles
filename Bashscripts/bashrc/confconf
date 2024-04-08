@@ -19,6 +19,7 @@ hubby2 (){
 	config add .bash_profile
 	config add Bashscripts
 	config add .config/yay
+    config add .config/zathura
 	config commit -m "$tag"
 	config push
 }
