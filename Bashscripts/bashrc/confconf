@@ -20,6 +20,7 @@ hubby2 (){
 	config add Bashscripts
 	config add .config/yay
     config add .config/zathura
+    config add .config/fastfetch
 	config commit -m "$tag"
 	config push
 }
