@@ -49,8 +49,8 @@ ueber (){
 	#Sychronisierung von Studium Ordner mit Seagate-HDD
 	rsync -ruvt --progress  /games/canh/Studium/ /run/media/ca/7FEF-CE8E/Studium
 	read -p "Externe Seagate-HDD auswerfen?(am besten kurz warten) " VARI10
-	sudo udisksctl unmount -b /dev/sdc1
-	sudo udisksctl power-off -b /dev/sdc1
+	sudo udisksctl unmount -b /dev/sdd1
+	sudo udisksctl power-off -b /dev/sdd1
 	echo "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass übertragen, etc. und Studium-Daten, Seagate-HDD ausgeworfen "
 	read -p "Linux-Pakte und Studium Ordner auf Fotoserver übertragen. " jkl
 	rsync -ruvt /games/canh/Linux-Pakte/ "/fotoserver/fotos/Canh_PC/Linux-Pakte"
