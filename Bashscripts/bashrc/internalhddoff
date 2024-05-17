@@ -1,2 +1,0 @@
- 
-sudo udisksctl power-off -b /dev/sdc
