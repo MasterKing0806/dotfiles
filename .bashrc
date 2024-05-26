@@ -61,6 +61,7 @@ alias shortcuts='echo "$(</home/ca/Bashscripts/bashfunctions.txt)"'
 
 alias bashpr='vim ~/.bash_profile'
 
+alias hddoff='/home/ca/Bashscripts/bashrc/internalhddoff.sh'
 
 
 #VDPAU (Video acceleration)

@@ -11,8 +11,8 @@ hubby2 (){
 	config add .config/Kvantum
 	config add .config/mpv
 	config add .config/qt5ct
+    config add .config/qt6ct
 	config add .config/waybar
-	config add .config/environment.d
 	config add .config/BetterDiscord
 	config add .config/dunst
 	config add .config/hypr
@@ -21,6 +21,7 @@ hubby2 (){
 	config add .config/yay
     config add .config/zathura
     config add .config/fastfetch
+    config add .config/corectrl
 	config commit -m "$tag"
 	config push
 }
