@@ -11,4 +11,13 @@ kon() {
 	rsync -ruvt /home/ca/.config/yay "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
     rsync -ruvt /home/ca/.config/zathura  "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
     rsync -ruvt /home/ca/.config/fastfetch "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/fontconfig "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/Kvantum "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/mpv "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/qt5ct "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/qt6ct "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/BetterDiscord "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/dunst "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/corectrl "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/yay "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 }
