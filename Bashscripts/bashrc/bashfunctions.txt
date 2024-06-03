@@ -6,3 +6,4 @@ kon: wichtige Config Files auf Crucial SSD schieben
 peckage: Paketenlisten erstellen
 snap: Backup + Fullupdate
 udisk: unmount a backup-hdd
+internalhddoff: turns off internal mounted hdd so it doesn't annoy me

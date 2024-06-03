@@ -63,6 +63,7 @@ alias bashpr='vim ~/.bash_profile'
 
 alias hddoff='/home/ca/Bashscripts/bashrc/internalhddoff.sh'
 
+alias sus='/home/ca/Bashscripts/bashrc/suspend.sh'
 
 #VDPAU (Video acceleration)
 export VDPAU_DRIVER=radeonsi

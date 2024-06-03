@@ -91,3 +91,4 @@
 (map! :leader
       :desc "enable line mode "
       "k" #'pdf-view-previous-page)
+
