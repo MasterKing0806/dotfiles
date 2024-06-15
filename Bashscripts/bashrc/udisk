@@ -1,7 +1,7 @@
 #Externen Backup-HDD entfernen
 unmounten  (){
-		sudo udisksctl unmount -b /dev/sde1
-		sudo udisksctl power-off -b /dev/sde1
+		sudo udisksctl unmount -b /dev/sdd1
+		sudo udisksctl power-off -b /dev/sdd1
 }
 
 
