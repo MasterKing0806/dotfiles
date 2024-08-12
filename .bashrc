@@ -63,6 +63,9 @@ alias bashpr='vim ~/.bash_profile'
 
 alias sus='/home/ca/Bashscripts/bashrc/suspend.sh'
 
+alias bios='systemctl reboot --firmware-setup'
+
+
 #VDPAU (Video acceleration)
 export VDPAU_DRIVER=radeonsi
 
