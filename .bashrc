@@ -33,8 +33,6 @@ alias flap='flatpak update'
 
 alias clearclip='clipman clear --all'
 
-alias lolan="/home/ca/Bashscripts/lolfix.sh"
-
 alias ytmp3='yt-dlp -x --audio-format mp3'
 
 alias rwaybar='waybar & disown'
@@ -45,25 +43,21 @@ alias swayc='vim ~/.config/sway/config'
 
 alias shut='shutdown now'
 
-alias .config='~/.config'
-
 alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --shuffle --volume=24'  
 
 alias mpvytnomix='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --volume=24'  
 
 alias ufotoserver='/home/ca/Bashscripts/ufotoserver.sh'
 
-#alias mov-cli='/home/ca/.local/bin/mov-cli'
-
 alias hyprc='vim ~/.config/hypr/hyprland.conf'
-
-alias shortcuts='echo "$(</home/ca/Bashscripts/bashfunctions.txt)"'
 
 alias bashpr='vim ~/.bash_profile'
 
 alias sus='/home/ca/Bashscripts/bashrc/suspend.sh'
 
 alias bios='systemctl reboot --firmware-setup'
+
+alias msianaus='hyprctl dispatch dpms toggle DP-3'
 
 
 #VDPAU (Video acceleration)
