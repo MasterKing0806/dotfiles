@@ -59,6 +59,8 @@ alias bios='systemctl reboot --firmware-setup'
 
 alias msianaus='hyprctl dispatch dpms toggle DP-3'
 
+alias lganaus='hyprctl dispatch dpms toggle DP-1'
+
 alias heimat='/home/ca/Bashscripts/fotoserverzuhause.sh'
 
 
