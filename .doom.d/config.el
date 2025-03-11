@@ -92,4 +92,3 @@
       :desc "enable line mode "
       "k" #'pdf-view-previous-page)
 
-(setq major-mode-remap-alist major-mode-remap-defaults)
