@@ -57,7 +57,7 @@ alias sus='/home/ca/Bashscripts/bashrc/suspend.sh'
 
 alias bios='systemctl reboot --firmware-setup'
 
-alias msianaus='hyprctl dispatch dpms toggle DP-3'
+alias msianaus='hyprctl dispatch dpms toggle DP-2'
 
 alias lganaus='hyprctl dispatch dpms toggle DP-1'
 
