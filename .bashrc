@@ -63,6 +63,8 @@ alias lganaus='hyprctl dispatch dpms toggle DP-1'
 
 alias heimat='/home/ca/Bashscripts/fotoserverzuhause.sh'
 
+alias sshlap='ssh caca@192.168.90.41'
+
 
 #VDPAU (Video acceleration)
 export VDPAU_DRIVER=radeonsi
@@ -109,6 +111,9 @@ source /home/ca/Bashscripts/bashrc/snap
 
 #neofetch
 fastfetch  
+
+#Starship
+eval "$(starship init bash)"
 
 # Created by `pipx` on 2023-10-17 21:16:29
 export PATH="$PATH:/home/ca/.local/bin"
