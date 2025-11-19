@@ -115,5 +115,10 @@ fastfetch
 #Starship
 eval "$(starship init bash)"
 
+# Source - https://superuser.com/a
+# Posted by ingkebil, modified by community. See post 'Timeline' for change history
+# Retrieved 2025-11-19, License - CC BY-SA 3.0
+
+
 # Created by `pipx` on 2023-10-17 21:16:29
 export PATH="$PATH:/home/ca/.local/bin"
