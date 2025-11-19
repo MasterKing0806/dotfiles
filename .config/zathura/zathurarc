@@ -8,3 +8,5 @@ map H adjust_window best-fit
 unmap q
 unmap d
 
+include zathura-nord
+
