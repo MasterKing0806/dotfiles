@@ -22,6 +22,7 @@ hubby2 (){
 	config add .config/yay
     	config add .config/zathura
     	config add .config/fastfetch
+    	config add .icons
 	config commit -m "$tag"
 	config push
 }

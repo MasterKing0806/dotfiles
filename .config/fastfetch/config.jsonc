@@ -65,6 +65,14 @@
             "type": "terminal",
             "key": "  "
         },
+	   {
+            "type": "theme",
+            "key": "  󰉼"
+        },
+        {
+            "type": "icons",
+            "key": "  󰀻"
+        },
         {
             "type": "font",
             "key": "  "

@@ -20,4 +20,5 @@ kon() {
     rsync -ruvt /home/ca/.config/dunst "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
     rsync -ruvt /home/ca/.config/yay "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
     rsync -ruvt /home/ca/.config/wofi "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.icons "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 }
