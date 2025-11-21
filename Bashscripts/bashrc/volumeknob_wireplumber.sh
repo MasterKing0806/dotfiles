@@ -1,0 +1,19 @@
+ #!/bin/bash
+
+
+ SPOTIFY_INDEX=$(
+wpctl status | awk '
+/^[[:space:]]*[0-9]+\. spotify[[:space:]]+\[.*pid:[0-9]+\]/ {
+    match($0, /pid:([0-9]+)/, a)
+    print a[1]
+}'
+)
+
+FEISHIN_INDEX=$(pgrep -f 'mpv --idle')
+
+if pgrep -f "/usr/bin/feishin" > /dev/null; then
+    echo "$FEISHIN_INDEX"
+elif pgrep -f /opt/spotify > /dev/null;then
+    echo "$SPOTIFY_INDEX"
+fi
+ 
