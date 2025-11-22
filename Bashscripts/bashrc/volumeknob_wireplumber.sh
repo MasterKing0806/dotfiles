@@ -11,9 +11,13 @@ wpctl status | awk '
 
 FEISHIN_INDEX=$(pgrep -f 'mpv --idle')
 
+YTMPV=$(pgrep -f 'mpv --vo=null')
+
 if pgrep -f "/usr/bin/feishin" > /dev/null; then
     echo "$FEISHIN_INDEX"
 elif pgrep -f /opt/spotify > /dev/null;then
     echo "$SPOTIFY_INDEX"
+elif pgrep -f 'alacritty --class mpvy' > /dev/null;then
+	echo "$YTMPV"
 fi
  

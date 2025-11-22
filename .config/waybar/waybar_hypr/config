@@ -9,7 +9,7 @@
 {
     "output": "DP-1",
     "position": "bottom",
-    "height": 53,
+    "height": 56,
     "layer": "top",
     "modules-center": ["hyprland/workspaces","memory","cpu","tray","clock"],
     // Modules configuration
@@ -87,6 +87,8 @@
     "tray": {
         "icon-size": 17,
         "spacing": 9
-        },
+        }
     }
+
+
 }
