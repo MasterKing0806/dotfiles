@@ -44,7 +44,10 @@ ueber (){
 	#Dryrun der Kopie von Daten des Studiums, um sicher zu gehen
 	read -p "Check: Sieht okay aus? Dann einfach fortfahren " VARI7
 	#Sychronisierung von Studium Ordner mit Seagate-HDD
-	rsync -ruvt --progress  /games/canh/Studium/ /run/media/ca/7FEF-CE8E/Studium
+	rsync -rhuvt --stats --progress  /games/canh/Studium/ /run/media/ca/7FEF-CE8E/Studium
+    #Synchronisierung von Server Dateien und Seagte-HDD
+    read -p "SSH (Musik-)Dateien auf Seagate-HDD (Check if Server is even on)" VAR67
+    rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/music/ /run/media/ca/7FEF-CE8E/Musik   
 	read -p "Externe Seagate-HDD auswerfen?(am besten kurz warten) " VARI10
 	sudo udisksctl unmount -b /dev/sdc1
 	sudo udisksctl power-off -b /dev/sdc1
@@ -58,7 +61,7 @@ ueber (){
 	rsync -ruvt  /games/canh/Wohnung/ "/fotoserver/fotos/Canh_PC/Wohnung"
 	rsync -ruvtn --progress --exclude={'*.mp4*','*.mp3*','*.zip*'} /games/canh/Studium/ "/fotoserver/fotos/Canh_PC/Studium"
 	read -p "Sieht aus okay aus? Dann einfach weiter. " jkl1
-	rsync -ruvt --progress --exclude={'*.mp4*','*.mp3*','*.zip*'} /games/canh/Studium/ "/fotoserver/fotos/Canh_PC/Studium"
+	rsync -rhuvt --stats --progress --exclude={'*.mp4*','*.mp3*','*.zip*'} /games/canh/Studium/ "/fotoserver/fotos/Canh_PC/Studium"
     read -p "VPN ausmachen und Fotoserver unmounten. " kklll12
     heimat
     vpn
