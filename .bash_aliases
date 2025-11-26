@@ -58,8 +58,6 @@ alias vpn='systemctl restart NetworkManager'
 
 alias ytmp3='yt-dlp -x --audio-format mp3'
 
-alias zuhause='zuhausesnap'
-
 
 
 
