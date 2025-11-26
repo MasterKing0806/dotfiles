@@ -1,4 +1,4 @@
-zuhausesnap(){
+zuhausesnap () {
     read -p "VPN Client aktivieren und mit Fotoserver zu verbinden. " jklll
     heimat
     echo "VPN Zuhause ist an und Fotoserver mounted"
@@ -17,6 +17,4 @@ zuhausesnap(){
     heimat
     vpn
     echo "VPN ist aus und Fotoserver unmountend."
-
-
 }

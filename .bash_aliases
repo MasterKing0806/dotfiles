@@ -6,6 +6,8 @@ alias bashrc='vim ~/.bashrc'
 
 alias bios='systemctl reboot --firmware-setup'
 
+alias calias='vim ~/.bash_aliases'
+
 alias config='/usr/bin/git --git-dir=/home/ca/dotfiles/ --work-tree=/home/ca'
 
 alias cum='cmatrix'
@@ -56,6 +58,7 @@ alias vpn='systemctl restart NetworkManager'
 
 alias ytmp3='yt-dlp -x --audio-format mp3'
 
+alias zuhause='zuhausesnap'
 
 
 
