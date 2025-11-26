@@ -2,7 +2,7 @@
 #Falls confirm gleich n ist, also kein neuer Monat ist, dann läuft autosnap mit den beiden Prompts.
 #Andernfalls, geschieht das gleiche, nur dass zusätzlich auf der externen Seagate-HDD ein Email-Ordner erstellt wird mit der neuen Monatsbezeichnung.
 ueber (){
-	#einlesen
+	einlesen
 	if [ "$confirm"  == "n" ]; then
 		autosnap
         /home/ca/Bashscripts/bashrc/takeoutff.sh
@@ -48,6 +48,10 @@ ueber (){
     #Synchronisierung von Server Dateien und Seagte-HDD
     read -p "SSH (Musik-)Dateien auf Seagate-HDD (Check if Server is even on)" VAR67
     rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/music/ /run/media/ca/7FEF-CE8E/Musik   
+    rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/compose.yaml "/games/canh/Linux-Pakte/Linux-Pakte/Config Files/Docker"
+    rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/compose.yaml "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker"
+    rsync -rhuvtP --stats --exclude="data/cache/" caca@192.168.90.41:/home/caca/navidrome/data "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker/navidrome"
+    rsync -rhuvtP --stats --exclude="data/cache/" caca@192.168.90.41:/home/caca/navidrome/data "/games/canh/Linux-Pakte/Config Files/Docker/navidrome"
 	read -p "Externe Seagate-HDD auswerfen?(am besten kurz warten) " VARI10
 	sudo udisksctl unmount -b /dev/sdc1
 	sudo udisksctl power-off -b /dev/sdc1

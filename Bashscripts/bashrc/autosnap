@@ -1,6 +1,6 @@
 #autosnap soll peckage zusammenführen mit anderen Prozessen.
 #doom upgrade updatet Doom Emacs.
-#konf, config files zu separat zu speichern
+#kon, config files zu separat zu speichern
 #confconf added, commited und pushed alle relevaten config files in Github.
 #Ausserdem wird ein timeshift snapshot auf der externen Backup-HDD erstellt und jene Festplatte anschließend sicher ausgeworfen.
 autosnap (){
