@@ -2,7 +2,7 @@
 #Falls confirm gleich n ist, also kein neuer Monat ist, dann läuft autosnap mit den beiden Prompts.
 #Andernfalls, geschieht das gleiche, nur dass zusätzlich auf der externen Seagate-HDD ein Email-Ordner erstellt wird mit der neuen Monatsbezeichnung.
 ueber (){
-	einlesen
+	#einlesen
 	if [ "$confirm"  == "n" ]; then
 		autosnap
         /home/ca/Bashscripts/bashrc/takeoutff.sh
