@@ -1,4 +1,6 @@
 #Funktionen
+#Hier alle Skripte aus dem ~/Bashscripts/bashrc mit source einfügen, da sonst die Funktionen nicht erkannt werden können
+
 
 #autosnap soll peckage zusammenführen mit anderen Prozessen.
 #doom upgrade updatet Doom Emacs. 
@@ -26,14 +28,20 @@ source /home/ca/Bashscripts/bashrc/fullupdate
 #Wichtige config files separat speichern
 source /home/ca/Bashscripts/bashrc/kon
 
+#Wichtige Files backuppen
+source /home/ca/Bashscripts/bashrc/mediasnap
+
+#Neuer Monat
+source /home/ca/Bashscripts/bashrc/neuermonat
+
 #Paketlisten erstellen
 source /home/ca/Bashscripts/bashrc/peckage
 
-#ssh Backup
-source /home/ca/Bashscripts/bashrc/ssh_backup 
-
 #Alles zusammenführen in eine übergreifende Funktion
 source /home/ca/Bashscripts/bashrc/snap
+
+#ssh Backup
+source /home/ca/Bashscripts/bashrc/ssh_backup 
 
 #Externen Backup-HDD entfernen
 source /home/ca/Bashscripts/bashrc/udisk
