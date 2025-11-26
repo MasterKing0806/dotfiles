@@ -1,24 +1,27 @@
 #Wichtige config files separat speichern
 kon() {
+    #Bashfiles
+	rsync -ruvt /home/ca/.bash_aliases "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+	rsync -ruvt /home/ca/.bash_functions "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 	rsync -ruvt /home/ca/.bashrc "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 	rsync -ruvt /home/ca/.bash_profile "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
-	rsync -ruvt /home/ca/.config/sway "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
-	rsync -ruvt /home/ca/.config/waybar "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
-	rsync -ruvt /home/ca/.config/alacritty "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
-	rsync -ruvt /home/ca/.doom.d "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
-	rsync -ruvt /home/ca/.config/hypr "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 	rsync -ruvt /home/ca/Bashscripts/ "/games/canh/Linux-Pakte/Config Files/Bashscripts"
-	rsync -ruvt /home/ca/.config/yay "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
-    rsync -ruvt /home/ca/.config/zathura  "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
-    rsync -ruvt /home/ca/.config/fastfetch "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
-    rsync -ruvt /home/ca/.config/fontconfig "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
-    rsync -ruvt /home/ca/.config/Kvantum "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
-    rsync -ruvt /home/ca/.config/mpv "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
-    rsync -ruvt /home/ca/.config/qt5ct "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
-    rsync -ruvt /home/ca/.config/qt6ct "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+
+    #.config Files
+	rsync -ruvt /home/ca/.config/alacritty "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
     rsync -ruvt /home/ca/.config/BetterDiscord "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
     rsync -ruvt /home/ca/.config/dunst "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
-    rsync -ruvt /home/ca/.config/yay "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/fastfetch "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/fontconfig "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+	rsync -ruvt /home/ca/.config/hypr "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/Kvantum "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/mpv "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+	rsync -ruvt /home/ca/.config/sway "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+	rsync -ruvt /home/ca/.config/waybar "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
     rsync -ruvt /home/ca/.config/wofi "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.config/zathura  "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+
+    #Others
+	rsync -ruvt /home/ca/.doom.d "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
     rsync -ruvt /home/ca/.icons "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 }

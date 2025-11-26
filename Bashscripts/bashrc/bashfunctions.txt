@@ -2,8 +2,9 @@ cacheleer: leert den Cache von den Package Managern
 confconf: Dotfiles pushen
 dtime: delete Timeshift Snapshot
 fullupdate
+internalhddoff: turns off internal mounted hdd so it doesn't annoy me
 kon: wichtige Config Files auf Crucial SSD schieben
 peckage: Paketenlisten erstellen
 snap: Backup + Fullupdate
+ssh_backup: backup für ssh dateien
 udisk: unmount a backup-hdd
-internalhddoff: turns off internal mounted hdd so it doesn't annoy me

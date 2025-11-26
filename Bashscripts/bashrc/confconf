@@ -3,24 +3,30 @@ tag=$(date +%d.%m.%y)
 
 hubby2 (){
 	echo "Update Nachricht für commit: $tag "
-	config add .doom.d
+	config add .bash_aliases
+	config add .bash_functions
 	config add .bashrc
+	config add .bash_profile
+	config add Bashscripts
+
+    #.config files
 	config add .config/alacritty
-	config add .config/sway
-	config add .config/fontconfig
-	config add .config/Kvantum
-	config add .config/mpv
-	config add .config/waybar
 	config add .config/BetterDiscord
 	config add .config/dunst
+   	config add .config/fastfetch
+	config add .config/fontconfig
 	config add .config/hypr
-	config add .bash_profile
+	config add .config/Kvantum
+	config add .config/mpv
+	config add .config/sway
+	config add .config/waybar
 	config add .config/wofi
-	config add Bashscripts
-	config add .config/yay
-    	config add .config/zathura
-    	config add .config/fastfetch
-    	config add .icons
+   	config add .config/zathura
+
+    #Others
+	config add .doom.d
+    config add .icons
+
 	config commit -m "$tag"
 	config push
 }
