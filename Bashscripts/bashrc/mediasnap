@@ -1,0 +1,20 @@
+mediasnap(){
+    #/games
+	rsync -ruvt  /games/canh/Beleg/ /run/media/ca/7FEF-CE8E/Beleg
+	rsync -ruvt  /games/canh/Filme-Serien/ /run/media/ca/7FEF-CE8E/Filme-Serien
+	rsync -ruvt  "/games/canh/Fotos Galaxy s9/" "/run/media/ca/7FEF-CE8E/Fotos Galaxy s9"
+	rsync -ruvt  /games/canh/KeePass.kdbx /run/media/ca/7FEF-CE8E/Keepass
+	rsync -ruvt  /games/canh/Kontoauszug/ /run/media/ca/7FEF-CE8E/Kontoauszug
+	rsync -ruvt  /games/canh/Linux-Pakte/ /run/media/ca/7FEF-CE8E/Linux-Pakte
+	rsync -ruvt  /games/canh/Lol/ /run/media/ca/7FEF-CE8E/Lol
+	rsync -ruvt  /games/canh/Musik/ /run/media/ca/7FEF-CE8E/Musik
+	rsync -ruvt  /games/canh/Schule/ /run/media/ca/7FEF-CE8E/Schule
+	rsync -ruvt  /games/canh/screenshots/ /run/media/ca/7FEF-CE8E/screenshots
+	rsync -ruvt  /games/canh/Wallpapers/ /run/media/ca/7FEF-CE8E/Wallpapers
+    rsync -ruvt  /games/canh/Wohnung/ /run/media/ca/7FEF-CE8E/Wohnung
+	rsync -ruvt  /games/canh/Word-Dokumente/ /run/media/ca/7FEF-CE8E/Word-Dokumente
+
+    #/kingston
+	rsync -ruvt  /kingston/Minecraft-alles/ /run/media/ca/7FEF-CE8E/Minecraft
+
+}

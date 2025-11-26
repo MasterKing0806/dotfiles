@@ -1,0 +1,22 @@
+zuhausesnap(){
+    read -p "VPN Client aktivieren und mit Fotoserver zu verbinden. " jklll
+    heimat
+    echo "VPN Zuhause ist an und Fotoserver mounted"
+	echo "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass übertragen, etc. und Studium-Daten, Seagate-HDD ausgeworfen "
+	read -p "Linux-Pakte und Studium Ordner auf Fotoserver übertragen. " jkl
+
+	rsync -ruvt /games/canh/Kontoauszug/ "/fotoserver/fotos/Canh_PC/Kontoauszug"
+	rsync -ruvt /games/canh/Linux-Pakte/ "/fotoserver/fotos/Canh_PC/Linux-Pakte"
+	rsync -ruvt /games/canh/Wohnung/ "/fotoserver/fotos/Canh_PC/Wohnung"
+
+	rsync -ruvtn --progress --exclude={'*.mp4*','*.mp3*','*.zip*'} /games/canh/Studium/ "/fotoserver/fotos/Canh_PC/Studium"
+	read -p "Sieht aus okay aus? Dann einfach weiter. " jkl1
+	rsync -rhuvt --stats --progress --exclude={'*.mp4*','*.mp3*','*.zip*'} /games/canh/Studium/ "/fotoserver/fotos/Canh_PC/Studium"
+
+    read -p "VPN ausmachen und Fotoserver unmounten. " kklll12
+    heimat
+    vpn
+    echo "VPN ist aus und Fotoserver unmountend."
+
+
+}
