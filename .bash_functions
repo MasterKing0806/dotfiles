@@ -32,7 +32,7 @@ source /home/ca/Bashscripts/bashrc/kon
 source /home/ca/Bashscripts/bashrc/mediasnap
 
 #Neuer Monat
-source /home/ca/Bashscripts/bashrc/neuermonat
+#source /home/ca/Bashscripts/bashrc/neuermonat
 
 #Paketlisten erstellen
 source /home/ca/Bashscripts/bashrc/peckage
