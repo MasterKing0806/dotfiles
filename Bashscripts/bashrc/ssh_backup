@@ -1,7 +1,7 @@
 ssh_backup() {
 read -p "Ist Server an? (y für ja, sonst nichts) " unks
 if [ "$unks" == "y" ];then
-    read -p "SSH (Musik-)Dateien auf Seagate-HDD" VAR67
+    echo "SSH (Musik-)Dateien auf Seagate-HDD" 
 
     #Musik
     rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/music/ /run/media/ca/7FEF-CE8E/Musik   
@@ -11,7 +11,7 @@ if [ "$unks" == "y" ];then
     rsync -rhuvtP --stats --exclude="data/cache/" caca@192.168.90.41:/home/caca/navidrome/ "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker/navidrome"
 
     #Pihole
-    rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/pihole/compose.yaml "/games/canh/Linux-Pakte/Config Files/Docker"
-    rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/pihole/compose.yaml "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker"
+    rsync -rhuvtP --stats --include={'compose.yaml','etc-pihole/','etc-pihole/pihole-FTL.db*'} --exclude='*' caca@192.168.90.41:/home/caca/pihole/ "/games/canh/Linux-Pakte/Config Files/Docker/pihole"
+    rsync -rhuvtP --stats --include={'compose.yaml','etc-pihole/','etc-pihole/pihole-FTL.db*'} --exclude='*' caca@192.168.90.41:/home/caca/pihole/ "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker/pihole"
 fi
 }
