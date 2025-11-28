@@ -1,13 +1,16 @@
 ssh_backup() {
 
     read -p "SSH (Musik-)Dateien auf Seagate-HDD (Check if Server is even on)" VAR67
+
     #Musik
     rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/music/ /run/media/ca/7FEF-CE8E/Musik   
-    #Andere Dateien
-    rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/compose.yaml "/games/canh/Linux-Pakte/Config Files/Docker"
-    rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/compose.yaml "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker"
-    rsync -rhuvtP --stats --exclude="data/cache/" caca@192.168.90.41:/home/caca/navidrome/data "/games/canh/Linux-Pakte/Config Files/Docker/navidrome"
-    rsync -rhuvtP --stats --exclude="data/cache/" caca@192.168.90.41:/home/caca/navidrome/data "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker/navidrome"
 
+    #Navidrome
+    rsync -rhuvtP --stats --exclude="data/cache/" caca@192.168.90.41:/home/caca/navidrome/ "/games/canh/Linux-Pakte/Config Files/Docker/navidrome"
+    rsync -rhuvtP --stats --exclude="data/cache/" caca@192.168.90.41:/home/caca/navidrome/ "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker/navidrome"
+
+    #Pihole
+    rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/pihole/compose.yaml "/games/canh/Linux-Pakte/Config Files/Docker"
+    rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/pihole/compose.yaml "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker"
 
 }

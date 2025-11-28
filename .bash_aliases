@@ -42,7 +42,7 @@ alias pps='sudo pacman -S'
 
 alias rwaybar='waybar & disown'
 
-alias shut='shutdown now'
+alias shut='shutdown -h now'
 
 alias sshlap='ssh caca@192.168.90.41'
 
