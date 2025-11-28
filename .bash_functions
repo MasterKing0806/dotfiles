@@ -14,7 +14,7 @@ source /home/ca/Bashscripts/bashrc/autosnap
 source /home/ca/Bashscripts/bashrc/cacheleer
 
 #Automatisch Dotfiles in git repository pushen
-source ~/Bashscripts/bashrc/confconf
+source /home/ca/Bashscripts/bashrc/confconf
 
 #Automatisch Dotfiles löschen von repository Einträgen
 source /home/ca/Bashscripts/bashrc/confrm
@@ -32,7 +32,7 @@ source /home/ca/Bashscripts/bashrc/kon
 source /home/ca/Bashscripts/bashrc/mediasnap
 
 #Neuer Monat
-#source /home/ca/Bashscripts/bashrc/neuermonat
+source /home/ca/Bashscripts/bashrc/neuermonat
 
 #Paketlisten erstellen
 source /home/ca/Bashscripts/bashrc/peckage

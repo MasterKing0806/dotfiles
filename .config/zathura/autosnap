@@ -1,0 +1,22 @@
+#autosnap soll peckage zusammenführen mit anderen Prozessen.
+#doom upgrade updatet Doom Emacs.
+#kon, config files zu separat zu speichern
+#confconf added, commited und pushed alle relevaten config files in Github.
+#Ausserdem wird ein timeshift snapshot auf der externen Backup-HDD erstellt und jene Festplatte anschließend sicher ausgeworfen.
+autosnap (){
+	peckage
+	doom upgrade
+	kon
+	confconf
+	read -p "Timeshift Backup machen? (n für nein) " zeit1
+	if [ "$zeit1" != "n" ];then
+		#Reihenfolge und Ort des Anschlusses der HDDs wichtig, damit keine Verwirrungen aufgrund des Device-Namens entsteht
+		read -p "Nicht vergessen, ZUERST externe Seagate-HDD an Front-IO und DANN externe Backup-HDD vorne an USB-C Front-IO oder hinten an Mainboard anzuschließen!(In Dolphin Backup-HDD nicht anklicken, Seagate-HDD aber schon anklicken!) " filler
+		sudo timeshift --create
+		read -p "Backup Drive auswerfen?(am besten kurz warten)" JJ1
+		udisk
+		echo "Externe Backup-HDD sicher ausgeworfen, Backups wurden übertragen"
+	else
+		echo "Kein Timeshift Backup erstellt"
+	fi
+}

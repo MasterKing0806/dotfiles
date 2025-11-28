@@ -1,6 +1,7 @@
 ssh_backup() {
-
-    read -p "SSH (Musik-)Dateien auf Seagate-HDD (Check if Server is even on)" VAR67
+read -p "Ist Server an? (y für ja, sonst nichts) " unks
+if [ "$unks" == "y" ];then
+    read -p "SSH (Musik-)Dateien auf Seagate-HDD" VAR67
 
     #Musik
     rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/music/ /run/media/ca/7FEF-CE8E/Musik   
@@ -12,5 +13,5 @@ ssh_backup() {
     #Pihole
     rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/pihole/compose.yaml "/games/canh/Linux-Pakte/Config Files/Docker"
     rsync -rhuvtP --stats caca@192.168.90.41:/home/caca/pihole/compose.yaml "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker"
-
+fi
 }
