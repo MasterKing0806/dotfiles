@@ -1,7 +1,7 @@
 #Automatisch in git repository pushen
 tag=$(date +%d.%m.%y)
 
-hubby2 (){
+confconf (){
 	echo "Update Nachricht für commit: $tag "
 	config add .bash_aliases
 	config add .bash_functions
@@ -30,4 +30,3 @@ hubby2 (){
 	config commit -m "$tag"
 	config push
 }
-alias confconf='hubby2'
