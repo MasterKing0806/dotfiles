@@ -1,8 +1,7 @@
 #Löschen von Snapshots vereinfachen
-timedelete (){
+dtime (){
 	sudo timeshift --list
 	read -p "Eingabe von Snapshot: " name
 	sudo rm -r $name
 }
 
-alias dtime='timedelete'

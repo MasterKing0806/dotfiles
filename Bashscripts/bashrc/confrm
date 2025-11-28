@@ -1,5 +1,5 @@
 #Automatisch löschen von repository Einträgen
-hubby (){
+confrm (){
 	read -p "Wie viele Einträge sollen gelöscht werden? " zahlen
 	for ((c=1; c<=$zahlen; c++))
 	do
@@ -14,4 +14,3 @@ hubby (){
 	config push
 }
 
-alias confrm='hubby'

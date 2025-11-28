@@ -1,5 +1,5 @@
 #Komplettes Systemupdate über alle Packagemanager
-sysalles () {
+fullupdate () {
 	read -p "Komplettes Systemupdate! Hast du alles gebackupped?(y für ja; Achtung bei Yay Git Packages CleanBuild) " VAR1
 	if [ "$VAR1" = "y" ]; then
 	    pp
@@ -8,4 +8,3 @@ sysalles () {
 	    pipx upgrade-all
 	fi
 }
-alias fullupdate='sysalles'

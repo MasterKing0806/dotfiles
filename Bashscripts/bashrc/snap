@@ -1,7 +1,7 @@
 #Alles zusammenführen in eine übergreifende Funktion
 #Falls confirm gleich n ist, also kein neuer Monat ist, dann läuft autosnap mit den beiden Prompts.
 #Andernfalls, geschieht das gleiche, nur dass zusätzlich auf der externen Seagate-HDD ein Email-Ordner erstellt wird mit der neuen Monatsbezeichnung.
-ueber (){
+snap (){
 	einlesen
 	if [ "$confirm"  == "n" ]; then
 		autosnap
@@ -42,4 +42,3 @@ ueber (){
 	cacheleer
 }
 
-alias snap='ueber'
