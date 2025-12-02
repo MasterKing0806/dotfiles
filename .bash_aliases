@@ -44,8 +44,6 @@ alias rwaybar='waybar & disown'
 
 alias shut='shutdown -h now'
 
-alias sshlap='ssh caca@192.168.90.23'
-
 alias sshbackup='ssh_backup'
 
 alias sshcp='/home/ca/Bashscripts/sshcopy.sh'

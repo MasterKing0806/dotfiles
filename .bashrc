@@ -15,6 +15,9 @@ source /home/ca/.bash_aliases
 #Functions
 source /home/ca/.bash_functions
 
+#sshlap
+source /home/ca/.sshlap
+
 #VDPAU (Video acceleration)
 export VDPAU_DRIVER=radeonsi
 
