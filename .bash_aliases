@@ -48,6 +48,8 @@ alias sshbackup='ssh_backup'
 
 alias sshcp='/home/ca/Bashscripts/sshcopy.sh'
 
+alias sshlap='ssh laptopserver'
+
 alias sus='/home/ca/Bashscripts/bashrc/suspend.sh'
 
 alias swayc='vim ~/.config/sway/config'

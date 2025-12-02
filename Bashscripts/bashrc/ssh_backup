@@ -1,0 +1,17 @@
+ssh_backup() {
+read -p "Ist Server an? (y für ja, sonst nichts) " unks
+if [ "$unks" == "y" ];then
+    echo "SSH (Musik-)Dateien auf Seagate-HDD" 
+
+    #Musik
+    rsync -rhuvtP --stats laptopserver:/home/caca/music/ /run/media/ca/7FEF-CE8E/Musik   
+
+    #Navidrome
+    rsync -rhuvtP --stats --exclude="data/cache/" laptopserver:/home/caca/navidrome/ "/games/canh/Linux-Pakte/Config Files/Docker/navidrome"
+    rsync -rhuvtP --stats --exclude="data/cache/" laptopserver:/home/caca/navidrome/ "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker/navidrome"
+
+    #Pihole
+    rsync -rhuvtP --stats --include={'compose.yaml','etc-pihole/','etc-pihole/pihole-FTL.db*'} --exclude='*' laptopserver:/home/caca/pihole/ "/games/canh/Linux-Pakte/Config Files/Docker/pihole"
+    rsync -rhuvtP --stats --include={'compose.yaml','etc-pihole/','etc-pihole/pihole-FTL.db*'} --exclude='*' laptopserver:/home/caca/pihole/ "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker/pihole"
+fi
+}
