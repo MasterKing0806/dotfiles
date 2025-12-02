@@ -24,4 +24,5 @@ kon() {
     #Others
 	rsync -ruvt /home/ca/.doom.d "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
     rsync -ruvt /home/ca/.icons "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
+    rsync -ruvt /home/ca/.ssh/config "/games/canh/Linux-Pakte/Config Files/Wichtige Config Files"
 }
