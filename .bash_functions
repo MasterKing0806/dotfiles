@@ -46,6 +46,9 @@ source /home/ca/Bashscripts/bashrc/ssh_backup
 #Externen Backup-HDD entfernen
 source /home/ca/Bashscripts/bashrc/udisk
 
+#Wake on Lan Alias (dont want it in my git)
+source /home/ca/Bashscripts/bashrc/wol
+
 #Zuhause VPN Datenübertragung
 source /home/ca/Bashscripts/bashrc/zuhausesnap
 
