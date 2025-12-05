@@ -10,6 +10,6 @@ mapfile -t files < <(find /home/caca/ -type f -name "compose.yaml")
 #echo "${files[0]}"   # first file
 for file in "${files[@]}"; do
      echo "Starting containers in $file"
-     docker compose -f "$file" up -d 
+     docker compose -f "$file" start
 done
 

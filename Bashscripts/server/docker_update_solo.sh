@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "$(date '+%Y-%m-%d %H:%M:%S') - Starting update"
-mapfile -t files < <(find /home/caca/ -type f -name "compose.yaml")
+mapfile -t files < <(sudo find /home/caca/ -type f -name "compose.yaml")
 #echo "${files[0]}"   # first file
 for file in "${files[@]}"; do
      echo "Stopping containers in $file"

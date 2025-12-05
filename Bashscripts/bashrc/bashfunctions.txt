@@ -8,3 +8,4 @@ peckage: Paketenlisten erstellen
 snap: Backup + Fullupdate
 ssh_backup: backup für ssh dateien
 udisk: unmount a backup-hdd
+wol: wakeonlan shortcut
