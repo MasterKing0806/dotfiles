@@ -11,8 +11,12 @@ if [ "$unks" == "y" ];then
     rsync -rhuvtP --stats --exclude="data/cache/" laptopserver:/home/caca/navidrome/ "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker/navidrome"
 
     #Nextcloud
+    #Compose file
     rsync -rhuvtP --stats --include={'compose.yaml'} --exclude='*' laptopserver:/home/caca/nextcloud/ "/games/canh/Linux-Pakte/Config Files/Docker/nextcloud"
     rsync -rhuvtP --stats --include={'compose.yaml'} --exclude='*' laptopserver:/home/caca/nextcloud/ "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker/nextcloud"
+
+    #Daten
+    rsync -rhuvtP --stats laptopserver:/home/caca/nextcloud/nc/data /run/media/ca/7FEF-CE8E/nextcloud  
 
     #Pihole
     rsync -rhuvtP --stats --include={'compose.yaml','etc-pihole/','etc-pihole/pihole-FTL.db*'} --exclude='*' laptopserver:/home/caca/pihole/ "/games/canh/Linux-Pakte/Config Files/Docker/pihole"
