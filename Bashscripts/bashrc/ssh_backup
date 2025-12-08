@@ -4,7 +4,7 @@ if [ "$unks" == "y" ];then
     echo "SSH (Musik-)Dateien auf Seagate-HDD" 
 
     #Musik
-    rsync -rhuvtP --stats laptopserver:/home/caca/music/ /run/media/ca/7FEF-CE8E/Musik   
+    rsync -rhuvtP --stats laptopserver:/home/caca/music/ /run/media/ca/7FEF-CE8E/Musik/servermusik   
 
     #Navidrome
     rsync -rhuvtP --stats --exclude="data/cache/" laptopserver:/home/caca/navidrome/ "/games/canh/Linux-Pakte/Config Files/Docker/navidrome"
