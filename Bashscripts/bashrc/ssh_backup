@@ -1,6 +1,6 @@
 ssh_backup() {
-read -p "Ist Server an? (y für ja, sonst nichts) " unks
-if [ "$unks" == "y" ];then
+read -p "Ist Server an? (n für nein, sonst nichts) " unks
+if [ "$unks" != "n" ];then
     echo "SSH (Musik-)Dateien auf Seagate-HDD" 
 
     #Musik
