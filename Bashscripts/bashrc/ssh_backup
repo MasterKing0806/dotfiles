@@ -12,8 +12,8 @@ if [ "$unks" == "y" ];then
 
     #Nextcloud
     #Compose file
-    rsync -rhuvtP --stats --include={'compose.yaml'} --exclude='*' laptopserver:/home/caca/nextcloud/ "/games/canh/Linux-Pakte/Config Files/Docker/nextcloud"
-    rsync -rhuvtP --stats --include={'compose.yaml'} --exclude='*' laptopserver:/home/caca/nextcloud/ "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker/nextcloud"
+    rsync -rhuvtP --stats --include='compose.yaml' --exclude='*' laptopserver:/home/caca/nextcloud/ "/games/canh/Linux-Pakte/Config Files/Docker/nextcloud"
+    rsync -rhuvtP --stats --include='compose.yaml' --exclude='*' laptopserver:/home/caca/nextcloud/ "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker/nextcloud"
 
     #Daten
     rsync -rhuvtP --stats --delete --rsync-path="sudo rsync" --exclude='compose.yaml' laptopserver:/home/caca/nextcloud/ "/run/media/ca/7FEF-CE8E/nextcloud"
