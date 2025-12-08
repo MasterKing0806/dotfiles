@@ -6,5 +6,6 @@ fullupdate () {
 	    ja
 	    flap
 	    pipx upgrade-all
+        job
 	fi
 }

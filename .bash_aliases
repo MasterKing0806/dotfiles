@@ -24,6 +24,8 @@ alias hyprc='vim ~/.config/hypr/hyprland.conf'
 
 alias ja='yay -Sua'
 
+alias job='wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash'
+
 alias lganaus='hyprctl dispatch dpms toggle DP-1'
 
 alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --shuffle --volume=24'  

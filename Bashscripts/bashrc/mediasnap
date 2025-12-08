@@ -17,4 +17,7 @@ mediasnap(){
     #/kingston
 	rsync -ruvt  /kingston/Minecraft-alles/ /run/media/ca/7FEF-CE8E/Minecraft
 
+    #home
+	rsync -ruvt  /home/ca/JoplinBackup/ /run/media/ca/7FEF-CE8E/Linux-Pakte/Joplin
+
 }
