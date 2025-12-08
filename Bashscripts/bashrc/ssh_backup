@@ -16,7 +16,7 @@ if [ "$unks" == "y" ];then
     rsync -rhuvtP --stats --include={'compose.yaml'} --exclude='*' laptopserver:/home/caca/nextcloud/ "/run/media/ca/7FEF-CE8E/Linux-Pakte/Config Files/Docker/nextcloud"
 
     #Daten
-    rsync -rhuvtP --stats laptopserver:/home/caca/nextcloud/nc/data /run/media/ca/7FEF-CE8E/nextcloud  
+    rsync -rhuvtP --stats --delete --rsync-path="sudo rsync" --exclude='compose.yaml' laptopserver:/home/caca/nextcloud/ "/run/media/ca/7FEF-CE8E/nextcloud"
 
     #Pihole
     rsync -rhuvtP --stats --include={'compose.yaml','etc-pihole/','etc-pihole/pihole-FTL.db*'} --exclude='*' laptopserver:/home/caca/pihole/ "/games/canh/Linux-Pakte/Config Files/Docker/pihole"
