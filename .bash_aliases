@@ -6,6 +6,8 @@ alias bashrc='vim ~/.bashrc'
 
 alias bios='systemctl reboot --firmware-setup'
 
+alias bruecke='/home/ca/Bashscripts/bruecke.sh'
+
 alias calias='vim ~/.bash_aliases'
 
 alias config='/usr/bin/git --git-dir=/home/ca/dotfiles/ --work-tree=/home/ca'
