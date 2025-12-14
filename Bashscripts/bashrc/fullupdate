@@ -5,6 +5,7 @@ fullupdate () {
 	    pp
 	    ja
 	    flap
+        read -p "Update server manually? " KAR23
 	    pipx upgrade-all
         job
 	fi

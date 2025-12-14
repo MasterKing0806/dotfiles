@@ -8,18 +8,18 @@ snap (){
         /home/ca/Bashscripts/bashrc/takeoutff.sh
 		read -p "Google Takout erstellen und Financials laden" CARI1
         /home/ca/Bashscripts/bashrc/thunderbirdff.sh
-		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass, etc. und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
+		read -p "Linux-Infos, Google Notes, Emails, Joplin, Handy Fotos, Wallpaper, Keepass, etc. und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 	else
 		autosnap
         /home/ca/Bashscripts/bashrc/takeoutff.sh
 		read -p "Google Takout erstellen und Financials laden" CARI1
         /home/ca/Bashscripts/bashrc/thunderbirdff.sh
-		read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper, Keepass, etc. und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
+		read -p "Linux-Infos, Google Notes, Emails, Joplin, Handy Fotos, Wallpaper, Keepass, etc. und Studium Daten auf externe Seagate-HDD und dann sicher auswerfen? " VARI2
 		mkdir /run/media/ca/7FEF-CE8E/Email/$monad
 	fi
 	#Erstellung eines Emailordners in Abhängigkeit vom Monat sowie des Tages, an dem die Emails übertragen worden.
 	mkdir /run/media/ca/7FEF-CE8E/Email/$monad/$tag
-	#Sychronisierung von Linux-Pakte Ordner, email, Handy Fotos, Wallpaper, Keepass, Beleg, Filme-Serien, Kontoauszug, Musik, screenshots, Word-Dokumente, Lol, novus-bevo mit externern Seagate-HDD
+	#Sychronisierung von Linux-Pakte Ordner, email, Handy Fotos, Joplin, Wallpaper, Keepass, Beleg, Filme-Serien, Kontoauszug, Musik, screenshots, Word-Dokumente, Lol, novus-bevo mit externern Seagate-HDD
 	rsync -ruvt  /games/canh/email/ /run/media/ca/7FEF-CE8E/Email/$monad/$tag
     mediasnap
 	read -p "Linux-Infos, Google Notes, Emails, Handy Fotos, Wallpaper und Keepass, etc. übertragen, fortfahren mit Studium-Daten (Vorsicht: Möglicher Datenverlust). Bitte erste alle Studium-Daten mit Learnweb vergleichen. " VARI6
