@@ -44,6 +44,8 @@ alias ppr='sudo pacman -Rsn'
 
 alias pps='sudo pacman -S'
 
+alias quad='nmcli  connection modify "Wired connection 2" ipv4.dns "9.9.9.9 149.112.112.112" && nmcli  connection modify "Wired connection 2" ipv6.dns "2620:fe::fe 2620:fe::9"'
+
 alias rwaybar='waybar & disown'
 
 alias shut='shutdown -h now'
