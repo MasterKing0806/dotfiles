@@ -9,7 +9,13 @@ wpctl status | awk '
 }'
 )
 
-FEISHIN_INDEX=$(pgrep -f 'mpv --idle')
+FEISHIN_INDEX=$(
+wpctl status | awk '
+/^[[:space:]]*[0-9]+\. Chromium[[:space:]]+\[.*pid:[0-9]+\]/ {
+    match($0, /pid:([0-9]+)/, a)
+    print a[1]
+}'
+)
 
 YTMPV=$(pgrep -f 'mpv --vo=null')
 
