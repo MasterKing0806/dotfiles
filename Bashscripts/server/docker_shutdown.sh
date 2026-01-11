@@ -13,5 +13,10 @@ for file in "${files[@]}"; do
      docker compose -f "$file" stop 
 done
 
+#Turn off external drive before shutting down
+sudo udisksctl unmount -b /dev/sdb
+sudo udisksctl power-off -b /dev/sdb
+echo "Externe Festplatte ist aus"
+
 echo "shutting down"
 sudo shutdown -h now

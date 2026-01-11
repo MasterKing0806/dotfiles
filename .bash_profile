@@ -3,7 +3,6 @@
 #
 
 if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
-    source Bashscripts/pihole.sh
    # source Bashscripts/wayland.sh
    # source Bashscripts/swaylogin.sh
     source Bashscripts/hyprlandlogin.sh
