@@ -26,6 +26,7 @@ confconf (){
     #Others
 	config add .doom.d
     config add .icons
+    config add .gitignore
 
 	config commit -m "$tag"
 	config push
