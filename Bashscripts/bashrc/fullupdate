@@ -5,8 +5,7 @@ fullupdate () {
 	    pp
 	    ja
 	    flap
-        quad
-        read -p "Update server manually (DNS swapped to Quad9) " KAR23
+        read -p "Update server manually " KAR23
         vpn
 	    pipx upgrade-all
         job

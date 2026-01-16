@@ -62,7 +62,7 @@ alias swayc='vim ~/.config/sway/config'
 
 alias ufotoserver='/home/ca/Bashscripts/ufotoserver.sh'
 
-alias vpn='/home/ca/Bashscripts/pihole.sh && sudo systemctl restart NetworkManager'
+alias vpn='sudo systemctl restart NetworkManager'
 
 alias ytmp3='yt-dlp -x --audio-format mp3'
 
