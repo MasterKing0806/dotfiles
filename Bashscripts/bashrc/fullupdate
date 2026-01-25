@@ -6,7 +6,6 @@ fullupdate () {
 	    ja
 	    flap
         read -p "Update server manually " KAR23
-        vpn
 	    pipx upgrade-all
         job
 	fi
