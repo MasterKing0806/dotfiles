@@ -1,0 +1,16 @@
+{
+    "core-SimpleMarkdownWrapper": "46054",
+    "core-React": "64700",
+    "core-Dispatcher": "73153",
+    "core-ReactSpring": "278420",
+    "core-AccessibilityContext": "158954",
+    "core-Tooltip": "397927",
+    "core-contextmenu-Actions": "442433",
+    "core-commandmanager-appIcons": "664929",
+    "core-settings-search": "368631",
+    "core-SimpleMarkdown": "791332",
+    "core-changelog-anchorClasses": "68380",
+    "core-commandmanager-iconClasses": "382780",
+    "core-commandmanager-builtInSeparatorClasses": "127461",
+    "core-mdinstallcss-codeBlockStyles": "830412"
+}
