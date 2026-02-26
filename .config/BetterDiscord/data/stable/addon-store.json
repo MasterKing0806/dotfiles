@@ -330,7 +330,7 @@
                 }
             },
             "likes": 16,
-            "downloads": 8714,
+            "downloads": 8775,
             "tags": [
                 "chat",
                 "utility"
@@ -358,7 +358,7 @@
                 "guild": null
             },
             "likes": 549,
-            "downloads": 1186367,
+            "downloads": 1188857,
             "tags": [
                 "voice",
                 "enhancement",
@@ -393,7 +393,7 @@
                 }
             },
             "likes": 73,
-            "downloads": 72267,
+            "downloads": 72474,
             "tags": [
                 "edit",
                 "shortcut",
@@ -429,7 +429,7 @@
                 }
             },
             "likes": 6,
-            "downloads": 23100,
+            "downloads": 23766,
             "tags": [
                 "enhancement",
                 "utility"
@@ -457,7 +457,7 @@
                 "guild": null
             },
             "likes": 23,
-            "downloads": 38332,
+            "downloads": 38622,
             "tags": [
                 "transparent",
                 "layout",
@@ -493,7 +493,7 @@
                 }
             },
             "likes": 1,
-            "downloads": 1865,
+            "downloads": 1981,
             "tags": [
                 "fun",
                 "chat",
@@ -527,7 +527,7 @@
                 }
             },
             "likes": 19,
-            "downloads": 13325,
+            "downloads": 13355,
             "tags": [
                 "shortcut",
                 "enhancement",
@@ -556,7 +556,7 @@
                 "guild": null
             },
             "likes": 25,
-            "downloads": 37881,
+            "downloads": 38430,
             "tags": [
                 "enhancement",
                 "utility"
@@ -584,7 +584,7 @@
                 "guild": null
             },
             "likes": 105,
-            "downloads": 122943,
+            "downloads": 123206,
             "tags": [
                 "chat",
                 "members",
@@ -615,7 +615,7 @@
                 "guild": null
             },
             "likes": 41,
-            "downloads": 44358,
+            "downloads": 44630,
             "tags": [
                 "layout",
                 "customizable",
@@ -645,7 +645,7 @@
                 "guild": null
             },
             "likes": 6,
-            "downloads": 10483,
+            "downloads": 10554,
             "tags": [
                 "customizable"
             ],
@@ -661,7 +661,7 @@
             "file_name": "VoiceActivity.plugin.js",
             "type": "plugin",
             "description": "Shows icons and info in popouts, the member list, and more when someone is in a voice channel.",
-            "version": "1.12.1",
+            "version": "1.12.2",
             "author": {
                 "github_id": "68879269",
                 "github_name": "Neodymium7",
@@ -677,16 +677,16 @@
                 }
             },
             "likes": 85,
-            "downloads": 90897,
+            "downloads": 91195,
             "tags": [
                 "shortcut",
                 "voice",
                 "utility"
             ],
             "thumbnail_url": "/resources/thumbnails/1009.png",
-            "latest_source_url": "https://raw.githubusercontent.com/Neodymium7/BetterDiscordStuff/ae69e6331e892398939d37958c627a07f96ea0f7/VoiceActivity/VoiceActivity.plugin.js",
+            "latest_source_url": "https://raw.githubusercontent.com/Neodymium7/BetterDiscordStuff/122274d2ed842e3ce0449aa2010543aeb5e39349/VoiceActivity/VoiceActivity.plugin.js",
             "initial_release_date": "2022-04-05T16:46:25.863418Z",
-            "latest_release_date": "2026-01-25T09:50:54.215708Z",
+            "latest_release_date": "2026-02-23T18:51:02.200186Z",
             "guild": null
         },
         "copier.plugin.js": {
@@ -711,7 +711,7 @@
                 }
             },
             "likes": 94,
-            "downloads": 90485,
+            "downloads": 90627,
             "tags": [
                 "channels",
                 "shortcut",
@@ -747,7 +747,7 @@
                 "guild": null
             },
             "likes": 87,
-            "downloads": 123125,
+            "downloads": 123696,
             "tags": [
                 "transparent",
                 "customizable",
@@ -778,7 +778,7 @@
                 "guild": null
             },
             "likes": 12,
-            "downloads": 40128,
+            "downloads": 41216,
             "tags": [
                 "emotes",
                 "chat"
@@ -806,7 +806,7 @@
                 "guild": null
             },
             "likes": 22,
-            "downloads": 39847,
+            "downloads": 40082,
             "tags": [
                 "transparent",
                 "customizable",
@@ -841,7 +841,7 @@
                 }
             },
             "likes": 77,
-            "downloads": 87647,
+            "downloads": 87951,
             "tags": [
                 "transparent",
                 "customizable",
@@ -877,7 +877,7 @@
                 }
             },
             "likes": 9,
-            "downloads": 7186,
+            "downloads": 7307,
             "tags": [
                 "channels",
                 "utility"
@@ -909,8 +909,8 @@
                     "avatar_hash": "a_0284b0297857e340d8d6a036ae4557e7                "
                 }
             },
-            "likes": 458,
-            "downloads": 766274,
+            "likes": 459,
+            "downloads": 768831,
             "tags": [
                 "transparent",
                 "customizable",
@@ -949,7 +949,7 @@
                 }
             },
             "likes": 120,
-            "downloads": 123176,
+            "downloads": 123484,
             "tags": [
                 "transparent",
                 "anime"
@@ -966,7 +966,7 @@
             "file_name": "GameTimeTracker.plugin.js",
             "type": "plugin",
             "description": "Track time spent in games",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "author": {
                 "github_id": "17981128",
                 "github_name": "Yentis",
@@ -977,16 +977,16 @@
                 "guild": null
             },
             "likes": 1,
-            "downloads": 5529,
+            "downloads": 5609,
             "tags": [
                 "game",
                 "activity",
                 "utility"
             ],
             "thumbnail_url": "/resources/thumbnails/1528.png",
-            "latest_source_url": "https://raw.githubusercontent.com/Yentis/betterdiscord-game-time-tracker/5d4ff43d76ad06c896cfea5236fe0c9f30d5e904/GameTimeTracker.plugin.js",
+            "latest_source_url": "https://raw.githubusercontent.com/Yentis/betterdiscord-game-time-tracker/76ef1fd3ca07fd92c36708d1cb1da5d8a7d1dcea/GameTimeTracker.plugin.js",
             "initial_release_date": "2024-12-12T11:19:49.707635Z",
-            "latest_release_date": "2026-01-26T22:48:23.404089Z",
+            "latest_release_date": "2026-02-23T16:51:41.212848Z",
             "guild": null
         },
         "hideiconbadge.plugin.js": {
@@ -1006,7 +1006,7 @@
                 "guild": null
             },
             "likes": 13,
-            "downloads": 14802,
+            "downloads": 14840,
             "tags": [
                 "edit",
                 "utility"
@@ -1034,7 +1034,7 @@
                 "guild": null
             },
             "likes": 4,
-            "downloads": 2983,
+            "downloads": 3043,
             "tags": [
                 "shortcut",
                 "enhancement",
@@ -1068,7 +1068,7 @@
                 }
             },
             "likes": 67,
-            "downloads": 94348,
+            "downloads": 94745,
             "tags": [
                 "dark",
                 "light"
@@ -1101,7 +1101,7 @@
                 }
             },
             "likes": 687,
-            "downloads": 944875,
+            "downloads": 947921,
             "tags": [
                 "customizable",
                 "nature"
@@ -1134,7 +1134,7 @@
                 }
             },
             "likes": 65,
-            "downloads": 107551,
+            "downloads": 107748,
             "tags": [
                 "customizable",
                 "dark",
@@ -1162,8 +1162,8 @@
                 "discord_snowflake": "574870314928832533",
                 "guild": null
             },
-            "likes": 136,
-            "downloads": 144230,
+            "likes": 137,
+            "downloads": 144495,
             "tags": [
                 "dark"
             ],
@@ -1195,7 +1195,7 @@
                 }
             },
             "likes": 800,
-            "downloads": 1461692,
+            "downloads": 1463677,
             "tags": [
                 "game",
                 "activity",
@@ -1225,7 +1225,7 @@
                 "guild": null
             },
             "likes": 17,
-            "downloads": 9286,
+            "downloads": 9327,
             "tags": [
                 "enhancement",
                 "utility"
@@ -1253,7 +1253,7 @@
                 "guild": null
             },
             "likes": 4,
-            "downloads": 2328,
+            "downloads": 2362,
             "tags": [
                 "channels",
                 "enhancement",
@@ -1284,7 +1284,7 @@
                 "guild": null
             },
             "likes": 54,
-            "downloads": 75414,
+            "downloads": 75707,
             "tags": [
                 "dark"
             ],
@@ -1311,7 +1311,7 @@
                 "guild": null
             },
             "likes": 12,
-            "downloads": 33115,
+            "downloads": 33334,
             "tags": [
                 "transparent",
                 "customizable",
@@ -1345,8 +1345,8 @@
                     "avatar_hash": null
                 }
             },
-            "likes": 3,
-            "downloads": 2999,
+            "likes": 4,
+            "downloads": 3062,
             "tags": [
                 "enhancement",
                 "utility"
@@ -1374,7 +1374,7 @@
                 "guild": null
             },
             "likes": 209,
-            "downloads": 144914,
+            "downloads": 145239,
             "tags": [
                 "enhancement",
                 "chat",
@@ -1402,8 +1402,8 @@
                 "discord_snowflake": "508863359777505290",
                 "guild": null
             },
-            "likes": 75,
-            "downloads": 58407,
+            "likes": 76,
+            "downloads": 59633,
             "tags": [
                 "customizable",
                 "dark"
@@ -1431,7 +1431,7 @@
                 "guild": null
             },
             "likes": 3,
-            "downloads": 699,
+            "downloads": 798,
             "tags": [
                 "enhancement"
             ],
@@ -1463,7 +1463,7 @@
                 }
             },
             "likes": 20,
-            "downloads": 22817,
+            "downloads": 22949,
             "tags": [
                 "enhancement",
                 "roles"
@@ -1496,7 +1496,7 @@
                 "guild": null
             },
             "likes": 136,
-            "downloads": 117355,
+            "downloads": 117614,
             "tags": [
                 "enhancement",
                 "organization",
@@ -1530,7 +1530,7 @@
                 }
             },
             "likes": 0,
-            "downloads": 926,
+            "downloads": 1066,
             "tags": [
                 "text",
                 "enhancement",
@@ -1541,6 +1541,69 @@
             "latest_source_url": "https://raw.githubusercontent.com/DaddyBoard/BD-Plugins/aec53f8a2c31ebfa677fbced72268c9b81c8696b/BetterMentions/BetterMentions.plugin.js",
             "initial_release_date": "2026-01-16T03:05:49.116867Z",
             "latest_release_date": "2026-01-24T00:15:11.545252Z",
+            "guild": null
+        },
+        "mobileforall.plugin.js": {
+            "id": 1486,
+            "name": "MobileForAll",
+            "file_name": "MobileForAll.plugin.js",
+            "type": "plugin",
+            "description": "Make the mobile indicator have priority instead of the VR or desktop indicators",
+            "version": "1.0.2",
+            "author": {
+                "github_id": "71196819",
+                "github_name": "doggybootsy",
+                "display_name": "DoggyBootsy",
+                "discord_name": "doggybootsy",
+                "discord_avatar_hash": "51e45b02bb0acf0449a87f3f1e079fc8",
+                "discord_snowflake": "515780151791976453",
+                "guild": null
+            },
+            "likes": 0,
+            "downloads": 22,
+            "tags": [
+                "status",
+                "shortcut",
+                "enhancement",
+                "utility"
+            ],
+            "thumbnail_url": "/resources/thumbnails/1823.png",
+            "latest_source_url": "https://raw.githubusercontent.com/doggybootsy/BDPlugins/79c4b0d28f300167b3f586bd6a6687ccda4a5169/mobile-for-all/MobileForAll.plugin.js",
+            "initial_release_date": "2026-02-17T00:56:29.044496Z",
+            "latest_release_date": "2026-02-21T19:41:20.594363Z",
+            "guild": null
+        },
+        "twitchpreview.plugin.js": {
+            "id": 1461,
+            "name": "TwitchPreview",
+            "file_name": "TwitchPreview.plugin.js",
+            "type": "plugin",
+            "description": "Improved previews for Twitch channel links.",
+            "version": "2.3.2",
+            "author": {
+                "github_id": "81967520",
+                "github_name": "Snusene",
+                "display_name": "Snues",
+                "discord_name": ".snues",
+                "discord_avatar_hash": "48a2f024dc5fe2a29a470c424ab26e8f",
+                "discord_snowflake": "98862725609816064",
+                "guild": {
+                    "name": "Snues's Hus",
+                    "snowflake": "1447307563052961824",
+                    "invite_link": "https://discord.gg/s4zTwVHJm2",
+                    "avatar_hash": "17cddd1b19da3e61b0f34f3d74ef6118                  "
+                }
+            },
+            "likes": 0,
+            "downloads": 18,
+            "tags": [
+                "enhancement",
+                "chat"
+            ],
+            "thumbnail_url": "/resources/thumbnails/1798.png",
+            "latest_source_url": "https://raw.githubusercontent.com/Snusene/BetterDiscordPlugins/574cfed8728d77d0b6f0dd8d2f8a9c0608c85e4d/TwitchPreview/TwitchPreview.plugin.js",
+            "initial_release_date": "2026-01-12T22:19:11.776389Z",
+            "latest_release_date": "2026-01-23T23:02:52.268153Z",
             "guild": null
         },
         "personalpins.plugin.js": {
@@ -1565,7 +1628,7 @@
                 }
             },
             "likes": 106,
-            "downloads": 53300,
+            "downloads": 53401,
             "tags": [
                 "enhancement",
                 "chat",
@@ -1599,7 +1662,7 @@
                 }
             },
             "likes": 20,
-            "downloads": 14432,
+            "downloads": 14550,
             "tags": [
                 "flat",
                 "customizable",
@@ -1630,7 +1693,7 @@
                 "guild": null
             },
             "likes": 4,
-            "downloads": 7356,
+            "downloads": 7490,
             "tags": [
                 "customizable",
                 "dark"
@@ -1658,7 +1721,7 @@
                 "guild": null
             },
             "likes": 288,
-            "downloads": 631501,
+            "downloads": 632607,
             "tags": [
                 "enhancement",
                 "servers",
@@ -1688,7 +1751,7 @@
                 "guild": null
             },
             "likes": 175,
-            "downloads": 176203,
+            "downloads": 176460,
             "tags": [
                 "enhancement",
                 "servers"
@@ -1721,7 +1784,7 @@
                 }
             },
             "likes": 22,
-            "downloads": 26448,
+            "downloads": 26515,
             "tags": [
                 "enhancement",
                 "members"
@@ -1749,7 +1812,7 @@
                 "guild": null
             },
             "likes": 1,
-            "downloads": 1887,
+            "downloads": 1922,
             "tags": [
                 "game",
                 "fun",
@@ -1783,7 +1846,7 @@
                 }
             },
             "likes": 8,
-            "downloads": 23003,
+            "downloads": 23513,
             "tags": [
                 "channels",
                 "enhancement",
@@ -1802,7 +1865,7 @@
             "file_name": "FriendNotifications.plugin.js",
             "type": "plugin",
             "description": "Shows a Notification when a Friend or a User, you choose to observe, changes their Status",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "author": {
                 "github_id": "23700969",
                 "github_name": "mwittrien",
@@ -1818,14 +1881,14 @@
                 }
             },
             "likes": 279,
-            "downloads": 436554,
+            "downloads": 437381,
             "tags": [
                 "friends"
             ],
             "thumbnail_url": "/resources/thumbnails/270.png",
-            "latest_source_url": "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/c561c50fadf8ce7e7862e6a090e48196f6069b9b/Plugins/FriendNotifications/FriendNotifications.plugin.js",
+            "latest_source_url": "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/c6968b5581038c0d9224277d5acefaec8ba9f533/Plugins/FriendNotifications/FriendNotifications.plugin.js",
             "initial_release_date": "2021-03-06T17:39:08.505912Z",
-            "latest_release_date": "2025-12-07T11:29:19.088346Z",
+            "latest_release_date": "2026-02-23T21:16:51.822961Z",
             "guild": null
         },
         "exponent.theme.css": {
@@ -1850,7 +1913,7 @@
                 }
             },
             "likes": 253,
-            "downloads": 138284,
+            "downloads": 139427,
             "tags": [
                 "layout",
                 "nature",
@@ -1881,7 +1944,7 @@
                 "guild": null
             },
             "likes": 5,
-            "downloads": 5754,
+            "downloads": 5813,
             "tags": [
                 "text",
                 "enhancement",
@@ -1915,7 +1978,7 @@
                 }
             },
             "likes": 45,
-            "downloads": 92466,
+            "downloads": 92665,
             "tags": [
                 "text",
                 "enhancement",
@@ -1944,7 +2007,7 @@
                 "guild": null
             },
             "likes": 58,
-            "downloads": 57802,
+            "downloads": 57917,
             "tags": [
                 "chat",
                 "utility"
@@ -1977,7 +2040,7 @@
                 }
             },
             "likes": 6,
-            "downloads": 5563,
+            "downloads": 5683,
             "tags": [
                 "friends",
                 "members",
@@ -2011,7 +2074,7 @@
                 }
             },
             "likes": 8,
-            "downloads": 7094,
+            "downloads": 7149,
             "tags": [
                 "text",
                 "enhancement",
@@ -2046,7 +2109,7 @@
                 }
             },
             "likes": 50,
-            "downloads": 62951,
+            "downloads": 63074,
             "tags": [
                 "edit",
                 "servers"
@@ -2071,10 +2134,15 @@
                 "discord_name": ".snues",
                 "discord_avatar_hash": "48a2f024dc5fe2a29a470c424ab26e8f",
                 "discord_snowflake": "98862725609816064",
-                "guild": null
+                "guild": {
+                    "name": "Snues's Hus",
+                    "snowflake": "1447307563052961824",
+                    "invite_link": "https://discord.gg/s4zTwVHJm2",
+                    "avatar_hash": "17cddd1b19da3e61b0f34f3d74ef6118                  "
+                }
             },
             "likes": 4,
-            "downloads": 515,
+            "downloads": 593,
             "tags": [
                 "notifications",
                 "chat",
@@ -2108,7 +2176,7 @@
                 }
             },
             "likes": 39,
-            "downloads": 34979,
+            "downloads": 35046,
             "tags": [
                 "transparent",
                 "anime",
@@ -2137,7 +2205,7 @@
                 "guild": null
             },
             "likes": 206,
-            "downloads": 406359,
+            "downloads": 407266,
             "tags": [
                 "transparent",
                 "layout",
@@ -2171,7 +2239,7 @@
                 "guild": null
             },
             "likes": 282,
-            "downloads": 461921,
+            "downloads": 462913,
             "tags": [
                 "dark",
                 "black",
@@ -2205,7 +2273,7 @@
                 "guild": null
             },
             "likes": 1,
-            "downloads": 783,
+            "downloads": 795,
             "tags": [
                 "shortcut",
                 "utility"
@@ -2233,7 +2301,7 @@
                 "guild": null
             },
             "likes": 6,
-            "downloads": 8986,
+            "downloads": 9010,
             "tags": [
                 "flat",
                 "dark",
@@ -2267,7 +2335,7 @@
                 }
             },
             "likes": 8,
-            "downloads": 5549,
+            "downloads": 5657,
             "tags": [
                 "servers",
                 "members",
@@ -2303,7 +2371,7 @@
                 }
             },
             "likes": 0,
-            "downloads": 2989,
+            "downloads": 3079,
             "tags": [
                 "shortcut",
                 "enhancement",
@@ -2337,7 +2405,7 @@
                 }
             },
             "likes": 25,
-            "downloads": 24456,
+            "downloads": 24585,
             "tags": [
                 "customizable",
                 "game",
@@ -2368,7 +2436,7 @@
                 "guild": null
             },
             "likes": 5,
-            "downloads": 4525,
+            "downloads": 4566,
             "tags": [
                 "text",
                 "enhancement",
@@ -2398,7 +2466,7 @@
                 "guild": null
             },
             "likes": 135,
-            "downloads": 240896,
+            "downloads": 241646,
             "tags": [
                 "dark",
                 "black",
@@ -2427,7 +2495,7 @@
                 "guild": null
             },
             "likes": 244,
-            "downloads": 238598,
+            "downloads": 238876,
             "tags": [
                 "fun",
                 "shortcut",
@@ -2462,7 +2530,7 @@
                 }
             },
             "likes": 2,
-            "downloads": 13980,
+            "downloads": 14135,
             "tags": [
                 "flat",
                 "customizable",
@@ -2493,7 +2561,7 @@
                 "guild": null
             },
             "likes": 27,
-            "downloads": 32329,
+            "downloads": 32512,
             "tags": [
                 "flat",
                 "customizable",
@@ -2523,7 +2591,7 @@
                 "guild": null
             },
             "likes": 184,
-            "downloads": 383084,
+            "downloads": 384249,
             "tags": [
                 "activity",
                 "status",
@@ -2558,7 +2626,7 @@
                 }
             },
             "likes": 1,
-            "downloads": 498,
+            "downloads": 556,
             "tags": [
                 "edit",
                 "shortcut",
@@ -2594,7 +2662,7 @@
                 }
             },
             "likes": 128,
-            "downloads": 149026,
+            "downloads": 149285,
             "tags": [
                 "customizable",
                 "dark",
@@ -2623,7 +2691,7 @@
                 "guild": null
             },
             "likes": 15,
-            "downloads": 13420,
+            "downloads": 13455,
             "tags": [
                 "notifications",
                 "channels",
@@ -2652,7 +2720,7 @@
                 "guild": null
             },
             "likes": 11,
-            "downloads": 42108,
+            "downloads": 42201,
             "tags": [
                 "flat",
                 "light"
@@ -2685,7 +2753,7 @@
                 }
             },
             "likes": 33,
-            "downloads": 11275,
+            "downloads": 11292,
             "tags": [
                 "organization",
                 "members"
@@ -2713,7 +2781,7 @@
                 "guild": null
             },
             "likes": 1489,
-            "downloads": 2198569,
+            "downloads": 2201357,
             "tags": [
                 "voice",
                 "utility"
@@ -2746,7 +2814,7 @@
                 }
             },
             "likes": 19,
-            "downloads": 23452,
+            "downloads": 23645,
             "tags": [
                 "fun",
                 "activity",
@@ -2775,7 +2843,7 @@
                 "guild": null
             },
             "likes": 375,
-            "downloads": 260035,
+            "downloads": 260340,
             "tags": [
                 "customizable",
                 "dark",
@@ -2811,7 +2879,7 @@
                 }
             },
             "likes": 1,
-            "downloads": 257,
+            "downloads": 286,
             "tags": [
                 "text",
                 "chat",
@@ -2838,10 +2906,15 @@
                 "discord_name": ".snues",
                 "discord_avatar_hash": "48a2f024dc5fe2a29a470c424ab26e8f",
                 "discord_snowflake": "98862725609816064",
-                "guild": null
+                "guild": {
+                    "name": "Snues's Hus",
+                    "snowflake": "1447307563052961824",
+                    "invite_link": "https://discord.gg/s4zTwVHJm2",
+                    "avatar_hash": "17cddd1b19da3e61b0f34f3d74ef6118                  "
+                }
             },
             "likes": 5,
-            "downloads": 561,
+            "downloads": 666,
             "tags": [
                 "notifications",
                 "enhancement",
@@ -2870,7 +2943,7 @@
                 "guild": null
             },
             "likes": 21,
-            "downloads": 11169,
+            "downloads": 11188,
             "tags": [
                 "shortcut",
                 "chat",
@@ -2904,7 +2977,7 @@
                 }
             },
             "likes": 425,
-            "downloads": 207186,
+            "downloads": 207809,
             "tags": [
                 "customizable",
                 "anime"
@@ -2937,7 +3010,7 @@
                 }
             },
             "likes": 118,
-            "downloads": 103326,
+            "downloads": 103546,
             "tags": [
                 "enhancement",
                 "servers",
@@ -2971,7 +3044,7 @@
                 }
             },
             "likes": 1,
-            "downloads": 3879,
+            "downloads": 3912,
             "tags": [
                 "edit",
                 "chat"
@@ -2980,6 +3053,37 @@
             "latest_source_url": "https://raw.githubusercontent.com/TheLazySquid/BetterDiscordPlugins/4dac5cb7bfc292366c5f8d288e180dffe15c2400/plugins/UnicodeEmojis/UnicodeEmojis.plugin.js",
             "initial_release_date": "2024-01-05T16:08:35.544966Z",
             "latest_release_date": "2026-02-10T13:00:31.091496Z",
+            "guild": null
+        },
+        "enhancecodeblocks.plugin.js": {
+            "id": 878,
+            "name": "enhancecodeblocks",
+            "file_name": "EnhanceCodeBlocks.plugin.js",
+            "type": "plugin",
+            "description": "Enhances Discords Codeblocks & Text File Attachments",
+            "version": "1.0.27",
+            "author": {
+                "github_id": "71196819",
+                "github_name": "doggybootsy",
+                "display_name": "DoggyBootsy",
+                "discord_name": "doggybootsy",
+                "discord_avatar_hash": "51e45b02bb0acf0449a87f3f1e079fc8",
+                "discord_snowflake": "515780151791976453",
+                "guild": null
+            },
+            "likes": 9,
+            "downloads": 5924,
+            "tags": [
+                "text",
+                "enhancement",
+                "chat",
+                "utility",
+                "developers"
+            ],
+            "thumbnail_url": "/resources/thumbnails/1226.png",
+            "latest_source_url": "https://raw.githubusercontent.com/doggybootsy/enhancecodeblocks/8cb627c1b879d02accc614dc6492da8866062702/dist/EnhanceCodeBlocks.plugin.js",
+            "initial_release_date": "2023-02-10T20:23:31.022502Z",
+            "latest_release_date": "2026-02-23T00:58:24.719799Z",
             "guild": null
         },
         "betterchannellist.plugin.js": {
@@ -3003,8 +3107,8 @@
                     "avatar_hash": "840d87c006a42a594deb620339b8d178                  "
                 }
             },
-            "likes": 21,
-            "downloads": 16427,
+            "likes": 22,
+            "downloads": 16605,
             "tags": [
                 "channels",
                 "enhancement"
@@ -3013,37 +3117,6 @@
             "latest_source_url": "https://raw.githubusercontent.com/arg0NNY/DiscordPlugins/e719f7adbc60a12a4427fce96724203cb6b7b691/BetterChannelList/BetterChannelList.plugin.js",
             "initial_release_date": "2023-11-05T08:01:33.789198Z",
             "latest_release_date": "2026-01-26T18:49:52.796725Z",
-            "guild": null
-        },
-        "enhancecodeblocks.plugin.js": {
-            "id": 878,
-            "name": "enhancecodeblocks",
-            "file_name": "EnhanceCodeBlocks.plugin.js",
-            "type": "plugin",
-            "description": "Enhances Discords Codeblocks & Text File Attachments",
-            "version": "1.0.26",
-            "author": {
-                "github_id": "71196819",
-                "github_name": "doggybootsy",
-                "display_name": "DoggyBootsy",
-                "discord_name": "doggybootsy",
-                "discord_avatar_hash": "51e45b02bb0acf0449a87f3f1e079fc8",
-                "discord_snowflake": "515780151791976453",
-                "guild": null
-            },
-            "likes": 9,
-            "downloads": 5870,
-            "tags": [
-                "text",
-                "enhancement",
-                "chat",
-                "utility",
-                "developers"
-            ],
-            "thumbnail_url": "/resources/thumbnails/1226.png",
-            "latest_source_url": "https://raw.githubusercontent.com/doggybootsy/enhancecodeblocks/dd436bbc108e8ae76bf556e8c262bb19b8bd15d8/dist/EnhanceCodeBlocks.plugin.js",
-            "initial_release_date": "2023-02-10T20:23:31.022502Z",
-            "latest_release_date": "2025-02-12T01:00:24.84002Z",
             "guild": null
         },
         "betterchatnames.plugin.js": {
@@ -3063,7 +3136,7 @@
                 "guild": null
             },
             "likes": 46,
-            "downloads": 53534,
+            "downloads": 53843,
             "tags": [
                 "channels",
                 "text",
@@ -3093,7 +3166,7 @@
                 "guild": null
             },
             "likes": 88,
-            "downloads": 69409,
+            "downloads": 69559,
             "tags": [
                 "flat",
                 "dark",
@@ -3122,7 +3195,7 @@
                 "guild": null
             },
             "likes": 3,
-            "downloads": 699,
+            "downloads": 808,
             "tags": [
                 "voice",
                 "enhancement",
@@ -3156,7 +3229,7 @@
                 }
             },
             "likes": 44,
-            "downloads": 51457,
+            "downloads": 51560,
             "tags": [
                 "shortcut",
                 "text",
@@ -3190,7 +3263,7 @@
                 }
             },
             "likes": 19,
-            "downloads": 11512,
+            "downloads": 11528,
             "tags": [
                 "enhancement"
             ],
@@ -3222,14 +3295,14 @@
                 }
             },
             "likes": 255,
-            "downloads": 400310,
+            "downloads": 400726,
             "tags": [
                 "library"
             ],
             "thumbnail_url": "/resources/thumbnails/234.png",
-            "latest_source_url": "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/e984b598b45e872b78a94f3e4fd2613985b30380/Library/0BDFDB.plugin.js",
+            "latest_source_url": "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/4e992befefe77cdbbcbe25c629beaee803e92188/Library/0BDFDB.plugin.js",
             "initial_release_date": "2021-03-06T09:38:58.199352Z",
-            "latest_release_date": "2026-02-14T06:58:11.975594Z",
+            "latest_release_date": "2026-02-20T19:45:50.716757Z",
             "guild": null
         },
         "editroles.plugin.js": {
@@ -3254,7 +3327,7 @@
                 }
             },
             "likes": 45,
-            "downloads": 82873,
+            "downloads": 83010,
             "tags": [
                 "edit",
                 "members",
@@ -3282,8 +3355,8 @@
                 "discord_snowflake": "247181419313496074",
                 "guild": null
             },
-            "likes": 24,
-            "downloads": 57610,
+            "likes": 26,
+            "downloads": 58822,
             "tags": [
                 "transparent"
             ],
@@ -3310,7 +3383,7 @@
                 "guild": null
             },
             "likes": 0,
-            "downloads": 336,
+            "downloads": 375,
             "tags": [
                 "status",
                 "servers",
@@ -3343,8 +3416,8 @@
                     "avatar_hash": "0ebf86191cc8d0ad44ec716406843990                  "
                 }
             },
-            "likes": 15,
-            "downloads": 8909,
+            "likes": 16,
+            "downloads": 9028,
             "tags": [
                 "activity",
                 "notifications",
@@ -3375,7 +3448,7 @@
                 "guild": null
             },
             "likes": 1,
-            "downloads": 585,
+            "downloads": 641,
             "tags": [
                 "activity",
                 "status",
@@ -3411,7 +3484,7 @@
                 }
             },
             "likes": 330,
-            "downloads": 412519,
+            "downloads": 413770,
             "tags": [
                 "transparent",
                 "anime",
@@ -3445,7 +3518,7 @@
                 }
             },
             "likes": 69,
-            "downloads": 45322,
+            "downloads": 45387,
             "tags": [
                 "layout",
                 "customizable",
@@ -3474,7 +3547,7 @@
                 "guild": null
             },
             "likes": 367,
-            "downloads": 353193,
+            "downloads": 356174,
             "tags": [
                 "flat",
                 "customizable",
@@ -3509,7 +3582,7 @@
                 }
             },
             "likes": 47,
-            "downloads": 58626,
+            "downloads": 58933,
             "tags": [
                 "transparent",
                 "abstract"
@@ -3547,7 +3620,7 @@
                 }
             },
             "likes": 155,
-            "downloads": 177163,
+            "downloads": 178906,
             "tags": [
                 "customizable",
                 "dark",
@@ -3578,7 +3651,7 @@
                 "guild": null
             },
             "likes": 7,
-            "downloads": 8470,
+            "downloads": 8659,
             "tags": [
                 "enhancement",
                 "chat",
@@ -3613,7 +3686,7 @@
                 }
             },
             "likes": 156,
-            "downloads": 224723,
+            "downloads": 225083,
             "tags": [
                 "enhancement",
                 "members"
@@ -3646,7 +3719,7 @@
                 }
             },
             "likes": 63,
-            "downloads": 63512,
+            "downloads": 63777,
             "tags": [
                 "channels",
                 "text",
@@ -3677,7 +3750,7 @@
                 "guild": null
             },
             "likes": 2,
-            "downloads": 1214,
+            "downloads": 1335,
             "tags": [
                 "enhancement",
                 "members"
@@ -3710,7 +3783,7 @@
                 }
             },
             "likes": 119,
-            "downloads": 155335,
+            "downloads": 155612,
             "tags": [
                 "enhancement",
                 "chat",
@@ -3739,7 +3812,7 @@
                 "guild": null
             },
             "likes": 3,
-            "downloads": 1112,
+            "downloads": 1281,
             "tags": [
                 "edit",
                 "enhancement",
@@ -3773,7 +3846,7 @@
                 }
             },
             "likes": 15,
-            "downloads": 35072,
+            "downloads": 35164,
             "tags": [
                 "layout",
                 "customizable"
@@ -3806,7 +3879,7 @@
                 "guild": null
             },
             "likes": 32,
-            "downloads": 60100,
+            "downloads": 60187,
             "tags": [
                 "customizable",
                 "dark",
@@ -3835,7 +3908,7 @@
                 "guild": null
             },
             "likes": 21,
-            "downloads": 10004,
+            "downloads": 10029,
             "tags": [
                 "shortcut",
                 "utility"
@@ -3863,7 +3936,7 @@
                 "guild": null
             },
             "likes": 30,
-            "downloads": 34053,
+            "downloads": 34139,
             "tags": [
                 "flat",
                 "layout",
@@ -3893,7 +3966,7 @@
                 "guild": null
             },
             "likes": 46,
-            "downloads": 74076,
+            "downloads": 74827,
             "tags": [
                 "enhancement",
                 "chat",
@@ -3927,7 +4000,7 @@
                 }
             },
             "likes": 33,
-            "downloads": 38530,
+            "downloads": 39139,
             "tags": [
                 "transparent",
                 "customizable",
@@ -3955,8 +4028,8 @@
                 "discord_snowflake": "1196991508549750784",
                 "guild": null
             },
-            "likes": 2,
-            "downloads": 239,
+            "likes": 3,
+            "downloads": 264,
             "tags": [
                 "fun",
                 "edit",
@@ -3987,7 +4060,7 @@
                 "guild": null
             },
             "likes": 2,
-            "downloads": 1111,
+            "downloads": 1126,
             "tags": [
                 "game",
                 "activity",
@@ -4021,7 +4094,7 @@
                 }
             },
             "likes": 2,
-            "downloads": 1593,
+            "downloads": 1612,
             "tags": [
                 "text",
                 "enhancement",
@@ -4050,8 +4123,8 @@
                 "discord_snowflake": "267228264580382721",
                 "guild": null
             },
-            "likes": 1145,
-            "downloads": 1034139,
+            "likes": 1148,
+            "downloads": 1038598,
             "tags": [
                 "customizable",
                 "dark",
@@ -4086,7 +4159,7 @@
                 }
             },
             "likes": 5,
-            "downloads": 4315,
+            "downloads": 4475,
             "tags": [
                 "shortcut",
                 "voice",
@@ -4115,7 +4188,7 @@
                 "guild": null
             },
             "likes": 1217,
-            "downloads": 1383545,
+            "downloads": 1387902,
             "tags": [
                 "transparent",
                 "customizable",
@@ -4150,7 +4223,7 @@
                 "guild": null
             },
             "likes": 35,
-            "downloads": 37024,
+            "downloads": 37135,
             "tags": [
                 "nature",
                 "dark",
@@ -4184,7 +4257,7 @@
                 }
             },
             "likes": 36,
-            "downloads": 38050,
+            "downloads": 38111,
             "tags": [
                 "edit",
                 "channels"
@@ -4217,7 +4290,7 @@
                 }
             },
             "likes": 60,
-            "downloads": 58077,
+            "downloads": 58278,
             "tags": [
                 "flat",
                 "transparent",
@@ -4251,7 +4324,7 @@
                 }
             },
             "likes": 67,
-            "downloads": 48190,
+            "downloads": 48488,
             "tags": [
                 "dark",
                 "light"
@@ -4284,7 +4357,7 @@
                 }
             },
             "likes": 101,
-            "downloads": 102181,
+            "downloads": 102340,
             "tags": [
                 "enhancement",
                 "chat"
@@ -4317,7 +4390,7 @@
                 }
             },
             "likes": 277,
-            "downloads": 464331,
+            "downloads": 466189,
             "tags": [
                 "dark"
             ],
@@ -4344,7 +4417,7 @@
                 "guild": null
             },
             "likes": 238,
-            "downloads": 150167,
+            "downloads": 150552,
             "tags": [
                 "dark",
                 "light",
@@ -4378,7 +4451,7 @@
                 }
             },
             "likes": 40,
-            "downloads": 41250,
+            "downloads": 41380,
             "tags": [
                 "voice",
                 "enhancement",
@@ -4394,6 +4467,40 @@
                 "invite_link": "https://discord.gg/M8DBtcZjXD",
                 "avatar_hash": "840d87c006a42a594deb620339b8d178                  "
             }
+        },
+        "multistreampopouts.plugin.js": {
+            "id": 1477,
+            "name": "MultiStreamPopouts",
+            "file_name": "MultiStreamPopouts.plugin.js",
+            "type": "plugin",
+            "description": "Allows you to open multiple Streams each in their own popout windows",
+            "version": "1.0.0",
+            "author": {
+                "github_id": "50876016",
+                "github_name": "domi-btnr",
+                "display_name": "domi.btnr",
+                "discord_name": "domi.btnr",
+                "discord_avatar_hash": "661304b01ea9a6593b93c6c4880070f3",
+                "discord_snowflake": "354191516979429376",
+                "guild": {
+                    "name": "¯\\_(ツ)_/¯",
+                    "snowflake": "838690163160514601",
+                    "invite_link": "https://discord.gg/gp2ExK5vc7",
+                    "avatar_hash": "216b8f7141608a933da9c668adb4edee                  "
+                }
+            },
+            "likes": 1,
+            "downloads": 68,
+            "tags": [
+                "voice",
+                "enhancement",
+                "utility"
+            ],
+            "thumbnail_url": "/resources/thumbnails/1814.png",
+            "latest_source_url": "https://raw.githubusercontent.com/domi-btnr/BetterDiscordStuff/2f35e429b0e615a25a5bbd2ed41c33edf9900024/MultiStreamPopouts/MultiStreamPopouts.plugin.js",
+            "initial_release_date": "2026-02-07T06:53:46.078869Z",
+            "latest_release_date": "2026-02-24T02:19:07.272481Z",
+            "guild": null
         },
         "morequickreacts.plugin.js": {
             "id": 1424,
@@ -4417,7 +4524,7 @@
                 }
             },
             "likes": 0,
-            "downloads": 1321,
+            "downloads": 1395,
             "tags": [
                 "shortcut",
                 "enhancement",
@@ -4447,7 +4554,7 @@
                 "guild": null
             },
             "likes": 28,
-            "downloads": 34895,
+            "downloads": 34974,
             "tags": [
                 "voice",
                 "enhancement",
@@ -4483,7 +4590,7 @@
                 }
             },
             "likes": 4,
-            "downloads": 8424,
+            "downloads": 8619,
             "tags": [
                 "utility"
             ],
@@ -4515,7 +4622,7 @@
                 }
             },
             "likes": 52,
-            "downloads": 53120,
+            "downloads": 53265,
             "tags": [
                 "flat",
                 "dark",
@@ -4549,7 +4656,7 @@
                 }
             },
             "likes": 340,
-            "downloads": 633330,
+            "downloads": 637616,
             "tags": [
                 "enhancement",
                 "utility"
@@ -4577,7 +4684,7 @@
                 "guild": null
             },
             "likes": 114,
-            "downloads": 133561,
+            "downloads": 133994,
             "tags": [
                 "layout",
                 "customizable",
@@ -4608,7 +4715,7 @@
                 "guild": null
             },
             "likes": 1,
-            "downloads": 3143,
+            "downloads": 3182,
             "tags": [
                 "text",
                 "enhancement",
@@ -4638,7 +4745,7 @@
                 "guild": null
             },
             "likes": 13,
-            "downloads": 15412,
+            "downloads": 15815,
             "tags": [
                 "customizable",
                 "game",
@@ -4673,7 +4780,7 @@
                 }
             },
             "likes": 187,
-            "downloads": 252922,
+            "downloads": 253455,
             "tags": [
                 "servers",
                 "organization"
@@ -4706,7 +4813,7 @@
                 }
             },
             "likes": 210,
-            "downloads": 183594,
+            "downloads": 184242,
             "tags": [
                 "flat",
                 "customizable",
@@ -4741,7 +4848,7 @@
                 }
             },
             "likes": 25,
-            "downloads": 26404,
+            "downloads": 26454,
             "tags": [
                 "customizable"
             ],
@@ -4768,7 +4875,7 @@
                 "guild": null
             },
             "likes": 125,
-            "downloads": 235115,
+            "downloads": 235863,
             "tags": [
                 "customizable",
                 "dark",
@@ -4799,7 +4906,7 @@
                 "guild": null
             },
             "likes": 4,
-            "downloads": 6977,
+            "downloads": 7069,
             "tags": [
                 "fun",
                 "text",
@@ -4828,7 +4935,7 @@
                 "guild": null
             },
             "likes": 47,
-            "downloads": 56390,
+            "downloads": 56505,
             "tags": [
                 "dark",
                 "black",
@@ -4862,7 +4969,7 @@
                 }
             },
             "likes": 372,
-            "downloads": 459591,
+            "downloads": 460436,
             "tags": [
                 "other"
             ],
@@ -4899,7 +5006,7 @@
                 }
             },
             "likes": 102,
-            "downloads": 67811,
+            "downloads": 68116,
             "tags": [
                 "customizable",
                 "dark",
@@ -4911,6 +5018,41 @@
             "latest_source_url": "https://raw.githubusercontent.com/Saltssaumure/pios-discord-theme/1f46fec1b1cbe55c36e789ae4dbc5346cf98670b/piOS.theme.css",
             "initial_release_date": "2022-01-12T06:28:07.457838Z",
             "latest_release_date": "2024-05-30T04:42:34.137665Z",
+            "guild": null
+        },
+        "timezones.plugin.js": {
+            "id": 1476,
+            "name": "Timezones",
+            "file_name": "Timezones.plugin.js",
+            "type": "plugin",
+            "description": "Allows you to display a local timezone you set for a user.",
+            "version": "2.0.4",
+            "author": {
+                "github_id": "90235641",
+                "github_name": "zrodevkaan",
+                "display_name": "Arven",
+                "discord_name": "zrodevkaan",
+                "discord_avatar_hash": "c088651f69e5f7f9291dcedba65ce8d8",
+                "discord_snowflake": "917630027477159986",
+                "guild": {
+                    "name": "Froggy Support",
+                    "snowflake": "1142561913453166794",
+                    "invite_link": "https://discord.gg/t3zMgv7Nvb",
+                    "avatar_hash": "4a4284a4e8e19853afcba9451e2d5fbb                  "
+                }
+            },
+            "likes": 0,
+            "downloads": 102,
+            "tags": [
+                "enhancement",
+                "friends",
+                "members",
+                "utility"
+            ],
+            "thumbnail_url": "/resources/thumbnails/1813.png",
+            "latest_source_url": "https://raw.githubusercontent.com/zrodevkaan/BDPlugins/b8a487d64a53eff0b42fd9943ccc39e0e9b1c5e6/Plugins/Timezones/Timezones.plugin.js",
+            "initial_release_date": "2026-02-07T05:22:08.969056Z",
+            "latest_release_date": "2026-02-23T15:16:46.757552Z",
             "guild": null
         },
         "ninex.theme.css": {
@@ -4935,7 +5077,7 @@
                 }
             },
             "likes": 104,
-            "downloads": 75914,
+            "downloads": 76586,
             "tags": [
                 "customizable",
                 "dark",
@@ -4965,7 +5107,7 @@
                 "guild": null
             },
             "likes": 2,
-            "downloads": 1067,
+            "downloads": 1078,
             "tags": [
                 "text",
                 "chat",
@@ -4994,7 +5136,7 @@
                 "guild": null
             },
             "likes": 495,
-            "downloads": 861431,
+            "downloads": 863137,
             "tags": [
                 "shortcut",
                 "enhancement",
@@ -5029,7 +5171,7 @@
                 }
             },
             "likes": 1,
-            "downloads": 512,
+            "downloads": 587,
             "tags": [
                 "status",
                 "notifications",
@@ -5064,7 +5206,7 @@
                 }
             },
             "likes": 15,
-            "downloads": 8757,
+            "downloads": 8784,
             "tags": [
                 "shortcut",
                 "enhancement",
@@ -5098,7 +5240,7 @@
                 "guild": null
             },
             "likes": 64,
-            "downloads": 57846,
+            "downloads": 58569,
             "tags": [
                 "transparent",
                 "customizable",
@@ -5129,7 +5271,7 @@
                 "guild": null
             },
             "likes": 22,
-            "downloads": 23164,
+            "downloads": 23545,
             "tags": [
                 "enhancement",
                 "servers",
@@ -5159,7 +5301,7 @@
                 "guild": null
             },
             "likes": 178,
-            "downloads": 293303,
+            "downloads": 293905,
             "tags": [
                 "flat",
                 "customizable",
@@ -5190,7 +5332,7 @@
                 "guild": null
             },
             "likes": 34,
-            "downloads": 33668,
+            "downloads": 33752,
             "tags": [
                 "customizable",
                 "dark",
@@ -5220,7 +5362,7 @@
                 "guild": null
             },
             "likes": 116,
-            "downloads": 117463,
+            "downloads": 117846,
             "tags": [
                 "dark",
                 "purple"
@@ -5253,7 +5395,7 @@
                 }
             },
             "likes": 268,
-            "downloads": 328415,
+            "downloads": 329700,
             "tags": [
                 "transparent",
                 "anime",
@@ -5292,7 +5434,7 @@
                 }
             },
             "likes": 1,
-            "downloads": 795,
+            "downloads": 805,
             "tags": [
                 "notifications",
                 "utility"
@@ -5319,8 +5461,8 @@
                 "discord_snowflake": "393900343135830016",
                 "guild": null
             },
-            "likes": 1832,
-            "downloads": 2549812,
+            "likes": 1834,
+            "downloads": 2559512,
             "tags": [
                 "transparent",
                 "customizable",
@@ -5360,7 +5502,7 @@
                 }
             },
             "likes": 3,
-            "downloads": 3778,
+            "downloads": 3872,
             "tags": [
                 "status",
                 "voice",
@@ -5396,7 +5538,7 @@
                 }
             },
             "likes": 22,
-            "downloads": 14961,
+            "downloads": 15087,
             "tags": [
                 "shortcut",
                 "text",
@@ -5426,7 +5568,7 @@
                 "guild": null
             },
             "likes": 14,
-            "downloads": 15225,
+            "downloads": 15311,
             "tags": [
                 "enhancement"
             ],
@@ -5453,7 +5595,7 @@
                 "guild": null
             },
             "likes": 6,
-            "downloads": 14774,
+            "downloads": 15194,
             "tags": [
                 "layout"
             ],
@@ -5485,7 +5627,7 @@
                 }
             },
             "likes": 51,
-            "downloads": 45200,
+            "downloads": 45318,
             "tags": [
                 "flat",
                 "layout",
@@ -5521,7 +5663,7 @@
                 }
             },
             "likes": 208,
-            "downloads": 240075,
+            "downloads": 240648,
             "tags": [
                 "channels",
                 "organization",
@@ -5555,7 +5697,7 @@
                 }
             },
             "likes": 224,
-            "downloads": 315973,
+            "downloads": 316736,
             "tags": [
                 "flat",
                 "customizable",
@@ -5589,7 +5731,7 @@
                 "guild": null
             },
             "likes": 3,
-            "downloads": 3185,
+            "downloads": 3219,
             "tags": [
                 "notifications",
                 "utility"
@@ -5621,8 +5763,8 @@
                     "avatar_hash": "62a80dd26298bee344ec72d5e1209c8b                  "
                 }
             },
-            "likes": 5,
-            "downloads": 10914,
+            "likes": 6,
+            "downloads": 11182,
             "tags": [
                 "activity",
                 "status"
@@ -5650,7 +5792,7 @@
                 "guild": null
             },
             "likes": 63,
-            "downloads": 78149,
+            "downloads": 78363,
             "tags": [
                 "status",
                 "shortcut",
@@ -5684,7 +5826,7 @@
                 }
             },
             "likes": 48,
-            "downloads": 41291,
+            "downloads": 41342,
             "tags": [
                 "channels",
                 "servers"
@@ -5717,7 +5859,7 @@
                 }
             },
             "likes": 6,
-            "downloads": 22521,
+            "downloads": 23078,
             "tags": [
                 "enhancement",
                 "members",
@@ -5751,7 +5893,7 @@
                 }
             },
             "likes": 15,
-            "downloads": 16521,
+            "downloads": 16714,
             "tags": [
                 "customizable",
                 "dark",
@@ -5786,7 +5928,7 @@
                 }
             },
             "likes": 308,
-            "downloads": 489110,
+            "downloads": 490015,
             "tags": [
                 "edit",
                 "notifications"
@@ -5814,7 +5956,7 @@
                 "guild": null
             },
             "likes": 400,
-            "downloads": 740326,
+            "downloads": 741624,
             "tags": [
                 "edit",
                 "text",
@@ -5845,7 +5987,7 @@
                 "guild": null
             },
             "likes": 0,
-            "downloads": 3261,
+            "downloads": 3805,
             "tags": [
                 "flat",
                 "customizable",
@@ -5881,7 +6023,7 @@
                 }
             },
             "likes": 271,
-            "downloads": 401171,
+            "downloads": 401790,
             "tags": [
                 "activity",
                 "enhancement",
@@ -5909,8 +6051,8 @@
                 "discord_snowflake": "332394843743584256",
                 "guild": null
             },
-            "likes": 184,
-            "downloads": 287088,
+            "likes": 186,
+            "downloads": 289204,
             "tags": [
                 "transparent",
                 "customizable",
@@ -5946,7 +6088,7 @@
                 }
             },
             "likes": 337,
-            "downloads": 355529,
+            "downloads": 356599,
             "tags": [
                 "customizable",
                 "other"
@@ -5974,7 +6116,7 @@
                 "guild": null
             },
             "likes": 3,
-            "downloads": 10521,
+            "downloads": 10587,
             "tags": [
                 "fun"
             ],
@@ -6001,7 +6143,7 @@
                 "guild": null
             },
             "likes": 23,
-            "downloads": 23407,
+            "downloads": 23639,
             "tags": [
                 "notifications",
                 "servers",
@@ -6034,8 +6176,8 @@
                     "avatar_hash": "3ed65aef2806f01ceb4022674b50ea1a                  "
                 }
             },
-            "likes": 291,
-            "downloads": 403406,
+            "likes": 292,
+            "downloads": 404190,
             "tags": [
                 "enhancement",
                 "organization",
@@ -6068,8 +6210,8 @@
                     "avatar_hash": "3ed65aef2806f01ceb4022674b50ea1a                  "
                 }
             },
-            "likes": 950,
-            "downloads": 1659968,
+            "likes": 951,
+            "downloads": 1664399,
             "tags": [
                 "text",
                 "chat",
@@ -6103,7 +6245,7 @@
                 }
             },
             "likes": 4,
-            "downloads": 1681,
+            "downloads": 1695,
             "tags": [
                 "enhancement",
                 "friends",
@@ -6132,7 +6274,7 @@
                 "guild": null
             },
             "likes": 4,
-            "downloads": 7128,
+            "downloads": 7191,
             "tags": [
                 "enhancement",
                 "roles"
@@ -6165,7 +6307,7 @@
                 }
             },
             "likes": 95,
-            "downloads": 254147,
+            "downloads": 254786,
             "tags": [
                 "transparent",
                 "customizable",
@@ -6200,7 +6342,7 @@
                 }
             },
             "likes": 2,
-            "downloads": 4712,
+            "downloads": 4784,
             "tags": [
                 "fun",
                 "enhancement",
@@ -6230,8 +6372,8 @@
                 "discord_snowflake": "257528678420840449",
                 "guild": null
             },
-            "likes": 217,
-            "downloads": 111261,
+            "likes": 220,
+            "downloads": 112189,
             "tags": [
                 "dark",
                 "light"
@@ -6264,7 +6406,7 @@
                 }
             },
             "likes": 169,
-            "downloads": 231150,
+            "downloads": 231580,
             "tags": [
                 "text",
                 "enhancement"
@@ -6292,7 +6434,7 @@
                 "guild": null
             },
             "likes": 5,
-            "downloads": 8165,
+            "downloads": 8302,
             "tags": [
                 "layout"
             ],
@@ -6319,7 +6461,7 @@
                 "guild": null
             },
             "likes": 2,
-            "downloads": 2173,
+            "downloads": 2337,
             "tags": [
                 "fun"
             ],
@@ -6351,7 +6493,7 @@
                 }
             },
             "likes": 1,
-            "downloads": 2702,
+            "downloads": 2732,
             "tags": [
                 "enhancement"
             ],
@@ -6378,7 +6520,7 @@
                 "guild": null
             },
             "likes": 17,
-            "downloads": 17572,
+            "downloads": 17630,
             "tags": [
                 "text",
                 "chat",
@@ -6407,7 +6549,7 @@
                 "guild": null
             },
             "likes": 10,
-            "downloads": 17304,
+            "downloads": 17382,
             "tags": [
                 "emotes",
                 "enhancement",
@@ -6436,7 +6578,7 @@
                 "guild": null
             },
             "likes": 7,
-            "downloads": 8410,
+            "downloads": 8435,
             "tags": [
                 "flat",
                 "dark",
@@ -6469,8 +6611,8 @@
                     "avatar_hash": "3ed65aef2806f01ceb4022674b50ea1a                  "
                 }
             },
-            "likes": 978,
-            "downloads": 1511120,
+            "likes": 979,
+            "downloads": 1513239,
             "tags": [
                 "activity",
                 "shortcut",
@@ -6500,7 +6642,7 @@
                 "guild": null
             },
             "likes": 53,
-            "downloads": 52721,
+            "downloads": 52881,
             "tags": [
                 "flat",
                 "dark"
@@ -6538,7 +6680,7 @@
                 }
             },
             "likes": 11,
-            "downloads": 17063,
+            "downloads": 17102,
             "tags": [
                 "flat",
                 "transparent"
@@ -6566,7 +6708,7 @@
                 "guild": null
             },
             "likes": 10,
-            "downloads": 27077,
+            "downloads": 27589,
             "tags": [
                 "fun",
                 "shortcut",
@@ -6600,7 +6742,7 @@
                 }
             },
             "likes": 244,
-            "downloads": 328220,
+            "downloads": 328715,
             "tags": [
                 "notifications",
                 "shortcut",
@@ -6634,7 +6776,7 @@
                 }
             },
             "likes": 36,
-            "downloads": 39080,
+            "downloads": 39156,
             "tags": [
                 "organization"
             ],
@@ -6661,7 +6803,7 @@
                 "guild": null
             },
             "likes": 75,
-            "downloads": 128265,
+            "downloads": 128530,
             "tags": [
                 "transparent",
                 "customizable",
@@ -6697,7 +6839,7 @@
                 }
             },
             "likes": 12,
-            "downloads": 28025,
+            "downloads": 28803,
             "tags": [
                 "enhancement",
                 "chat"
@@ -6730,7 +6872,7 @@
                 }
             },
             "likes": 40,
-            "downloads": 48577,
+            "downloads": 48678,
             "tags": [
                 "customizable",
                 "dark",
@@ -6764,7 +6906,7 @@
                 }
             },
             "likes": 55,
-            "downloads": 69488,
+            "downloads": 69670,
             "tags": [
                 "enhancement",
                 "chat",
@@ -6793,7 +6935,7 @@
                 "guild": null
             },
             "likes": 245,
-            "downloads": 580623,
+            "downloads": 581748,
             "tags": [
                 "flat",
                 "customizable",
@@ -6828,7 +6970,7 @@
                 }
             },
             "likes": 62,
-            "downloads": 66458,
+            "downloads": 66637,
             "tags": [
                 "customizable",
                 "dark",
@@ -6857,7 +6999,7 @@
                 "guild": null
             },
             "likes": 1,
-            "downloads": 1294,
+            "downloads": 1331,
             "tags": [
                 "shortcut",
                 "organization",
@@ -6888,7 +7030,7 @@
                 "guild": null
             },
             "likes": 16,
-            "downloads": 12110,
+            "downloads": 12191,
             "tags": [
                 "text",
                 "chat",
@@ -6917,7 +7059,7 @@
                 "guild": null
             },
             "likes": 175,
-            "downloads": 193730,
+            "downloads": 194185,
             "tags": [
                 "shortcut",
                 "enhancement",
@@ -6946,7 +7088,7 @@
                 "guild": null
             },
             "likes": 19,
-            "downloads": 40482,
+            "downloads": 41100,
             "tags": [
                 "enhancement",
                 "utility"
@@ -6974,7 +7116,7 @@
                 "guild": null
             },
             "likes": 15,
-            "downloads": 8117,
+            "downloads": 8144,
             "tags": [
                 "text",
                 "enhancement",
@@ -7008,7 +7150,7 @@
                 }
             },
             "likes": 106,
-            "downloads": 136657,
+            "downloads": 136946,
             "tags": [
                 "enhancement",
                 "utility"
@@ -7033,10 +7175,15 @@
                 "discord_name": ".snues",
                 "discord_avatar_hash": "48a2f024dc5fe2a29a470c424ab26e8f",
                 "discord_snowflake": "98862725609816064",
-                "guild": null
+                "guild": {
+                    "name": "Snues's Hus",
+                    "snowflake": "1447307563052961824",
+                    "invite_link": "https://discord.gg/s4zTwVHJm2",
+                    "avatar_hash": "17cddd1b19da3e61b0f34f3d74ef6118                  "
+                }
             },
             "likes": 2,
-            "downloads": 442,
+            "downloads": 492,
             "tags": [
                 "enhancement",
                 "chat"
@@ -7064,7 +7211,7 @@
                 "guild": null
             },
             "likes": 2,
-            "downloads": 1301,
+            "downloads": 1320,
             "tags": [
                 "shortcut",
                 "enhancement",
@@ -7093,7 +7240,7 @@
                 "guild": null
             },
             "likes": 0,
-            "downloads": 819,
+            "downloads": 840,
             "tags": [
                 "shortcut",
                 "enhancement",
@@ -7122,7 +7269,7 @@
                 "guild": null
             },
             "likes": 123,
-            "downloads": 193924,
+            "downloads": 194296,
             "tags": [
                 "flat",
                 "layout",
@@ -7158,7 +7305,7 @@
                 }
             },
             "likes": 179,
-            "downloads": 356350,
+            "downloads": 356736,
             "tags": [
                 "edit",
                 "members"
@@ -7191,7 +7338,7 @@
                 }
             },
             "likes": 0,
-            "downloads": 4460,
+            "downloads": 4523,
             "tags": [
                 "notifications",
                 "voice",
@@ -7225,7 +7372,7 @@
                 }
             },
             "likes": 12,
-            "downloads": 18318,
+            "downloads": 18607,
             "tags": [
                 "fun",
                 "text",
@@ -7259,7 +7406,7 @@
                 }
             },
             "likes": 61,
-            "downloads": 43294,
+            "downloads": 43416,
             "tags": [
                 "game",
                 "activity",
@@ -7287,17 +7434,17 @@
                 "discord_snowflake": "1124341362955919371",
                 "guild": null
             },
-            "likes": 0,
-            "downloads": 2126,
+            "likes": 1,
+            "downloads": 2546,
             "tags": [
                 "customizable",
                 "dark",
                 "purple"
             ],
             "thumbnail_url": "/resources/thumbnails/1722.png",
-            "latest_source_url": "https://raw.githubusercontent.com/Blade04208/shine/6cbcb89bb32bd0904608ce205e49e1a418311569/shine.theme.css",
+            "latest_source_url": "https://raw.githubusercontent.com/Blade04208/shine/df0fdbfef1cfd1b88ef10fdcd974c57f014b5bb8/shine.theme.css",
             "initial_release_date": "2025-08-19T11:49:16.637069Z",
-            "latest_release_date": "2025-12-19T14:43:29.104977Z",
+            "latest_release_date": "2026-02-21T17:23:11.94689Z",
             "guild": null
         },
         "customstatuspresets.plugin.js": {
@@ -7322,7 +7469,7 @@
                 }
             },
             "likes": 186,
-            "downloads": 174943,
+            "downloads": 175160,
             "tags": [
                 "activity",
                 "status",
@@ -7356,7 +7503,7 @@
                 }
             },
             "likes": 221,
-            "downloads": 259870,
+            "downloads": 261346,
             "tags": [
                 "transparent",
                 "anime",
@@ -7382,10 +7529,15 @@
                 "discord_name": "sexymartian",
                 "discord_avatar_hash": "c1194801c13617724001ce58c0380558",
                 "discord_snowflake": "384087218957844482",
-                "guild": null
+                "guild": {
+                    "name": "Aurora",
+                    "snowflake": "427609830073696258",
+                    "invite_link": "https://discord.gg/YAuBmg9",
+                    "avatar_hash": "35a132ba9f637c1f0fa1ed4b45576256                  "
+                }
             },
             "likes": 1,
-            "downloads": 7366,
+            "downloads": 7432,
             "tags": [
                 "activity",
                 "status",
@@ -7419,7 +7571,7 @@
                 }
             },
             "likes": 34,
-            "downloads": 32562,
+            "downloads": 32616,
             "tags": [
                 "shortcut",
                 "text",
@@ -7453,7 +7605,7 @@
                 }
             },
             "likes": 21,
-            "downloads": 53400,
+            "downloads": 53765,
             "tags": [
                 "channels",
                 "voice",
@@ -7489,7 +7641,7 @@
                 }
             },
             "likes": 238,
-            "downloads": 324155,
+            "downloads": 324762,
             "tags": [
                 "members",
                 "roles"
@@ -7517,7 +7669,7 @@
                 "guild": null
             },
             "likes": 40,
-            "downloads": 48649,
+            "downloads": 48776,
             "tags": [
                 "emotes",
                 "text",
@@ -7546,7 +7698,7 @@
                 "guild": null
             },
             "likes": 10,
-            "downloads": 23405,
+            "downloads": 23787,
             "tags": [
                 "dark",
                 "game",
@@ -7580,7 +7732,7 @@
                 }
             },
             "likes": 224,
-            "downloads": 512069,
+            "downloads": 512569,
             "tags": [
                 "enhancement",
                 "members"
@@ -7613,7 +7765,7 @@
                 }
             },
             "likes": 444,
-            "downloads": 484597,
+            "downloads": 485800,
             "tags": [
                 "flat",
                 "dark"
@@ -7646,7 +7798,7 @@
                 }
             },
             "likes": 48,
-            "downloads": 88573,
+            "downloads": 88819,
             "tags": [
                 "transparent",
                 "customizable",
@@ -7681,7 +7833,7 @@
                 }
             },
             "likes": 30,
-            "downloads": 10941,
+            "downloads": 10962,
             "tags": [
                 "shortcut",
                 "text",
@@ -7715,7 +7867,7 @@
                 }
             },
             "likes": 169,
-            "downloads": 224853,
+            "downloads": 225232,
             "tags": [
                 "other"
             ],
@@ -7747,7 +7899,7 @@
                 }
             },
             "likes": 19,
-            "downloads": 13718,
+            "downloads": 13790,
             "tags": [
                 "enhancement",
                 "servers",
@@ -7781,7 +7933,7 @@
                 }
             },
             "likes": 550,
-            "downloads": 860595,
+            "downloads": 862047,
             "tags": [
                 "shortcut",
                 "enhancement",
@@ -7815,7 +7967,7 @@
                 }
             },
             "likes": 7,
-            "downloads": 2714,
+            "downloads": 2750,
             "tags": [
                 "notifications",
                 "shortcut",
@@ -7845,7 +7997,7 @@
                 "guild": null
             },
             "likes": 44,
-            "downloads": 68795,
+            "downloads": 69003,
             "tags": [
                 "flat",
                 "customizable",
@@ -7880,7 +8032,7 @@
                 }
             },
             "likes": 25,
-            "downloads": 31327,
+            "downloads": 31531,
             "tags": [
                 "channels",
                 "utility"
@@ -7908,7 +8060,7 @@
                 "guild": null
             },
             "likes": 869,
-            "downloads": 1391430,
+            "downloads": 1398683,
             "tags": [
                 "transparent",
                 "customizable",
@@ -7943,7 +8095,7 @@
                 "guild": null
             },
             "likes": 804,
-            "downloads": 692540,
+            "downloads": 694392,
             "tags": [
                 "game",
                 "green",
@@ -7972,7 +8124,7 @@
                 "guild": null
             },
             "likes": 23,
-            "downloads": 52722,
+            "downloads": 53021,
             "tags": [
                 "voice",
                 "enhancement",
@@ -8006,7 +8158,7 @@
                 }
             },
             "likes": 448,
-            "downloads": 849713,
+            "downloads": 852808,
             "tags": [
                 "customizable",
                 "dark",
@@ -8040,7 +8192,7 @@
                 "guild": null
             },
             "likes": 59,
-            "downloads": 69587,
+            "downloads": 70114,
             "tags": [
                 "customizable",
                 "black"
@@ -8073,7 +8225,7 @@
                 }
             },
             "likes": 1,
-            "downloads": 296,
+            "downloads": 313,
             "tags": [
                 "enhancement",
                 "utility"
@@ -8106,7 +8258,7 @@
                 }
             },
             "likes": 15,
-            "downloads": 10717,
+            "downloads": 10742,
             "tags": [
                 "organization",
                 "utility"
@@ -8139,7 +8291,7 @@
                 }
             },
             "likes": 0,
-            "downloads": 1292,
+            "downloads": 1311,
             "tags": [
                 "game",
                 "shortcut",
@@ -8174,7 +8326,7 @@
                 }
             },
             "likes": 113,
-            "downloads": 169655,
+            "downloads": 170132,
             "tags": [
                 "transparent",
                 "anime"
@@ -8212,7 +8364,7 @@
                 }
             },
             "likes": 30,
-            "downloads": 24715,
+            "downloads": 24782,
             "tags": [
                 "emotes",
                 "servers",
@@ -8241,7 +8393,7 @@
                 "guild": null
             },
             "likes": 115,
-            "downloads": 141904,
+            "downloads": 142020,
             "tags": [
                 "fun",
                 "edit",
@@ -8277,7 +8429,7 @@
                 }
             },
             "likes": 1,
-            "downloads": 1070,
+            "downloads": 1092,
             "tags": [
                 "game",
                 "activity",
@@ -8311,7 +8463,7 @@
                 }
             },
             "likes": 11,
-            "downloads": 7316,
+            "downloads": 7395,
             "tags": [
                 "shortcut",
                 "text",
@@ -8340,7 +8492,7 @@
                 "guild": null
             },
             "likes": 4,
-            "downloads": 11227,
+            "downloads": 11261,
             "tags": [
                 "flat",
                 "dark",
@@ -8371,7 +8523,7 @@
                 "guild": null
             },
             "likes": 188,
-            "downloads": 285921,
+            "downloads": 286784,
             "tags": [
                 "channels",
                 "utility"
@@ -8404,7 +8556,7 @@
                 }
             },
             "likes": 19,
-            "downloads": 10878,
+            "downloads": 10926,
             "tags": [
                 "notifications",
                 "enhancement",
@@ -8443,7 +8595,7 @@
                 }
             },
             "likes": 355,
-            "downloads": 435083,
+            "downloads": 436087,
             "tags": [
                 "dark",
                 "abstract"
@@ -8476,7 +8628,7 @@
                 "guild": null
             },
             "likes": 8,
-            "downloads": 11937,
+            "downloads": 12067,
             "tags": [
                 "enhancement",
                 "utility"
@@ -8504,7 +8656,7 @@
                 "guild": null
             },
             "likes": 2,
-            "downloads": 328,
+            "downloads": 384,
             "tags": [
                 "text",
                 "chat",
@@ -8533,7 +8685,7 @@
                 "guild": null
             },
             "likes": 16,
-            "downloads": 18352,
+            "downloads": 18525,
             "tags": [
                 "enhancement",
                 "chat",
@@ -8567,7 +8719,7 @@
                 }
             },
             "likes": 499,
-            "downloads": 797697,
+            "downloads": 798922,
             "tags": [
                 "utility"
             ],
@@ -8599,7 +8751,7 @@
                 }
             },
             "likes": 152,
-            "downloads": 114840,
+            "downloads": 115027,
             "tags": [
                 "enhancement",
                 "search"
@@ -8616,7 +8768,7 @@
             "file_name": "LinkConverter.plugin.js",
             "type": "plugin",
             "description": "Converts all links into a configurable embed link",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "author": {
                 "github_id": "90235641",
                 "github_name": "zrodevkaan",
@@ -8632,7 +8784,7 @@
                 }
             },
             "likes": 1,
-            "downloads": 497,
+            "downloads": 541,
             "tags": [
                 "edit",
                 "text",
@@ -8641,9 +8793,9 @@
                 "utility"
             ],
             "thumbnail_url": null,
-            "latest_source_url": "https://raw.githubusercontent.com/zrodevkaan/BDPlugins/c724a7d46b6d3616b124bec2c5897aa69bc51e7d/Plugins/LinkConverter/LinkConverter.plugin.js",
+            "latest_source_url": "https://raw.githubusercontent.com/zrodevkaan/BDPlugins/bfa2851e298c05e88923b572d7045e87b4bc87ee/Plugins/LinkConverter/LinkConverter.plugin.js",
             "initial_release_date": "2025-10-15T15:34:09.968034Z",
-            "latest_release_date": "2026-01-24T00:47:55.920081Z",
+            "latest_release_date": "2026-02-20T23:40:01.504489Z",
             "guild": null
         },
         "darkmatter.theme.css": {
@@ -8662,8 +8814,8 @@
                 "discord_snowflake": "254362351170617345",
                 "guild": null
             },
-            "likes": 1112,
-            "downloads": 1921167,
+            "likes": 1113,
+            "downloads": 1929574,
             "tags": [
                 "transparent",
                 "customizable",
@@ -8702,7 +8854,7 @@
                 }
             },
             "likes": 580,
-            "downloads": 674772,
+            "downloads": 675985,
             "tags": [
                 "transparent",
                 "customizable"
@@ -8730,7 +8882,7 @@
                 "guild": null
             },
             "likes": 20,
-            "downloads": 46892,
+            "downloads": 47228,
             "tags": [
                 "fun",
                 "emotes",
@@ -8765,7 +8917,7 @@
                 }
             },
             "likes": 563,
-            "downloads": 1096564,
+            "downloads": 1098172,
             "tags": [
                 "channels",
                 "text",
@@ -8805,7 +8957,7 @@
                 }
             },
             "likes": 7,
-            "downloads": 4787,
+            "downloads": 4872,
             "tags": [
                 "shortcut",
                 "text",
@@ -8841,7 +8993,7 @@
                 }
             },
             "likes": 33,
-            "downloads": 14321,
+            "downloads": 14360,
             "tags": [
                 "members",
                 "utility"
@@ -8874,7 +9026,7 @@
                 }
             },
             "likes": 0,
-            "downloads": 6775,
+            "downloads": 6880,
             "tags": [
                 "channels",
                 "voice",
@@ -8910,7 +9062,7 @@
                 }
             },
             "likes": 1,
-            "downloads": 1135,
+            "downloads": 1157,
             "tags": [
                 "channels",
                 "servers",
@@ -8938,8 +9090,8 @@
                 "discord_snowflake": "477402916966236172",
                 "guild": null
             },
-            "likes": 255,
-            "downloads": 241100,
+            "likes": 256,
+            "downloads": 242411,
             "tags": [
                 "dark",
                 "game",
@@ -8975,7 +9127,7 @@
                 }
             },
             "likes": 43,
-            "downloads": 59361,
+            "downloads": 59553,
             "tags": [
                 "servers",
                 "organization"
@@ -8992,7 +9144,7 @@
             "file_name": "APlatformIndicators.plugin.js",
             "type": "plugin",
             "description": "Adds indicators for every platform that the user is using. Source code availble on the repo in the 'src' folder.",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "author": {
                 "github_id": "46447572",
                 "github_name": "Strencher",
@@ -9008,7 +9160,7 @@
                 }
             },
             "likes": 209,
-            "downloads": 292871,
+            "downloads": 293763,
             "tags": [
                 "status",
                 "shortcut",
@@ -9016,9 +9168,9 @@
                 "chat"
             ],
             "thumbnail_url": null,
-            "latest_source_url": "https://raw.githubusercontent.com/Strencher/BetterDiscordStuff/576f6e123505b96ea7fd406df43e25a4e3a8fef9/PlatformIndicators/APlatformIndicators.plugin.js",
+            "latest_source_url": "https://raw.githubusercontent.com/Strencher/BetterDiscordStuff/24371df7750bd8d8335c859eb5bbd7e5aa9c4c0b/PlatformIndicators/APlatformIndicators.plugin.js",
             "initial_release_date": "2021-04-21T19:06:24.143165Z",
-            "latest_release_date": "2026-02-16T11:40:56.326078Z",
+            "latest_release_date": "2026-02-23T17:36:29.738742Z",
             "guild": {
                 "name": "Stern Community",
                 "snowflake": "458997239738793984",
@@ -9043,7 +9195,7 @@
                 "guild": null
             },
             "likes": 17,
-            "downloads": 27212,
+            "downloads": 27374,
             "tags": [
                 "flat",
                 "transparent",
@@ -9078,7 +9230,7 @@
                 }
             },
             "likes": 112,
-            "downloads": 167220,
+            "downloads": 167490,
             "tags": [
                 "text",
                 "enhancement",
@@ -9107,7 +9259,7 @@
                 "guild": null
             },
             "likes": 82,
-            "downloads": 55468,
+            "downloads": 55651,
             "tags": [
                 "other"
             ],
@@ -9144,7 +9296,7 @@
                 }
             },
             "likes": 178,
-            "downloads": 251457,
+            "downloads": 251973,
             "tags": [
                 "channels"
             ],
@@ -9171,7 +9323,7 @@
                 "guild": null
             },
             "likes": 2,
-            "downloads": 795,
+            "downloads": 832,
             "tags": [
                 "enhancement",
                 "organization",
@@ -9200,7 +9352,7 @@
                 "guild": null
             },
             "likes": 7,
-            "downloads": 3962,
+            "downloads": 3988,
             "tags": [
                 "channels",
                 "enhancement",
@@ -9229,7 +9381,7 @@
                 "guild": null
             },
             "likes": 46,
-            "downloads": 51460,
+            "downloads": 51572,
             "tags": [
                 "customizable",
                 "dark",
@@ -9258,7 +9410,7 @@
                 "guild": null
             },
             "likes": 21,
-            "downloads": 24887,
+            "downloads": 24974,
             "tags": [
                 "flat",
                 "dark"
@@ -9286,7 +9438,7 @@
                 "guild": null
             },
             "likes": 74,
-            "downloads": 96196,
+            "downloads": 96986,
             "tags": [
                 "shortcut",
                 "enhancement",
@@ -9320,7 +9472,7 @@
                 }
             },
             "likes": 4,
-            "downloads": 1668,
+            "downloads": 1926,
             "tags": [
                 "edit",
                 "enhancement",
@@ -9350,7 +9502,7 @@
                 "guild": null
             },
             "likes": 86,
-            "downloads": 184307,
+            "downloads": 184588,
             "tags": [
                 "flat",
                 "transparent",
@@ -9386,7 +9538,7 @@
                 }
             },
             "likes": 300,
-            "downloads": 523912,
+            "downloads": 524647,
             "tags": [
                 "status",
                 "servers",
@@ -9415,7 +9567,7 @@
                 "guild": null
             },
             "likes": 181,
-            "downloads": 310088,
+            "downloads": 310625,
             "tags": [
                 "enhancement",
                 "friends"
@@ -9448,7 +9600,7 @@
                 }
             },
             "likes": 3,
-            "downloads": 4457,
+            "downloads": 4525,
             "tags": [
                 "voice",
                 "enhancement"
@@ -9476,7 +9628,7 @@
                 "guild": null
             },
             "likes": 13,
-            "downloads": 26011,
+            "downloads": 26505,
             "tags": [
                 "shortcut",
                 "enhancement",
@@ -9511,7 +9663,7 @@
                 }
             },
             "likes": 709,
-            "downloads": 1373493,
+            "downloads": 1376067,
             "tags": [
                 "notifications",
                 "shortcut"
@@ -9539,7 +9691,7 @@
                 "guild": null
             },
             "likes": 103,
-            "downloads": 198889,
+            "downloads": 199813,
             "tags": [
                 "flat",
                 "layout",
@@ -9574,7 +9726,7 @@
                 }
             },
             "likes": 4,
-            "downloads": 3150,
+            "downloads": 3208,
             "tags": [
                 "notifications",
                 "channels",
@@ -9609,7 +9761,7 @@
                 }
             },
             "likes": 73,
-            "downloads": 87499,
+            "downloads": 87628,
             "tags": [
                 "layout",
                 "customizable"
@@ -9637,7 +9789,7 @@
                 "guild": null
             },
             "likes": 4,
-            "downloads": 6424,
+            "downloads": 6496,
             "tags": [
                 "activity",
                 "status",
@@ -9670,8 +9822,8 @@
                     "avatar_hash": "840d87c006a42a594deb620339b8d178                  "
                 }
             },
-            "likes": 130,
-            "downloads": 151813,
+            "likes": 131,
+            "downloads": 152127,
             "tags": [
                 "security"
             ],
@@ -9708,7 +9860,7 @@
                 }
             },
             "likes": 66,
-            "downloads": 94245,
+            "downloads": 94483,
             "tags": [
                 "flat",
                 "customizable",
@@ -9743,7 +9895,7 @@
                 }
             },
             "likes": 57,
-            "downloads": 82449,
+            "downloads": 83319,
             "tags": [
                 "customizable",
                 "space",
@@ -9773,7 +9925,7 @@
                 "guild": null
             },
             "likes": 14,
-            "downloads": 22355,
+            "downloads": 22580,
             "tags": [
                 "customizable",
                 "dark",
@@ -9807,7 +9959,7 @@
                 }
             },
             "likes": 218,
-            "downloads": 247704,
+            "downloads": 248273,
             "tags": [
                 "text",
                 "chat"

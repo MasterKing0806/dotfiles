@@ -12,5 +12,10 @@
     "core-changelog-anchorClasses": "68380",
     "core-commandmanager-iconClasses": "382780",
     "core-commandmanager-builtInSeparatorClasses": "127461",
-    "core-mdinstallcss-codeBlockStyles": "830412"
+    "core-mdinstallcss-codeBlockStyles": "830412",
+    "core-themeattributes-MessageComponent": "371741",
+    "core-themeattributes-messageHook": "672341",
+    "core-themeattributes-VoiceUserComponent": "481947",
+    "core-themeattributes-ChatAvatar": "643204",
+    "core-themeattributes-AvatarImg": "97808"
 }
