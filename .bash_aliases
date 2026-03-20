@@ -22,7 +22,7 @@ alias flap='flatpak update'
 
 alias heimat='/home/ca/Bashscripts/fotoserverzuhause.sh'
 
-alias hyprc='vim ~/.config/hypr/hyprland.conf && hyprctl reload'
+alias hyprc='vim ~/.config/hypr/hyprland.conf'
 
 alias ja='yay -Sua'
 
