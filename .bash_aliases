@@ -56,6 +56,8 @@ alias sshcp='/home/ca/Bashscripts/sshcopy.sh'
 
 alias sshlap='ssh laptopserver'
 
+alias son='/home/ca/Bashscripts/sunshine_ipad.sh'
+
 alias sus='/home/ca/Bashscripts/bashrc/suspend.sh'
 
 alias swayc='vim ~/.config/sway/config'
