@@ -9,14 +9,14 @@
     "core-commandmanager-appIcons": "664929",
     "core-settings-search": "368631",
     "core-SimpleMarkdown": "791332",
-    "core-changelog-anchorClasses": "398435",
-    "core-commandmanager-iconClasses": "703263",
-    "core-commandmanager-builtInSeparatorClasses": "581942",
-    "core-mdinstallcss-codeBlockStyles": "782691",
+    "core-changelog-anchorClasses": "983763",
+    "core-commandmanager-iconClasses": "824527",
+    "core-commandmanager-builtInSeparatorClasses": "282214",
+    "core-mdinstallcss-codeBlockStyles": "992595",
     "core-themeattributes-MessageComponent": "371741",
     "core-themeattributes-messageHook": "672341",
     "core-themeattributes-VoiceUserComponent": "481947",
     "core-themeattributes-ChatAvatar": "643204",
     "core-themeattributes-AvatarImg": "97808",
-    "core-contextmenu-classes": "945375"
+    "core-contextmenu-classes": "32271"
 }
