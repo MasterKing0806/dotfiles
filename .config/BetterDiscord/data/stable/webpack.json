@@ -1,10 +1,10 @@
 {
     "core-SimpleMarkdownWrapper": "46054",
     "core-React": "64700",
-    "core-Dispatcher": "73153",
+    "core-Dispatcher": "228366",
     "core-ReactSpring": "278420",
-    "core-AccessibilityContext": "158954",
-    "core-Tooltip": "397927",
+    "core-AccessibilityContext": "844222",
+    "core-Tooltip": "781696",
     "core-contextmenu-Actions": "442433",
     "core-commandmanager-appIcons": "664929",
     "core-settings-search": "368631",
@@ -16,7 +16,14 @@
     "core-themeattributes-MessageComponent": "371741",
     "core-themeattributes-messageHook": "672341",
     "core-themeattributes-VoiceUserComponent": "481947",
-    "core-themeattributes-ChatAvatar": "643204",
+    "core-themeattributes-ChatAvatar": "639288",
     "core-themeattributes-AvatarImg": "97808",
-    "core-contextmenu-classes": "32271"
+    "core-contextmenu-classes": "32271",
+    "core-stores-Flux": "17928",
+    "core-commandmanager-user": "889227",
+    "core-commandmanager-messages": "720149",
+    "core-commandmanager-icons": "3451",
+    "core-contextmenu-menu": "550079",
+    "core-LinkParser": "527214",
+    "core-themeattributes-TabBar": "761508"
 }

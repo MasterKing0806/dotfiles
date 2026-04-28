@@ -3,6 +3,7 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
+#Start every compose file
 # Trap Ctrl+C (SIGINT) and exit immediately
 trap 'echo -e "\nScript interrupted! Exiting..."; exit 1' SIGINT
 
@@ -12,4 +13,8 @@ for file in "${files[@]}"; do
      echo "Starting containers in $file"
      docker compose -f "$file" start
 done
+
+#Turn on Overleaf
+/home/caca/overleaf/overleaf-toolkit/bin/up -d
+
 
