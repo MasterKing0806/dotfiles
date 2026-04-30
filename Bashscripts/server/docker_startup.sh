@@ -14,6 +14,7 @@ for file in "${files[@]}"; do
      docker compose -f "$file" start
 done
 
+set +e
 #Turn on Overleaf
 /home/caca/overleaf/overleaf-toolkit/bin/up -d
 
