@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Exit immediately if a command exits with a non-zero status
-set -e
+#set -e
+
+#Turn on Overleaf
+/home/caca/overleaf/overleaf-toolkit/bin/up -d
 
 #Start every compose file
 # Trap Ctrl+C (SIGINT) and exit immediately
@@ -14,8 +17,5 @@ for file in "${files[@]}"; do
      docker compose -f "$file" start
 done
 
-set +e
-#Turn on Overleaf
-/home/caca/overleaf/overleaf-toolkit/bin/up -d
 
 

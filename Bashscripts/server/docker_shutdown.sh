@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Exit immediately if a command exits with a non-zero status
-set -e
+#set -e
 
 #Stop every compose file
 # Trap Ctrl+C (SIGINT) and exit immediately
