@@ -67,7 +67,7 @@ hl.env("HYPRCURSOR_THEME", "Nordzy-hyprcursors")
 hl.env("FORCE_TIMES_TO_RUN", "5")
 
 -- Für ssh-agent startup
-hl.env("SSH_AUTH_SOCK", "$XDG_RUNTIME_DIR/ssh-agent.socket")
+hl.env("SSH_AUTH_SOCK", os.getenv("XDG_RUNTIME_DIR").."/ssh-agent.socket")
 
 -----------------------
 ----- PERMISSIONS -----
@@ -82,7 +82,7 @@ hl.config({
    },
 })
 
--- hl.permission("/usr/(bin|local/bin)/grim", "screencopy", "allow")
+hl.permission("/usr/(bin|local/bin)/grim", "screencopy", "allow")
 -- hl.permission("/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", "screencopy", "allow")
 -- hl.permission("/usr/(bin|local/bin)/hyprpm", "plugin", "allow")
 
@@ -155,21 +155,21 @@ hl.curve("myBezier",       { type = "bezier", points = { {0.05, 0.9},    {0.1, 1
 --hl.curve("easy",           { type = "spring", mass = 1, stiffness = 71.2633, dampening = 15.8273644 })
 
 --hl.animation({ leaf = "global",        enabled = true,  speed = 10,   bezier = "default" })
---hl.animation({ leaf = "border",        enabled = true,  speed = 5, bezier = "easeOutQuint" })
+hl.animation({ leaf = "border",        enabled = true,  speed = 5, bezier = "myBezier" })
 hl.animation({ leaf = "windows",       enabled = true,  speed = 3, bezier = "myBezier" })
 hl.animation({ leaf = "windowsIn",     enabled = true,  speed = 2, bezier = "myBezier", style = "popin 80%" })
-hl.animation({ leaf = "windowsOut",    enabled = true,  speed = 3, bezier = "myBezier", style = "popin 80%" })
+hl.animation({ leaf = "windowsOut",    enabled = true,  speed = 2, bezier = "myBezier", style = "popin 80%" })
 --hl.animation({ leaf = "fadeIn",        enabled = true,  speed = 1.73, bezier = "almostLinear" })
 --hl.animation({ leaf = "fadeOut",       enabled = true,  speed = 1.46, bezier = "almostLinear" })
 hl.animation({ leaf = "fade",          enabled = true,  speed = 2, bezier = "myBezier"})
---hl.animation({ leaf = "layers",        enabled = true,  speed = 3, bezier = "easeOutQuint" })
+hl.animation({ leaf = "layers",        enabled = true,  speed = 3, bezier = "myBezier" })
 --hl.animation({ leaf = "layersIn",      enabled = true,  speed = 4,    bezier = "easeOutQuint", style = "fade" })
 --hl.animation({ leaf = "layersOut",     enabled = true,  speed = 1.5,  bezier = "linear",       style = "fade" })
 --hl.animation({ leaf = "fadeLayersIn",  enabled = true,  speed = 1.79, bezier = "almostLinear" })
 --hl.animation({ leaf = "fadeLayersOut", enabled = true,  speed = 1.39, bezier = "almostLinear" })
-hl.animation({ leaf = "workspaces",    enabled = true,  speed = 3.5, style = "slidefade", bezier = "myBezier" })
---hl.animation({ leaf = "workspacesIn",  enabled = true,  speed = 1.21, bezier = "almostLinear", style = "fade" })
---hl.animation({ leaf = "workspacesOut", enabled = true,  speed = 1.94, bezier = "almostLinear", style = "fade" })
+hl.animation({ leaf = "workspaces",    enabled = true,  speed = 3.8, style = "slidefade", bezier = "myBezier" })
+--hl.animation({ leaf = "workspacesIn",  enabled = true,  speed = 2, bezier = "almostLinear", style = "fade" })
+--hl.animation({ leaf = "workspacesOut", enabled = true,  speed = 2, bezier = "almostLinear", style = "fade" })
 --hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "quick" })
 
 
@@ -221,9 +221,6 @@ hl.config({
 
         sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
 
-        touchpad = {
-            natural_scroll = false,
-        },
         accel_profile = "flat",
     },
 
@@ -250,7 +247,7 @@ hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.window.close())
 hl.bind(mainMod .. "+ SHIFT + E", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind("ALT + D", hl.dsp.exec_cmd(fileManager))
-hl.bind(mainMod .. " + space", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + SHIFT + space", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
@@ -262,11 +259,21 @@ hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
-
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
+
+-- Move with mainMod Shift + arrow keys
+hl.bind(mainMod .. "+ SHIFT + left",  hl.dsp.window.move({ direction = "left" }))
+hl.bind(mainMod .. "+ SHIFT + right", hl.dsp.window.move({ direction = "right" }))
+hl.bind(mainMod .. "+ SHIFT + up",    hl.dsp.window.move({ direction = "up" }))
+hl.bind(mainMod .. "+ SHIFT + down",  hl.dsp.window.move({ direction = "down" }))
+
+hl.bind(mainMod .. "+ SHIFT + H",  hl.dsp.window.move({ direction = "left" }))
+hl.bind(mainMod .. "+ SHIFT + L", hl.dsp.window.move({ direction = "right" }))
+hl.bind(mainMod .. "+ SHIFT + K",    hl.dsp.window.move({ direction = "up" }))
+hl.bind(mainMod .. "+ SHIFT + J",  hl.dsp.window.move({ direction = "down" }))
 
 --workspaces focus wechsel und windows verschieben
 for i = 1, 5 do
@@ -328,22 +335,22 @@ hl.bind("ALT + K", hl.dsp.exec_cmd("/home/ca/Bashscripts/clipauskee.sh"))
 hl.bind("ALT + T", hl.dsp.exec_cmd("thunderbird"))
 hl.bind("ALT + SHIFT + E", hl.dsp.exec_cmd("emacs"))
 hl.bind("ALT + F", hl.dsp.exec_cmd("firefox"))
-hl.bind("ALT + SHIFT + D", hl.dsp.exec_cmd('"discord", { workspace = "7 silent" }'))
-hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
+hl.bind("ALT + SHIFT + D", function()
+    hl.dispatch(hl.dsp.exec_cmd("discord", { workspace = "7 silent" }))
+end)
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd('grim -g "$(slurp)" /games/canh/screenshots/$(date +%Y-%m-%d_%H-%m-%s).png'))
 hl.bind(mainMod .. " + SHIFT + Z", function()
-    hl.dispatch(hl.dsp.exec_cmd('"alacritty --class mpvy -e /home/ca/Bashscripts/mpv.sh", { workspace = "3 silent" }'))
-    hl.dispatch(hl.dsp.exec_cmd('"wpctl set-volume -p $("/home/ca/Bashscripts/volumeknob_wireplumber_mpv.sh") 100%)"'))
+    hl.dispatch(hl.dsp.exec_cmd("alacritty --class mpvy -e /home/ca/Bashscripts/mpv.sh", { workspace = "3 silent" }))
 end)
 hl.bind("CTRL + ALT + L", hl.dsp.exec_cmd("swaylock --image /games/canh/Wallpapers/neon-genesis-evangelion-ec-2560x1440.jpg --inside-color 3b4252 --ring-color 2e3440 --key-hl-color d8dee9 --inside-ver-color 81a1c1 --ring-ver-color 88c0d0 -f"))
-hl.bind(mainMod .. " + SHIFT + M", hl.dsp.dpms('action = toggle, monitor = "DP-2"'))
+hl.bind(mainMod .. " + SHIFT + M", hl.dsp.dpms({ action = "toggle", monitor = "DP-2" }))
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd('libreoffice -o "/games/canh/Linux-Pakte/Infos zu Linux/Linux Links.odt"'))
 hl.bind(mainMod .. " + J", hl.dsp.exec_cmd("/home/ca/.joplin/Joplin.AppImage"))
-hl.bind("ALT + SHIFT + W", hl.dsp.exec_cmd("firefox --new-window https://web.whatsapp.com/", { workspace = "8" }))
+hl.bind("ALT + SHIFT + W", function()
+    hl.dispatch(hl.dsp.exec_cmd("firefox --new-window https://web.whatsapp.com/", { workspace = "8" }))
+end)
 hl.bind("ALT + H", hl.dsp.exec_cmd("clipman pick -t wofi"))
 
-
---swap windows
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(" /home/ca/Bashscripts/swapwinwork.sh"))
 
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
@@ -378,15 +385,26 @@ hl.window_rule({
     no_focus = true,
 })
 
+
 hl.window_rule({
     name  = "silent discord",
     match = {
         initial_class      = "discord",
-        initial_title      = "Discord",
-        workspace  = "7 silent"
+        initial_title      = "Discord"
     },
+    no_initial_focus = true, 
+    workspace  = "7 silent",
+})
 
-    no_focus = true,
+
+
+hl.window_rule({
+    name  = "silent discord",
+    match = {
+        class      = "firefox",
+        title      = "WhatsApp — Mozilla Firefox"
+    },
+    workspace  = "8",
 })
 
 --bind Workspaces to Monitors
@@ -419,3 +437,4 @@ hl.window_rule({
     move  = "20 monitor_h-120",
     float = true,
 })
+

@@ -18,4 +18,5 @@ for file in "${files[@]}"; do
 done
 
 
+/home/caca/overleaf/overleaf-toolkit/bin/up -d
 

@@ -22,13 +22,13 @@ alias flap='flatpak update'
 
 alias heimat='/home/ca/Bashscripts/fotoserverzuhause.sh'
 
-alias hyprc='vim ~/.config/hypr/hyprland.conf'
+alias hyprc='vim ~/.config/hypr/hyprland.lua'
 
 alias ja='yay -Sua'
 
 alias job='wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash'
 
-alias lganaus='hyprctl dispatch dpms toggle DP-1'
+alias lganaus="hyprctl dispatch 'hl.dsp.dpms({ action = \"toggle\", monitor = \"DP-1\" })'"
 
 alias mpvcd='mpv --term-osd-bar cdda://'
 
@@ -36,7 +36,7 @@ alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-play
 
 alias mpvytnomix='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --volume=24'  
 
-alias msianaus='hyprctl dispatch dpms toggle DP-2'
+alias msianaus="hyprctl dispatch 'hl.dsp.dpms({ action = \"toggle\", monitor = \"DP-2\" })'"
 
 alias pp='sudo pacman -Syu'
 
