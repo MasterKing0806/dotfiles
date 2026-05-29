@@ -399,7 +399,7 @@ hl.window_rule({
 
 
 hl.window_rule({
-    name  = "silent discord",
+    name  = "silent Whatsapp",
     match = {
         class      = "firefox",
         title      = "WhatsApp — Mozilla Firefox"
