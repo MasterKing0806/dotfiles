@@ -38,7 +38,12 @@ local menu        = 'wofi --show=drun --lines=5 --prompt=""'
 hl.on("hyprland.start", function () 
    hl.exec_cmd("swaybg -o DP-1 -m fill -i /games/canh/Wallpapers/thumb-1920-907796.png")
    hl.exec_cmd("swaybg -o DP-2 -m fill -i /games/canh/Wallpapers/thumb-1920-1347355.png ")
-   hl.exec_cmd('waybar & "nm-applet --indicator" &  "wl-paste --type text --watch clipman store --no-persist" & "/usr/bin/easyeffects --gapplication-service" & "/usr/lib/polkit-kde-authentication-agent-1" & dunst')
+   hl.exec_cmd("waybar")
+   hl.exec_cmd("nm-applet --indicator")
+   hl.exec_cmd("wl-paste --type text --watch clipman store --no-persist")
+   hl.exec_cmd("/usr/bin/easyeffects --gapplication-service")
+   hl.exec_cmd("/usr/lib/polkit-kde-authentication-agent-1")
+   hl.exec_cmd("dunst")
 end)
 
 
