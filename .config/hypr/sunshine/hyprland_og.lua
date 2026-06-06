@@ -146,9 +146,9 @@ hl.config({
 -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
 --hl.curve("easeOutQuint",   { type = "bezier", points = { {0.23, 1},    {0.32, 1}    } })
 --hl.curve("easeInOutCubic", { type = "bezier", points = { {0.65, 0.05}, {0.36, 1}    } })
---hl.curve("linear",         { type = "bezier", points = { {0, 0},       {1, 1}       } })
---hl.curve("almostLinear",   { type = "bezier", points = { {0.5, 0.5},   {0.75, 1}    } })
---hl.curve("quick",          { type = "bezier", points = { {0.15, 0},    {0.1, 1}     } })
+hl.curve("linear",         { type = "bezier", points = { {0, 0},       {1, 1}       } })
+hl.curve("almostLinear",   { type = "bezier", points = { {0.5, 0.5},   {0.75, 1}    } })
+hl.curve("quick",          { type = "bezier", points = { {0.15, 0},    {0.1, 1}     } })
 hl.curve("myBezier",       { type = "bezier", points = { {0.05, 0.9},    {0.1, 1.05}     } })
 
 -- Default springs
@@ -167,9 +167,9 @@ hl.animation({ leaf = "layers",        enabled = true,  speed = 3, bezier = "myB
 --hl.animation({ leaf = "layersOut",     enabled = true,  speed = 1.5,  bezier = "linear",       style = "fade" })
 --hl.animation({ leaf = "fadeLayersIn",  enabled = true,  speed = 1.79, bezier = "almostLinear" })
 --hl.animation({ leaf = "fadeLayersOut", enabled = true,  speed = 1.39, bezier = "almostLinear" })
-hl.animation({ leaf = "workspaces",    enabled = true,  speed = 3.8, style = "slidefade", bezier = "myBezier" })
---hl.animation({ leaf = "workspacesIn",  enabled = true,  speed = 2, bezier = "almostLinear", style = "fade" })
---hl.animation({ leaf = "workspacesOut", enabled = true,  speed = 2, bezier = "almostLinear", style = "fade" })
+hl.animation({ leaf = "workspaces",    enabled = true,  speed = 3.8, style = "slidefade", bezier = "default" })
+hl.animation({ leaf = "workspacesIn",  enabled = true,  speed = 2.5, bezier = "default", style = "slidefade" })
+hl.animation({ leaf = "workspacesOut", enabled = true,  speed = 2.5, bezier = "default", style = "slidefade" })
 --hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "quick" })
 
 
@@ -399,7 +399,7 @@ hl.window_rule({
 
 
 hl.window_rule({
-    name  = "silent discord",
+    name  = "silent Whatsapp",
     match = {
         class      = "firefox",
         title      = "WhatsApp — Mozilla Firefox"
