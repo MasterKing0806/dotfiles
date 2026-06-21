@@ -12,22 +12,13 @@ wpctl status | awk '
 #Feishin using mpv
 FEISHIN_INDEX=$(pgrep -f 'mpv --idle')
 
-#Feishin using Chromium
-#FEISHIN_INDEX=$(
-#wpctl status | awk '
-#/^[[:space:]]*[0-9]+\. Chromium[[:space:]]+\[.*pid:[0-9]+\]/ {
-#    match($0, /pid:([0-9]+)/, a)
-#    print a[1]
-#}'
-#)
-
 YTMPV=$(pgrep -f 'mpv --vo=null')
 
 CD_ROM=$(pgrep -f 'mpv --term-osd-bar cdda://')
 
 if pgrep -f 'mpv --term-osd-bar cdda://' > /dev/null;then
     echo "$CD_ROM"
-elif pgrep -f "/usr/bin/feishin" > /dev/null; then
+elif pgrep -f "feishin" > /dev/null; then
     echo "$FEISHIN_INDEX"
 elif pgrep -f /opt/spotify > /dev/null;then
     echo "$SPOTIFY_INDEX"
