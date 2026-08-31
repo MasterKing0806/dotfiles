@@ -4,7 +4,7 @@ alias bashpr='vim ~/.bash_profile'
 
 alias bashrc='vim ~/.bashrc'
 
-alias bios='systemctl reboot --firmware-setup'
+alias bios='hyprshutdown -t "Bye Bye" --post-cmd "systemctl reboot --firmware-setup"'
 
 alias bruecke='/home/ca/Bashscripts/bruecke.sh'
 
@@ -67,6 +67,8 @@ alias sus='/home/ca/Bashscripts/bashrc/suspend.sh'
 alias swayc='vim ~/.config/sway/config'
 
 alias ufotoserver='/home/ca/Bashscripts/ufotoserver.sh'
+
+alias windows='sudo efibootmgr --bootnext 0003 && hyprshutdown -t "Bye Bye" --post-cmd "reboot"'
 
 alias vpn='sudo systemctl restart NetworkManager'
 
