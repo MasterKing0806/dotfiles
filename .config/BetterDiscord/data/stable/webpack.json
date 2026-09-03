@@ -29,5 +29,6 @@
     "core-addoncard-ChannelActions": "730852",
     "core-reactdom-base": "333007",
     "core-reactdom-client": "379800",
-    "core-RemoteModule": "19575"
+    "core-RemoteModule": "19575",
+    "core-settings-usersettings": "766075"
 }
