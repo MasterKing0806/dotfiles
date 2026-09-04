@@ -30,7 +30,7 @@ alias job='wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Jopl
 
 alias lganaus="hyprctl dispatch 'hl.dsp.dpms({ action = \"toggle\", monitor = \"DP-1\" })'"
 
-alias mpvcd='mpv --term-osd-bar cdda://'
+alias mpvcd='mpv --term-osd-bar --cdda-cdtext=yes cdda://'
 
 alias mpvyt='mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --shuffle --volume=24'  
 
