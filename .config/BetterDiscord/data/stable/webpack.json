@@ -1,7 +1,7 @@
 {
     "core-SimpleMarkdownWrapper": "46054",
     "core-React": "64641",
-    "core-Dispatcher": "228366",
+    "core-Dispatcher": "73153",
     "core-ReactSpring": "27480",
     "core-AccessibilityContext": "844222",
     "core-Tooltip": "900002",
@@ -30,5 +30,6 @@
     "core-reactdom-base": "333007",
     "core-reactdom-client": "379800",
     "core-RemoteModule": "19575",
-    "core-settings-usersettings": "766075"
+    "core-settings-usersettings": "766075",
+    "core-ChannelActions": "730852"
 }
