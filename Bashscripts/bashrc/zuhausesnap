@@ -6,7 +6,7 @@ zuhausesnap () {
 	read -p "Linux-Pakte und Studium Ordner auf Fotoserver übertragen. " jkl
 
 	rsync -ruvt /games/canh/Kontoauszug/ "/fotoserver/ca/fotos/Canh_PC/Kontoauszug"
-	rsync -ruvt /games/canh/Linux-Pakte/ "/fotoserver/ca/fotos/Canh_PC/Linux-Pakte"
+	rsync -ruvt --exclude="Config Files/Docker/navidrome/data/artwork" /games/canh/Linux-Pakte/ "/fotoserver/ca/fotos/Canh_PC/Linux-Pakte"
 	rsync -ruvt /games/canh/Wohnung/ "/fotoserver/ca/fotos/Canh_PC/Wohnung"
 
 	rsync -ruvtn --progress --exclude={'*.mp4*','*.mp3*','*.zip*'} /games/canh/Studium/ "/fotoserver/ca/fotos/Canh_PC/Studium"
