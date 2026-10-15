@@ -2,6 +2,6 @@
 dtime (){
 	sudo timeshift --list
 	read -p "Eingabe von Snapshot: " name
-	sudo rm -r $name
+	sudo timeshift --delete --snapshot $name
 }
 
