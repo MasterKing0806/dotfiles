@@ -1,0 +1,22 @@
+local function swapCurrentWithPrevious()
+    local currentWS = hl.get_active_workspace()
+    local prevWS    = hl.get_last_workspace()
+
+    if not currentWS or not prevWS or currentWS.id == prevWS.id then return end
+
+    -- Collect window IDs BEFORE any moves
+    local curWins  = hl.get_workspace_windows(currentWS)
+    local prevWins = hl.get_workspace_windows(prevWS)
+
+    -- Move current → previous
+    for _, win in ipairs(curWins) do
+        hl.dispatch(hl.dsp.window.move({ window = win, workspace = prevWS.id, follow = false }))
+    end
+
+    -- Move previous → current
+    for _, win in ipairs(prevWins) do
+        hl.dispatch(hl.dsp.window.move({ window = win, workspace = currentWS.id, follow = false }))
+    end
+end
+
+hl.bind("SUPER + W", swapCurrentWithPrevious)   

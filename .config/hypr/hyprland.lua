@@ -37,7 +37,8 @@ local menu        = 'wofi --show=drun --lines=5 --prompt=""'
 -- Or execute your favorite apps at launch like this:
 hl.on("hyprland.start", function () 
    hl.exec_cmd("swaybg -o DP-1 -m fill -i /games/canh/Wallpapers/thumb-1920-907796.png")
-   hl.exec_cmd("swaybg -o DP-2 -m fill -i /games/canh/Wallpapers/thumb-1920-1347355.png ")
+   hl.exec_cmd("swaybg -o DP-2 -m fill -i /games/canh/Wallpapers/thumb-1920-1347355.png ") 
+   hl.exec_cmd("hyprpaper")
    hl.exec_cmd("waybar")
    hl.exec_cmd("nm-applet --indicator")
    hl.exec_cmd("wl-paste --type text --watch clipman store --no-persist")
@@ -443,3 +444,5 @@ hl.window_rule({
     float = true,
 })
 
+-- Swap windows between workspaces
+require("/home/ca/Bashscripts/swapwinwork")
