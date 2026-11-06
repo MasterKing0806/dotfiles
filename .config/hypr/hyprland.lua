@@ -338,7 +338,7 @@ hl.bind(mainMod .. " + CTRL + N",  hl.dsp.exec_cmd("playerctl previous"))
 
 
 -- Shortcut für Apps
-hl.bind("ALT + K", hl.dsp.exec_cmd("/home/ca/Bashscripts/clipauskee.sh"))
+hl.bind("ALT + K", hl.dsp.exec_cmd("keepassxc"))
 hl.bind("ALT + T", hl.dsp.exec_cmd("thunderbird"))
 hl.bind("ALT + SHIFT + E", hl.dsp.exec_cmd("emacs"))
 hl.bind("ALT + F", hl.dsp.exec_cmd("firefox"))
