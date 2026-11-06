@@ -41,7 +41,8 @@ hl.on("hyprland.start", function ()
    hl.exec_cmd("hyprpaper")
    hl.exec_cmd("waybar")
    hl.exec_cmd("nm-applet --indicator")
-   hl.exec_cmd("wl-paste --type text --watch clipman store --no-persist")
+   hl.exec_cmd("wl-paste --type text --watch cliphist store")
+   hl.exec_cmd("wl-paste --type image --watch cliphist store")
    hl.exec_cmd("/usr/bin/easyeffects --gapplication-service")
    hl.exec_cmd("/usr/lib/polkit-kde-authentication-agent-1")
    hl.exec_cmd("dunst")
@@ -355,8 +356,10 @@ hl.bind(mainMod .. " + J", hl.dsp.exec_cmd("/home/ca/.joplin/Joplin.AppImage"))
 hl.bind("ALT + SHIFT + W", function()
     hl.dispatch(hl.dsp.exec_cmd("firefox --new-window https://web.whatsapp.com/", { workspace = "8" }))
 end)
-hl.bind("ALT + H", hl.dsp.exec_cmd("clipman pick -t wofi"))
-
+hl.bind("ALT + H", hl.dsp.exec_cmd([[
+selection=$(cliphist list | wofi --dmenu --pre-display-cmd "echo '%s' | cut -f 2")
+[ -n "$selection" ] && printf '%s\n' "$selection" | cliphist decode | wl-copy
+]]))
 
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
